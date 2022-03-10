@@ -1,0 +1,44 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+
+imgui.ini
+
+*.log
+
+build/
+Toolchains/
+
+Assets/editor-icons/
+Assets/shaders/
+Assets/*.dll
+Assets/*.log
+Assets/*.pvf
+Assets/Debug
+Assets/*.ilk
+MapleEngine.dll
+MapleLibrary.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+
+
+# Executables
+*.exe
+*.app

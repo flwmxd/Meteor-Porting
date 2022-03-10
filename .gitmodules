@@ -1,0 +1,3 @@
+[submodule "MapleEngine"]
+	path = MapleEngine
+	url = https://github.com/flwmxd/MapleEngine
