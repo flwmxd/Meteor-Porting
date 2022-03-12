@@ -8,16 +8,21 @@
 // This file is part of the Meteor-Remake                             		//
 //////////////////////////////////////////////////////////////////////////////
 
+#pragma once
+
 #ifdef BUILD_EDITOR
 #	include "Editor.h"
 #else
 #	include "Application.h"
 #endif
 
-class MeteorDelegate : public maple::AppDelegate
+namespace meteor 
 {
-  public:
-	MeteorDelegate();
-	virtual auto onInit() -> void override;
-	virtual auto onDestory() -> void override{};
-};
+	class MeteorDelegate : public maple::AppDelegate
+	{
+	public:
+		MeteorDelegate();
+		virtual auto onInit() -> void override;
+		virtual auto onDestory() -> void override {};
+	};
+}

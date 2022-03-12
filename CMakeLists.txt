@@ -74,6 +74,8 @@ file(GLOB METEOR_APP_SRC
 	${GAME_SRC_DIR}/*.h	
 	${GAME_SRC_DIR}/Map/*.cpp
 	${GAME_SRC_DIR}/Map/*.h
+	${GAME_SRC_DIR}/Loader/*.cpp
+	${GAME_SRC_DIR}/Loader/*.h
 )
 
 file(GLOB METEOR_EDITOR_SRC
