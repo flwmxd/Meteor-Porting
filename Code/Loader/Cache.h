@@ -24,8 +24,16 @@ namespace meteor
 			auto iter = cache.find(name);
 			if (iter == cache.end())
 			{
-				iter = cache.emplace(name, T{ name })
-					.first;
+				if constexpr (std::is_constructible<T, const std::string&>::value)
+				{
+					iter = cache.emplace(name, T{ name })
+						.first;
+				}
+				else 
+				{
+					iter = cache.emplace(name, T{})
+						.first;
+				}
 			}
 			return iter->second;
 		}
@@ -53,5 +61,8 @@ namespace meteor
 #else
 	std::unordered_map<std::string, T> Cache<T>::cache;
 #endif
+
+#define DEFINE_CACHE(Tclazz) class Tclazz##Cache : public Cache<Tclazz> { };
+
 }
 
