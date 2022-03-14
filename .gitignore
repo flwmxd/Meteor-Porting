@@ -21,7 +21,6 @@ build/
 Toolchains/
 
 Assets/editor-icons/
-Assets/shaders/
 Assets/*.dll
 Assets/*.log
 Assets/*.pvf

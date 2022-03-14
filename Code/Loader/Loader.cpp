@@ -180,7 +180,9 @@ namespace meteor
 				if (shader.textureArg0 != -1)
 				{
 					maple::PBRMataterialTextures textures;
-					textures.albedo = maple::Texture2D::create(gmbFile.texturesNames[shader.textureArg0], "meteor/textures/" + gmbFile.texturesNames[shader.textureArg0]);
+					const auto & textureName = gmbFile.texturesNames[shader.textureArg0];
+					if(!maple::StringUtils::endWith(textureName,".ifl"))
+						textures.albedo = maple::Texture2D::create(textureName, "meteor/textures/" + textureName);
 					material->setTextures(textures);
 				}
 				catchMaterials.emplace_back(material);
