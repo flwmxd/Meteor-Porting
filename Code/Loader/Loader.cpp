@@ -10,6 +10,7 @@
 #include <Engine/Material.h>
 #include <Others/Console.h>
 #include <Others/StringUtils.h>
+#include <FileSystem/File.h>
 #include <Scene/Component/Transform.h>
 
 #include <mio.hpp>
@@ -36,6 +37,8 @@ namespace meteor
 				if (maple::StringUtils::startWith(line, "#"))
 					continue;
 
+				maple::StringUtils::trim(line);
+				maple::StringUtils::replace(line, "\t", " ");
 				auto keyValue = maple::StringUtils::split(line, " ");
 				if (keyValue.empty())
 				{
@@ -62,39 +65,33 @@ namespace meteor
 					{
 						maple::StringUtils::trim(obj);
 
-						auto keyValue = maple::StringUtils::split(obj, " ");
-
-						if (keyValue.empty())
+						if (maple::StringUtils::startWith(obj, "#"))
 							continue;
-						if (keyValue[0] == "#")
-							continue;
-						if (keyValue[0] == "{")
+						if (maple::StringUtils::startWith(obj, "{"))
 						{
 							readLeftToken = true;
 							leftTokenStack++;
 							continue;
 						}
-						//Z UP TO Y UP xÖázÖáÈ¡·´
-						if (keyValue[0] == "Position:" && readLeftToken && leftTokenStack == 1)
+						std::string temp;
+						std::stringstream sstream(obj);
+						if (maple::StringUtils::startWith(obj, "Position:") && readLeftToken && leftTokenStack == 1)
 						{
-							attr.pos.x = std::floorf(10000 * std::stof(keyValue[1])) / 10000.0f;
-							attr.pos.z = std::floorf(10000 * std::stof(keyValue[2])) / 10000.0f;
-							attr.pos.y = std::floorf(10000 * std::stof(keyValue[3])) / 10000.0f;
+							sstream >> temp >> attr.pos.x >> attr.pos.z >> attr.pos.y;
 						}
-						if (keyValue[0] == "Quaternion:" && readLeftToken && leftTokenStack == 1)
+						if (maple::StringUtils::startWith(obj, "Quaternion:") && readLeftToken && leftTokenStack == 1)
 						{
-							attr.quat.w = std::floorf(10000 * std::stof(keyValue[1])) / 10000.0f;
-							attr.quat.x = -std::floorf(10000 * std::stof(keyValue[2])) / 10000.0f;
-							attr.quat.y = -std::floorf(10000 * std::stof(keyValue[4])) / 10000.0f;
-							attr.quat.z = -std::floorf(10000 * std::stof(keyValue[3])) / 10000.0f;
+							sstream >> temp >> attr.quat.w >> attr.quat.x >> attr.quat.z >> attr.quat.y;
+							attr.quat.x *= -1.f;
+							attr.quat.y *= -1.f;
+							attr.quat.z *= -1.f;
 						}
-						if (keyValue[0] == "TextureAnimation:" && readLeftToken && leftTokenStack == 1)
+
+						if (maple::StringUtils::startWith(obj, "TextureAnimation:") && readLeftToken && leftTokenStack == 1)
 						{
-							attr.useTextAnimation = (std::stoi(keyValue[1]) == 1);
-							attr.textAnimation.x = std::stof(keyValue[2]);
-							attr.textAnimation.y = std::stof(keyValue[3]);
+							sstream >> temp >> attr.useTextAnimation >> attr.textAnimation.x >> attr.textAnimation.y;
 						}
-						if (keyValue[0] == "Custom:" && readLeftToken && leftTokenStack == 1)
+						if (maple::StringUtils::startWith(obj, "Custom:") && readLeftToken && leftTokenStack == 1)
 						{
 							std::string obj;
 							while (std::getline(desFile, obj))
@@ -128,7 +125,7 @@ namespace meteor
 			LOGI("Parse {0} finished", fileName);
 		}
 
-		inline auto loadGmbFile(GmbFile& gmbFile, DesFile& desFile, const std::string& fileName, std::unordered_map<std::string, std::shared_ptr<maple::Mesh>>& outMeshes)
+		inline auto loadGmbFile(GModelFile& gmbFile, DesFile& desFile, const std::string& fileName, std::unordered_map<std::string, std::shared_ptr<maple::Mesh>>& outMeshes)
 		{
 			mio::mmap_source mmap(fileName);
 			MAPLE_ASSERT(mmap.is_open(), "open gmb file failed");
@@ -172,6 +169,22 @@ namespace meteor
 			gmbFile.dummeyObjectsCount = binaryReader.read<int32_t>();
 			gmbFile.verticesCount = binaryReader.read<int32_t>();
 			gmbFile.facesCount = binaryReader.read<int32_t>();
+
+
+			std::vector<std::shared_ptr<maple::Material>> catchMaterials;
+			catchMaterials.emplace_back(std::make_shared<maple::Material>());
+			for (auto i = 0; i < gmbFile.shaderCount; i++)
+			{
+				auto& shader = gmbFile.shaders[i];
+				auto material = std::make_shared<maple::Material>();
+				if (shader.textureArg0 != -1)
+				{
+					maple::PBRMataterialTextures textures;
+					textures.albedo = maple::Texture2D::create(gmbFile.texturesNames[shader.textureArg0], "meteor/textures/" + gmbFile.texturesNames[shader.textureArg0]);
+					material->setTextures(textures);
+				}
+				catchMaterials.emplace_back(material);
+			}
 
 			for (int32_t k = 0; k < gmbFile.sceneObjectsCount; k++)
 			{
@@ -220,10 +233,19 @@ namespace meteor
 					vertex.texCoord = binaryReader.readVec2();
 				}
 
+				std::vector<std::shared_ptr<maple::Material>> materials;
+				
+
+				std::vector<uint32_t> idxOffset;
+				int32_t textureId = -1;
+				uint32_t offset = 0;
+				int32_t subMeshCount = 0;
+
+				std::vector<uint32_t> shaderIds;
+
 				for (int32_t n = 0; n < numOfFaces; n++)
 				{
-					binaryReader.skip(4);//material ID ?
-
+					int32_t currentTextureId = binaryReader.read<int32_t>();
 					uint32_t a = binaryReader.read<int32_t>();
 					uint32_t b = binaryReader.read<int32_t>();
 					uint32_t c = binaryReader.read<int32_t>();
@@ -231,30 +253,45 @@ namespace meteor
 					indicies.emplace_back(a);
 					indicies.emplace_back(c);
 					indicies.emplace_back(b);
+					
+					if (textureId != currentTextureId)
+					{
+						if (subMeshCount > 0)
+						{
+							idxOffset.emplace_back(offset);
+						}
 
+						materials.emplace_back(catchMaterials[currentTextureId + 1]);
+
+						textureId = currentTextureId;
+						subMeshCount++;
+					}
+					offset += 3;
 					binaryReader.skip(12);//3 * sizeof(int32_t)
 				}
 
-				auto material = std::make_shared<maple::Material>();
-
-				maple::PBRMataterialTextures textures;
-				textures.albedo = maple::Texture2D::create(gmbFile.texturesNames[0], "meteor/textures/" + gmbFile.texturesNames[0]);
-				material->setTextures(textures);
-
+				maple::Mesh::generateNormals(vertices, indicies);
+				maple::Mesh::generateTangents(vertices, indicies);
 				auto mesh = std::make_shared<maple::Mesh>(indicies, vertices);
+
 				mesh->setName(meshName);
-				mesh->setMaterial(material);
+				mesh->setMaterial(materials);
+				mesh->setSubMeshCount(subMeshCount);
+				mesh->setSubMeshIndex(idxOffset);
+				MAPLE_ASSERT(subMeshCount == materials.size(), "the count subMesh is different from materials");
 				outMeshes.emplace(meshName, mesh);
 			}
 		}
 
-		inline auto loadGmcFile(GmcFile& gmcFile, const std::string& fileName, std::unordered_map<std::string, std::shared_ptr<maple::Mesh>>& outMeshes)
+		inline auto loadGmcFile(GModelFile& gmcFile, DesFile& desFile, const std::string& fileName, std::unordered_map<std::string, std::shared_ptr<maple::Mesh>>& outMeshes)
 		{
-			std::ifstream desFile;
-			desFile.open(fileName);
-
+			std::ifstream gmcIn;
+			gmcIn.open(fileName);
 			std::string line;
-			while (std::getline(desFile, line))
+
+			std::vector<std::shared_ptr<maple::Material>> catchMaterials;
+			
+			while (std::getline(gmcIn, line))
 			{
 				if (maple::StringUtils::startWith(line, "#"))
 					continue;
@@ -265,7 +302,7 @@ namespace meteor
 				{
 					gmcFile.texturesCount = std::stoi(keyValue[1]);
 					std::string line;
-					while (std::getline(desFile, line)) 
+					while (std::getline(gmcIn, line)) 
 					{
 						maple::StringUtils::trim(line);
 						maple::StringUtils::trim(line,"\t");
@@ -278,16 +315,16 @@ namespace meteor
 					}
 					continue;
 				}
-
+				
 				if (keyValue[0] == "Shaders")
 				{
 					gmcFile.shaderCount = std::stoi(keyValue[1]);
 
-					for (auto i = 0;i<gmcFile.shaderCount;i++)
+					for (auto i = 0; i < gmcFile.shaderCount; i++)
 					{
 						auto& shader = gmcFile.shaders.emplace_back();
 						std::string line;
-						while (std::getline(desFile, line)) 
+						while (std::getline(gmcIn, line)) 
 						{
 							if(line == "{")
 								continue;
@@ -320,6 +357,22 @@ namespace meteor
 							}
 						}
 					}
+				
+
+					catchMaterials.emplace_back(std::make_shared<maple::Material>());
+					for (auto i = 0; i < gmcFile.shaderCount; i++)
+					{
+						auto& shader = gmcFile.shaders[i];
+						auto material = std::make_shared<maple::Material>();
+						if (shader.textureArg0 != -1)
+						{
+							maple::PBRMataterialTextures textures;
+							textures.albedo = maple::Texture2D::create(gmcFile.texturesNames[shader.textureArg0], "meteor/textures/" + gmcFile.texturesNames[shader.textureArg0]);
+							material->setTextures(textures);
+						}
+						catchMaterials.emplace_back(material);
+					}
+
 					continue;
 				}
 
@@ -341,22 +394,30 @@ namespace meteor
 				{
 					if (i > 0) 
 					{
-						std::getline(desFile, line);
+						std::getline(gmcIn, line);
 					}
 
 					auto keyValue = maple::StringUtils::split(line, " ");
 					std::string meshName = keyValue[1];
 
-					std::getline(desFile, line);//{
+					std::getline(gmcIn, line);//{
 
-					std::getline(desFile, line);// Vertices 156 Faces 138
+					std::getline(gmcIn, line);// Vertices 156 Faces 138
 
 					std::vector<maple::Vertex> vertices;
 					std::vector<uint32_t> indices;
 
-					int32_t textureId = -1;
 
-					while (std::getline(desFile, line))
+					std::vector<std::shared_ptr<maple::Material>> materials;
+					std::vector<std::shared_ptr<maple::Material>> catchMaterials;
+
+					catchMaterials.resize(gmcFile.shaderCount);
+					std::vector<uint32_t> idxOffset;
+					int32_t textureId = -1;
+					uint32_t offset = 0;
+					int32_t subMeshCount = 0;
+
+					while (std::getline(gmcIn, line))
 					{
 						if (line == "}")
 							break;
@@ -385,44 +446,125 @@ namespace meteor
 							std::string str = "";
 							uint32_t b, c, d;
 							std::stringstream strstream(line);
-
-							strstream >> str >> textureId >> b >> c >> d;
+							int32_t currentTextureId = 0;
+							strstream >> str >> currentTextureId >> b >> c >> d;
 
 							indices.emplace_back(b);
 							indices.emplace_back(d);
 							indices.emplace_back(c);
+							
+							if (textureId != currentTextureId)
+							{
+								if (subMeshCount > 0)
+								{
+									idxOffset.emplace_back(offset);
+								}
+								materials.emplace_back(catchMaterials[currentTextureId + 1]);
+								textureId = currentTextureId;
+								subMeshCount++;
+							}
+							offset += 3;
 						}
 					}
-
+					maple::Mesh::generateNormals(vertices, indices);
+					maple::Mesh::generateTangents(vertices, indices);
 					auto mesh = std::make_shared<maple::Mesh>(indices,vertices);
 					mesh->setName(meshName);
-					if (textureId > -1) 
-					{
-						auto material = std::make_shared<maple::Material>();
-						maple::PBRMataterialTextures textures;
-						textures.albedo = maple::Texture2D::create(gmcFile.texturesNames[textureId], "meteor/textures/" + gmcFile.texturesNames[textureId]);
-						material->setTextures(textures);
-						mesh->setMaterial(material);
-					}
+					mesh->setMaterial(materials);
+					mesh->setSubMeshCount(subMeshCount);
+					mesh->setSubMeshIndex(idxOffset);
 					outMeshes[meshName] = mesh;
+
+					MAPLE_ASSERT(subMeshCount == materials.size(), "the count subMesh is different from materials");
 				}
 			}
+		}
+		
+		inline auto loadFmc(const std::string& fileName) 
+		{
+			auto fmc = std::make_shared<FmcFile>();
+			std::ifstream fmcIn;
+			fmcIn.open(fileName);
+
+			std::string line;
+			while (std::getline(fmcIn, line))
+			{
+				if (maple::StringUtils::startWith(line, "#"))
+					continue;
+
+				if (maple::StringUtils::startWith(line, "SceneObjects"))
+				{
+					std::stringstream sstream(line);
+					std::string str;
+					sstream >> str >> fmc->scemeObjCount >> str >> fmc->dummyObjCount;
+					continue;
+				}
+
+				if (maple::StringUtils::startWith(line, "FPS"))
+				{
+					std::stringstream sstream(line);
+					std::string str;
+					sstream >> str >> fmc->fps >> str >> fmc->frames;
+					fmc->fmcFrames.resize(fmc->frames);
+					continue;
+				}
+
+				if (maple::StringUtils::startWith(line, "frame")) 
+				{
+					std::stringstream sstream(line);
+					std::string str;
+					int32_t index;
+					sstream >> str >> index;
+					auto& frame = fmc->fmcFrames[index];
+					frame.frameIdx = index;
+
+					while (std::getline(fmcIn, str))
+					{
+						if (str == "{") 
+							continue;
+						if(str == "}")
+							break;
+
+						std::stringstream sstream2(str);
+						std::string str2;
+						auto & pos = frame.pos.emplace_back();
+						auto & quat = frame.quat.emplace_back();
+						sstream2 >> 
+							str2 >> pos.x >> pos.z >> pos.y >> 
+							str2 >> quat.w >> quat.x >> quat.z >> quat.y;
+						
+						quat.x *= -1.f;
+						quat.y *= -1.f;
+						quat.z *= -1.f;
+					}	
+				}
+			}
+			return fmc;
 		}
 	}
 
 	auto GmbLoader::load(const std::string& name, const std::string& extension, std::unordered_map<std::string, std::shared_ptr<maple::Mesh>>& outMeshes) -> void
 	{
+		auto objName = maple::StringUtils::getFileNameWithoutExtension(name);
+		auto& sceneObj = MeteorSceneObjectCache::get(objName);
+
+		loadDesFile(sceneObj.desFile, maple::StringUtils::removeExtension(name) + ".des");
+	
+
+
 		if (extension == "gmb") 
 		{
-			auto objName = maple::StringUtils::getFileNameWithoutExtension(name);
-			auto& sceneObj = MeteorSceneObjectCache::get(objName);
-			loadDesFile(sceneObj.desFile, maple::StringUtils::removeExtension(name) + ".des");
 			loadGmbFile(sceneObj.gmbFile, sceneObj.desFile, name, outMeshes);
 		}
 		else if (extension == "gmc")
 		{
-			auto& gmcFile = GmcFileCache::get(name);
-			loadGmcFile(gmcFile,name, outMeshes);
+			loadGmcFile(sceneObj.gmbFile, sceneObj.desFile, name, outMeshes);
+		}
+
+		auto fmcFile = maple::StringUtils::removeExtension(name) + ".fmc";
+		if (maple::File::fileExists(fmcFile)) 
+		{
+			sceneObj.fmcFile = loadFmc(fmcFile);
 		}
 	}
 }

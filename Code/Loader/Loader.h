@@ -21,5 +21,4 @@ namespace meteor
 	};
 
 	DEFINE_CACHE(MeteorSceneObject);
-	DEFINE_CACHE(GmcFile);
 }
