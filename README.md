@@ -1,2 +1,2 @@
 # Meteor
-Meteor butterfly and a sword with MapleEngine
+Meteor Blade with MapleEngine
