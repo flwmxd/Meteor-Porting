@@ -16,6 +16,7 @@ struct Light
 layout( location = 0 ) in vec4 inPosition;
 layout( location = 1 ) in vec2 inUV;
 layout( location = 2 ) in vec3 inNormal;
+layout( location = 3 ) in vec4 inColor;
 
 layout(set = 1, binding = 0) uniform sampler2D uDiffuseMap;
 
@@ -42,7 +43,7 @@ float lengthSquared(vec3 vec)
 
 void main()
 {
-	vec4 diffuse = getAlbedo();
+	vec4 diffuse = getAlbedo();// * inColor;
 	vec4 flux = vec4( ( ubo.light.color.rgb * diffuse.rgb * ubo.light.intensity ) , 1.0 );
 	outColor = flux;
 	outPosition = inPosition;

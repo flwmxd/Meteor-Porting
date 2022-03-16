@@ -1,0 +1,228 @@
+/*
+	PScript for scene 04
+		by Peter Pon 2002/09/27
+*/
+
+#include "..\PScriptLib\Def.h"
+
+#include "..\PScriptLib\box.pst"
+#include "..\PScriptLib\desk.pst"
+#include "..\PScriptLib\chair.pst"
+#include "..\PScriptLib\jug.pst"
+
+int g_iPdoorMaxHP = 3000;
+int g_iPdoorState1HP;
+int g_iPdoorState2HP;
+int g_iPdoorState3HP;
+
+int g_bAPdoorAlive;
+int g_iAPdoorState;
+int g_iAPdoorShakePose;
+int g_iAPdoorHP;
+
+int g_bBPdoorAlive;
+int g_iBPdoorState;
+int g_iBPdoorShakePose;
+int g_iBPdoorHP;
+
+string efname = "GunHit";
+
+Scene_OnLoad()
+{
+	SetScene("snow", 0);
+	SetScene("snowdensity", 1000);
+	SetScene("winddir", 50, 0, 0);
+	SetScene("snowspeed", 20, 100);
+	SetScene("snowsize", 5, 5);
+
+	string name;
+	int i;
+	
+	g_iPdoorMaxHP = g_iLevel04GiMaMaxHP;
+	g_iPdoorState1HP = (g_iPdoorMaxHP*3)/4;
+	g_iPdoorState2HP = (g_iPdoorMaxHP*2)/4;
+	g_iPdoorState3HP = (g_iPdoorMaxHP*1)/4;
+	
+	SetSceneItem("D_APdoor", "name", "machine");
+	SetSceneItem("D_APdoor", "attribute", "damage", 0);
+	SetSceneItem("D_APdoor", "attribute", "damagevalue", 30);
+	SetSceneItem("D_APdoor", "attribute", "collision", 0);
+	SetSceneItem("D_APd02Box", "attribute", "collision", 1);
+	
+	SetSceneItem("D_BPdoor", "name", "machine");
+	SetSceneItem("D_BPdoor", "attribute", "damage", 0);
+	SetSceneItem("D_BPdoor", "attribute", "damagevalue", 30);
+	SetSceneItem("D_BPdoor", "attribute", "collision", 0);
+	SetSceneItem("D_BPd02Box", "attribute", "collision", 1);
+}
+
+Scene_OnClose()
+{
+	SetScene("snow", 0);
+}
+
+Scene_OnInit()
+{
+	string name;
+	int i;
+	
+	InitBoxes(g_iNumBoxes);
+	InitBBoxes(g_iNumBBoxes);
+	InitChairs(g_iNumChairs);
+	InitDeskes(g_iNumDeskes);
+	InitJugs(g_iNumJugs);
+	
+	g_iAPdoorHP = g_iPdoorMaxHP;
+	g_bAPdoorAlive = 1;
+	g_iAPdoorState = 1;
+	g_iAPdoorShakePose = 1;
+	
+	g_iBPdoorHP = g_iPdoorMaxHP;
+	g_bBPdoorAlive = 1;
+	g_iBPdoorState = 1;
+	g_iBPdoorShakePose = 1;
+	
+	SetSceneItem("D_APdoor", "pose", 0, 0);
+	SetSceneItem("D_BPdoor", "pose", 0, 0);
+}
+
+D_APdoor_OnAttack(int id, int character, int damage)
+{
+	int state;
+
+	g_iAPdoorHP = g_iAPdoorHP - damage;
+	Output("A", g_iAPdoorHP, g_iAPdoorState);
+	
+	if ( g_iAPdoorState==1 && g_iAPdoorHP < g_iPdoorState1HP )
+	{
+		g_iAPdoorState = g_iAPdoorState + 1;
+		g_iAPdoorShakePose = 3;
+		NetEvent(1);
+		SetSceneItem(id, "pose", 2, 0);
+		NetEvent(0);
+	}
+	
+	if ( g_iAPdoorState==2 && g_iAPdoorHP < g_iPdoorState2HP )
+	{
+		g_iAPdoorState = g_iAPdoorState + 1;
+		g_iAPdoorShakePose = 5;
+		NetEvent(1);
+		SetSceneItem(id, "pose", 4, 0);
+		NetEvent(0);
+	}
+	
+	if ( g_iAPdoorState==3 && g_iAPdoorHP < g_iPdoorState3HP )
+	{
+		g_iAPdoorState = g_iAPdoorState + 1;
+		g_iAPdoorShakePose = 7;
+		NetEvent(1);
+		SetSceneItem(id, "pose", 6, 0);
+		NetEvent(0);
+	}
+	
+	if ( g_iAPdoorState==4 && g_iAPdoorHP < 0 )
+	{
+		g_iAPdoorState = g_iAPdoorState + 1;
+		NetEvent(1);
+		CreateEffect(id, "GiMaBRK");
+		SetSceneItem(id, "attribute", "interactive", 0);
+		SetSceneItem(id, "attribute", "collision", 0);
+		SetSceneItem(id, "pose", 8, 0);
+		NetEvent(0);
+	}
+
+	state = GetSceneItem(id, "state");
+	if ( state==3 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaHIT");
+		SetSceneItem(id, "pose", g_iAPdoorShakePose, 0);
+		NetEvent(0);
+	}
+}
+
+D_APdoor_OnIdle(int id)
+{
+	if ( g_iAPdoorState==5 && g_bAPdoorAlive==1 )
+	{
+		int state;
+		state = GetSceneItem(id, "state");
+		if ( state==3 )
+		{
+			g_bAPdoorAlive = 0;
+			GameCallBack("end", 2);
+		}
+	}
+}
+
+D_BPdoor_OnAttack(int id, int character, int damage)
+{
+	int state;
+
+	g_iBPdoorHP = g_iBPdoorHP - damage;
+	Output("B", g_iBPdoorHP, g_iBPdoorState);
+	
+	if ( g_iBPdoorState==1 && g_iBPdoorHP < g_iPdoorState1HP )
+	{
+		g_iBPdoorState = g_iBPdoorState + 1;
+		g_iBPdoorShakePose = 3;
+		NetEvent(1);
+		SetSceneItem(id, "pose", 2, 0);
+		NetEvent(0);
+	}
+	
+	if ( g_iBPdoorState==2 && g_iBPdoorHP < g_iPdoorState2HP )
+	{
+		g_iBPdoorState = g_iBPdoorState + 1;
+		g_iBPdoorShakePose = 5;
+		Output("Change State 3");
+		NetEvent(1);
+		SetSceneItem(id, "pose", 4, 0);
+		NetEvent(0);
+	}
+	
+	if ( g_iBPdoorState==3 && g_iBPdoorHP < g_iPdoorState3HP )
+	{
+		g_iBPdoorState = g_iBPdoorState + 1;
+		g_iBPdoorShakePose = 7;
+		Output("Change State 4");
+		NetEvent(1);
+		SetSceneItem(id, "pose", 6, 0);
+		NetEvent(0);
+	}
+	
+	if ( g_iBPdoorState==4 && g_iBPdoorHP < 0 )
+	{
+		g_iBPdoorState = g_iBPdoorState + 1;
+		NetEvent(1);
+		CreateEffect(id, "GiMaBRK");
+		SetSceneItem(id, "attribute", "interactive", 0);
+		SetSceneItem(id, "attribute", "collision", 0);
+		SetSceneItem(id, "pose", 8, 0);
+		NetEvent(0);
+	}
+
+	state = GetSceneItem(id, "state");
+	if ( state==3 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaHIT");
+		SetSceneItem(id, "pose", g_iBPdoorShakePose, 0);
+		NetEvent(0);
+	}
+}
+
+D_BPdoor_OnIdle(int id)
+{
+	if ( g_iBPdoorState==5 && g_bBPdoorAlive==1 )
+	{
+		int state;
+		state = GetSceneItem(id, "state");
+		if ( state==3 )
+		{
+			g_bBPdoorAlive = 0;
+			GameCallBack("end", 1);
+		}
+	}
+}
+

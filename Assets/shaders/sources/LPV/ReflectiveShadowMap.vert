@@ -22,13 +22,14 @@ layout(push_constant) uniform PushConsts
 layout(location = 0) out vec4 fragPosition;
 layout(location = 1) out vec2 fragTexCoord;
 layout(location = 2) out vec3 fragNormal;
+layout(location = 3) out vec4 fragColor;
 
 void main()
 {
     vec4 worldPosition =  pushConsts.transform * vec4(inPosition, 1.0);
     fragPosition = worldPosition;
     
-    vec4 testColor = inColor;
+    fragColor = inColor;
 	fragTexCoord = inTexCoord;
 
     fragNormal =  normalize(transpose(inverse(mat3(  pushConsts.transform ) ) ) * inNormal);

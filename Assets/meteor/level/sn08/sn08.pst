@@ -1,0 +1,39 @@
+/*
+	PScript for scene 08
+		by Peter Pon 2002/09/27
+*/
+
+#include "..\PScriptLib\Def.h"
+
+#include "..\PScriptLib\box.pst"
+#include "..\PScriptLib\desk.pst"
+#include "..\PScriptLib\chair.pst"
+#include "..\PScriptLib\jug.pst"
+
+Scene_OnLoad()
+{
+	SetSceneItem("D_sn08B01", "name", "machine");
+	
+	SetSceneItem("D_sn08B02", "name", "machine");
+	SetSceneItem("D_sn08B02", "attribute", "damage", 1);
+	SetSceneItem("D_sn08B02", "attribute", "damagevalue", g_iLevel08StickDamage);
+	
+	SetSceneItem("D_sn08B03", "name", "machine");
+	SetSceneItem("D_sn08B03", "attribute", "interactive", 0);
+}
+
+Scene_OnInit()
+{
+	InitBoxes(g_iNumBoxes);
+	InitBBoxes(g_iNumBBoxes);
+	InitChairs(g_iNumChairs);
+	InitDeskes(g_iNumDeskes);
+	InitJugs(g_iNumJugs);
+	
+	SetSceneItem("D_sn08B01", "attribute", "interactive", 0);
+	SetSceneItem("D_sn08B03", "attribute", "interactive", 0);
+	
+	SetSceneItem("D_sn08B01", "pose", 1, 1);
+	SetSceneItem("D_sn08B02", "pose", 1, 1);
+	SetSceneItem("D_sn08B03", "pose", 1, 1);
+}

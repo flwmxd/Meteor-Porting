@@ -21,7 +21,7 @@ layout(location = 3) in vec3 inNormal;
 layout(location = 4) in vec3 inTangent;
 
 
-layout(location = 0) out vec3 fragColor;
+layout(location = 0) out vec4 fragColor;
 layout(location = 1) out vec2 fragTexCoord;
 layout(location = 2) out vec4 fragPosition;
 layout(location = 3) out vec3 fragNormal;
@@ -43,7 +43,7 @@ void main()
     vec4 pos =  ubo.projView * fragPosition;
     gl_Position = pos;
     
-    fragColor = inColor.xyz;
+    fragColor = inColor;
 	fragTexCoord = inTexCoord;
     fragNormal =  transpose(inverse(mat3(pushConsts.transform))) * normalize(inNormal);
     

@@ -1,0 +1,10 @@
+Scene_OnLoad()
+{
+	int i;
+	string name;
+	for ( i=1; i<=100; i=i+1 )
+	{
+		MakeString(name, i);
+		SetSceneItem(name, "name", "machine");
+	}
+}

@@ -1,0 +1,82 @@
+/*
+	PScript for scene 02
+		by Peter Pon 2002/09/27
+*/
+
+#include "..\PScriptLib\Def.h"
+
+#include "..\PScriptLib\box.pst"
+#include "..\PScriptLib\desk.pst"
+#include "..\PScriptLib\chair.pst"
+#include "..\PScriptLib\jug.pst"
+
+Scene_OnLoad()
+{
+	int i;
+	string name;
+
+	// knife	
+	for ( i=1; i<=3; i++ )
+	{
+		MakeString(name, "D_knife", i);	
+		SetSceneItem(name, "name", "machine");
+	
+		SetSceneItem(name, "attribute", "damage", 1);
+		SetSceneItem(name, "attribute", "damagevalue", 300);
+	}
+	
+	// stone step
+	for ( i=1; i<=3; i++ )
+	{
+		MakeString(name, "D_sn02st", i);
+		SetSceneItem(name, "name", "machine");
+		SetSceneItem(name, "attribute", "collision", 1);
+	}
+}
+
+Scene_OnInit()
+{
+	int i;
+	string name;
+	
+	SetSceneItem("D_knife01", "pose", 1, 1);
+	SetSceneItem("D_knife01", "frame", 0);
+
+	SetSceneItem("D_knife02", "pose", 1, 1);
+	SetSceneItem("D_knife02", "frame", 30);
+
+	SetSceneItem("D_knife03", "pose", 1, 1);
+	SetSceneItem("D_knife03", "frame", 60);
+
+	InitBoxes(g_iNumBoxes);
+	InitBBoxes(g_iNumBBoxes);
+	InitChairs(g_iNumChairs);
+	InitDeskes(g_iNumDeskes);
+	InitJugs(g_iNumJugs);
+
+	SetSceneItem("D_sn02st01", "attribute", "active", 0);
+	SetSceneItem("D_sn02st02", "attribute", "active", 0);
+	SetSceneItem("D_sn02st03", "attribute", "active", 0);
+	
+	SetSceneItem("D_IPItem01", "attribute", "active", 1);
+}
+
+D_IPItem01_OnPickUp()
+{
+	NetEvent(1);
+	
+	SetSceneItem("D_sn02st01", "attribute", "active", 1);
+	SetSceneItem("D_sn02st02", "attribute", "active", 1);
+	SetSceneItem("D_sn02st03", "attribute", "active", 1);
+	
+	SetSceneItem("D_sn02st01", "pose", 1, 1);
+	SetSceneItem("D_sn02st01", "frame", 0);
+
+	SetSceneItem("D_sn02st02", "pose", 1, 1);
+	SetSceneItem("D_sn02st02", "frame", 60);
+
+	SetSceneItem("D_sn02st03", "pose", 1, 1);
+	SetSceneItem("D_sn02st03", "frame", 120);
+	
+	NetEvent(0);
+}

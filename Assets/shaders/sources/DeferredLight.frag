@@ -209,7 +209,7 @@ float random(vec4 seed4)
 float textureProj(vec4 shadowCoord, vec2 offset, int cascadeIndex)
 {
 	float shadow = 1.0;
-	float ambient = 0.1;
+	float ambient = 0.03;
 	
 	if ( shadowCoord.z > -1.0 && shadowCoord.z < 1.0 && shadowCoord.w > 0)
 	{
@@ -406,7 +406,7 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 			float cutoffAngle   = 1.0f - light.angle;      
 			float dist          = length(L);
 			L = normalize(L);
-			float theta         = dot(L.xyz, light.direction.xyz);
+			float theta         = dot(L.xyz, light.direction.xyz * -1);
 			float epsilon       = cutoffAngle - cutoffAngle * 0.9f;
 			float attenuation 	= ((theta - cutoffAngle) / epsilon); // atteunate when approaching the outer cone
 			attenuation         *= light.radius / (pow(dist, 2.0) + 1.0);//saturate(1.0f - dist / light.range);
@@ -435,7 +435,7 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 			}
 		}
 		
-		vec3 Li = light.direction.xyz;
+		vec3 Li = light.direction.xyz * -1;
 		vec3 Lradiance = lightColor;
 		vec3 Lh = normalize(Li + material.view);
 		
@@ -476,7 +476,7 @@ vec3 IBL(vec3 F0, vec3 Lr, Material material)
 	float level = float(ubo.cubeMapMipLevels);
 	if(textureSize(uIrradianceMap,0).x == 1)
 	{
-		return vec3(0,0,0);
+		return material.albedo.rgb * 0.04;
 	}
 	vec3 irradiance = texture(uIrradianceMap, material.normal).rgb;
 	vec3 F = fresnelSchlickRoughness(F0, material.normalDotView, material.roughness);

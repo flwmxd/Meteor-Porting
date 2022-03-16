@@ -1,0 +1,158 @@
+/* 
+	PScript by Peter Pon
+	
+	scene12
+*/
+#include "..\PScriptLib\Def.h"
+
+#include "..\PScriptLib\box.pst"
+#include "..\PScriptLib\desk.pst"
+#include "..\PScriptLib\chair.pst"
+#include "..\PScriptLib\jug.pst"
+
+int g_iMaxStoves = 6;
+int g_iMaxStoveHP = 200;
+int g_bStoveAlive[g_iMaxStoves];
+int g_iStoveHP[g_iMaxStoves];
+
+int g_iTeamAStoves;
+int g_iTeamBStoves;
+
+Scene_OnLoad()
+{
+	int i;
+	string name;
+	
+	g_iMaxStoveHP = g_iLevel12StoveHP;
+	
+	for ( i=1; i<=g_iMaxStoves; i++ )
+	{
+		MakeString(name, "D_AStove", i);
+		SetSceneItem(name, "name", "machine");
+		MakeString(name, "D_BStove", i);
+		SetSceneItem(name, "name", "machine");
+	}
+}
+
+Scene_OnInit()
+{
+	int i;
+	string name;
+	
+	g_iTeamAStoves = 3;
+	g_iTeamBStoves = 3;
+	
+	for ( i=1; i<=g_iMaxStoves; i++ )
+	{
+		g_bStoveAlive[i-1] = 1;
+		g_iStoveHP[i-1] = g_iMaxStoveHP;
+		MakeString(name, "D_AStove", i);
+		SetSceneItem(name, "pose", 0, 0);
+		SetSceneItem(name, "attribute", "active", 1);
+		SetSceneItem(name, "attribute", "collision", 1);
+
+		MakeString(name, "D_BStove", i);
+		SetSceneItem(name, "pose", 0, 0);
+		SetSceneItem(name, "attribute", "active", 1);
+		SetSceneItem(name, "attribute", "collision", 1);
+	}
+	
+	InitBoxes(g_iNumBoxes);
+	InitBBoxes(g_iNumBBoxes);
+	InitChairs(g_iNumChairs);
+	InitDeskes(g_iNumDeskes);
+	InitJugs(g_iNumJugs);
+
+}
+
+StoveOnAttack(int index, int characterid, int damage)
+{
+	if ( g_bStoveAlive[index-1]==0 )
+	{
+		return 0;
+	}
+	Output("OnAttack", index, g_iStoveHP[index-1]);	
+	string stovename;
+	if ( index <=3 )
+	{
+		MakeString(stovename, "D_AStove", index);
+	}
+	else
+	{
+		MakeString(stovename, "D_BStove", index-3);
+	}
+	
+	int id = GetSceneItem(stovename, "index");
+	g_iStoveHP[index-1] = g_iStoveHP[index-1] - damage;
+	if ( g_iStoveHP[index-1]>0 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "FireHIT");
+		int state = GetSceneItem(id, "state");
+		Output("state", state);
+		if ( state==3 )
+		{
+			Output("Shake", id);
+			SetSceneItem(id, "pose", 1, 0);
+		}
+		NetEvent(0);
+		return 0;
+	}
+	g_bStoveAlive[index-1] = 0;
+	if ( index>=1 && index<=3 )
+	{
+		g_iTeamAStoves = g_iTeamAStoves - 1;
+	}
+	else
+	{
+		g_iTeamBStoves = g_iTeamBStoves - 1;
+	}
+	
+	NetEvent(1);
+	CreateEffect(id, "FireBRK");
+	SetSceneItem(id, "pose", 2, 0);
+	SetSceneItem(id, "attribute", "interactive", 0);
+	SetSceneItem(id, "attribute", "collision", 0);
+	NetEvent(0);
+
+	if ( g_iTeamAStoves==0 )
+	{
+		GameCallBack("end", 2);
+	}
+	if ( g_iTeamBStoves==0 )
+	{
+		GameCallBack("end", 1);
+	}
+	
+	return 1;
+}
+
+D_AStove01_OnAttack(int index, int characterid, int damage)
+{
+	StoveOnAttack(1, characterid, damage);
+}
+
+D_AStove02_OnAttack(int index, int characterid, int damage)
+{
+	StoveOnAttack(2, characterid, damage);
+}
+
+D_AStove03_OnAttack(int index, int characterid, int damage)
+{
+	StoveOnAttack(3, characterid, damage);
+}
+
+D_BStove01_OnAttack(int index, int characterid, int damage)
+{
+	StoveOnAttack(4, characterid, damage);
+}
+
+D_BStove02_OnAttack(int index, int characterid, int damage)
+{
+	StoveOnAttack(5, characterid, damage);
+}
+
+D_BStove03_OnAttack(int index, int characterid, int damage)
+{
+	StoveOnAttack(6, characterid, damage);
+}

@@ -401,7 +401,7 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material)
 			float cutoffAngle   = 1.0f - light.angle;      
 			float dist          = length(L);
 			L = normalize(L);
-			float theta         = dot(L.xyz, light.direction.xyz);
+			float theta         = dot(L.xyz, light.direction.xyz * -1);
 			float epsilon       = cutoffAngle - cutoffAngle * 0.9f;
 			float attenuation 	= ((theta - cutoffAngle) / epsilon); // atteunate when approaching the outer cone
 			attenuation         *= light.radius / (pow(dist, 2.0) + 1.0);//saturate(1.0f - dist / light.range);
@@ -416,10 +416,10 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material)
 		else
 		{
 			int cascadeIndex = calculateCascadeIndex(wsPos);
-			value = calculateShadow(wsPos,cascadeIndex, light.direction.xyz, material.normal);
+			value = calculateShadow(wsPos,cascadeIndex, light.direction.xyz * -1, material.normal);
 		}
 		
-		vec3 Li = light.direction.xyz;
+		vec3 Li = light.direction.xyz * -1;
 		vec3 Lradiance = light.color.xyz * light.intensity;
 		vec3 Lh = normalize(Li + material.view);
 		

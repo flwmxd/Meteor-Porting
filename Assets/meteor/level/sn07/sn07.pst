@@ -1,0 +1,231 @@
+/*
+	PScript for scene 07
+		by Peter Pon 2002/09/27
+*/
+
+#include "..\PScriptLib\Def.h"
+
+#include "..\PScriptLib\box.pst"
+#include "..\PScriptLib\desk.pst"
+#include "..\PScriptLib\chair.pst"
+#include "..\PScriptLib\jug.pst"
+
+Scene_OnLoad()
+{
+	SetSceneItem("D_Aknife01", "name", "machine");
+	SetSceneItem("D_Aknife01", "attribute", "damage", 1);
+	SetSceneItem("D_Aknife01", "attribute", "damagevalue", g_iLevel07KnifeDamage);
+
+	SetSceneItem("D_Aknife02", "name", "machine");
+	SetSceneItem("D_Aknife02", "attribute", "damage", 1);
+	SetSceneItem("D_Aknife02", "attribute", "damagevalue", g_iLevel07KnifeDamage);
+
+	SetSceneItem("D_Bknife03", "name", "machine");
+	SetSceneItem("D_Bknife03", "attribute", "damage", 1);
+	SetSceneItem("D_Bknife03", "attribute", "damagevalue", g_iLevel07KnifeDamage);
+
+	SetSceneItem("D_Bknife04", "name", "machine");
+	SetSceneItem("D_Bknife04", "attribute", "damage", 1);
+	SetSceneItem("D_Bknife04", "attribute", "damagevalue", g_iLevel07KnifeDamage);
+	
+	SetSceneItem("D_floor01", "name", "machine");
+	SetSceneItem("D_floor02", "name", "machine");
+	SetSceneItem("D_floor03", "name", "machine");
+	SetSceneItem("D_floor04", "name", "machine");
+	SetSceneItem("D_floor05", "name", "machine");
+	SetSceneItem("D_floor06", "name", "machine");
+	
+	SetSceneItem("D_floor01", "attribute", "collision", 1);
+	SetSceneItem("D_floor03", "attribute", "collision", 1);
+	SetSceneItem("D_floor04", "attribute", "collision", 1);
+	SetSceneItem("D_floor05", "attribute", "collision", 1);
+	SetSceneItem("D_floor06", "attribute", "collision", 1);
+	
+	SetSceneItem("D_sn07t03", "name", "machine");
+	SetSceneItem("D_sn07t04", "name", "machine");
+	SetSceneItem("D_sn07t05", "name", "machine");
+	SetSceneItem("D_sn07t06", "name", "machine");
+
+	SetSceneItem("D_sn07t03", "attribute", "damage", 1);
+	SetSceneItem("D_sn07t03", "attribute", "damagevalue", g_iLevel07PinDamage);
+	SetSceneItem("D_sn07t04", "attribute", "damage", 1);
+	SetSceneItem("D_sn07t04", "attribute", "damagevalue", g_iLevel07PinDamage);
+	SetSceneItem("D_sn07t05", "attribute", "damage", 1);
+	SetSceneItem("D_sn07t05", "attribute", "damagevalue", g_iLevel07PinDamage);
+	SetSceneItem("D_sn07t06", "attribute", "damage", 1);
+	SetSceneItem("D_sn07t06", "attribute", "damagevalue", g_iLevel07PinDamage);
+	
+	SetSceneItem("D_gd02eye01", "name", "machine");
+	SetSceneItem("D_gd03eye02", "name", "machine");
+	SetSceneItem("D_gd04eye03", "name", "machine");
+	SetSceneItem("D_gd05eye04", "name", "machine");
+
+	SetSceneItem("D_sn07gd02", "name", "machine");
+	SetSceneItem("D_sn07gd03", "name", "machine");
+	SetSceneItem("D_sn07gd04", "name", "machine");
+	SetSceneItem("D_sn07gd05", "name", "machine");
+}
+
+Scene_OnInit()
+{
+	SetSceneItem("D_Aknife01", "pose", 0, 0);
+	SetSceneItem("D_Aknife02", "pose", 0, 0);
+	SetSceneItem("D_Bknife03", "pose", 0, 0);
+	SetSceneItem("D_Bknife04", "pose", 0, 0);
+	
+	SetSceneItem("D_floor01", "pose", 0, 0);
+	SetSceneItem("D_floor03", "pose", 0, 0);
+	SetSceneItem("D_floor04", "pose", 0, 0);
+	SetSceneItem("D_floor05", "pose", 0, 0);
+	SetSceneItem("D_floor06", "pose", 0, 0);
+
+	SetSceneItem("D_sn07t03", "pose", 0, 0);
+	SetSceneItem("D_sn07t04", "pose", 0, 0);
+	SetSceneItem("D_sn07t05", "pose", 0, 0);
+	SetSceneItem("D_sn07t06", "pose", 0, 0);
+
+	SetSceneItem("D_gd02eye01", "pose", 0, 0);
+	SetSceneItem("D_gd03eye02", "pose", 0, 0);
+	SetSceneItem("D_gd04eye03", "pose", 0, 0);
+	SetSceneItem("D_gd05eye04", "pose", 0, 0);
+
+	InitBoxes(g_iNumBoxes);
+	InitBBoxes(g_iNumBBoxes);
+	InitChairs(g_iNumChairs);
+	InitDeskes(g_iNumDeskes);
+	InitJugs(g_iNumJugs);
+}
+
+RandomActivate()
+{
+	int r=rand(0,10);
+	Output("Activate", r);
+	if ( r==0 )
+	{
+		if ( GetSceneItem("D_Aknife01", "state")==3 )
+		{
+			SetSceneItem("D_Aknife01", "pose", 1, 0);
+			SetSceneItem("D_Aknife02", "pose", 1, 0);
+		}
+	}
+	
+	if ( r==1 )
+	{
+		if ( GetSceneItem("D_Bknife03", "state")==3 )
+		{
+			SetSceneItem("D_Bknife03", "pose", 1, 0);
+			SetSceneItem("D_Bknife04", "pose", 1, 0);
+		}
+	}
+	if ( r==2 )
+	{
+		if ( GetSceneItem("D_floor01", "state")==3 )
+		{
+			SetSceneItem("D_floor01", "pose", 1, 0);
+		}
+	}
+	if ( r==3 )
+	{
+		if ( GetSceneItem("D_floor03", "state")==3 )
+		{
+			SetSceneItem("D_floor03", "pose", 1, 0);
+		}
+	}
+	if ( r==4 )
+	{
+		if ( GetSceneItem("D_floor04", "state")==3 )
+		{
+			SetSceneItem("D_floor04", "pose", 1, 0);
+		}
+	}
+	if ( r==5 )
+	{
+		if ( GetSceneItem("D_floor05", "state")==3 )
+		{
+			SetSceneItem("D_floor05", "pose", 1, 0);
+		}
+	}
+	if ( r==6 )
+	{
+		if ( GetSceneItem("D_floor06", "state")==3 )
+		{
+			SetSceneItem("D_floor06", "pose", 1, 0);
+		}
+	}
+	if ( r==7 )
+	{
+		if ( GetSceneItem("D_sn07t03", "state")==3 )
+		{
+			SetSceneItem("D_sn07t03", "pose", 1, 0);
+		}
+	}
+	if ( r==8 )
+	{
+		if ( GetSceneItem("D_sn07t04", "state")==3 )
+		{
+			SetSceneItem("D_sn07t04", "pose", 1, 0);
+		}
+	}
+	if ( r==9 )
+	{
+		if ( GetSceneItem("D_sn07t05", "state")==3 )
+		{
+			SetSceneItem("D_sn07t05", "pose", 1, 0);
+		}
+	}
+	if ( r==10 )
+	{
+		if ( GetSceneItem("D_sn07t06", "state")==3 )
+		{
+			SetSceneItem("D_sn07t06", "pose", 1, 0);
+		}
+	}
+}
+
+D_sn07gd02_OnAttack(int id, int characterid, int damage)
+{
+	Output("02");
+	if ( GetSceneItem("D_gd02eye01", "state")==3 )
+	{
+		NetEvent(1);
+		SetSceneItem("D_gd02eye01", "pose", 1, 0);
+		RandomActivate();
+		NetEvent(0);
+	}
+}
+
+D_sn07gd03_OnAttack(int id, int characterid, int damage)
+{
+	Output("03");
+	if ( GetSceneItem("D_gd03eye02", "state")==3 )
+	{
+		NetEvent(1);
+		SetSceneItem("D_gd03eye02", "pose", 1, 0);
+		RandomActivate();
+		NetEvent(0);
+	}
+}
+
+D_sn07gd04_OnAttack(int id, int characterid, int damage)
+{
+	Output("04");
+	if ( GetSceneItem("D_gd04eye03", "state")==3 )
+	{
+		NetEvent(1);
+		SetSceneItem("D_gd04eye03", "pose", 1, 0);
+		RandomActivate();
+		NetEvent(0);
+	}
+}
+
+D_sn07gd05_OnAttack(int id, int characterid, int damage)
+{
+	Output("05");
+	if ( GetSceneItem("D_gd05eye04", "state")==3 )
+	{
+		NetEvent(1);
+		SetSceneItem("D_gd05eye04", "pose", 1, 0);
+		RandomActivate();
+		NetEvent(0);
+	}
+}

@@ -27,16 +27,17 @@ out gl_PerVertex
 
 void main() 
 {
-    const float outlineWidth = 0.03;
+    const float outlineWidth = 0.1;
 	// Extrude along normal
-	vec4 position = pushConsts.transform * vec4(inPosition ,1.0);
+	vec4 position = ubo.projView * pushConsts.transform * vec4(inPosition ,1.0);
 
     vec4 fragColor = inColor;
 	vec2 fragTexCoord = inTexCoord;
+    vec3 fragNormal = transpose(inverse(mat3(pushConsts.transform))) * inNormal;
 
-	vec4 fragPosition = vec4(position.xyz +  inNormal * outlineWidth ,1.0);
+	vec4 projNormal = ubo.projView * vec4(fragNormal,1.0);
+	projNormal.xyz /= projNormal.w;
 
-   // vec3 fragNormal = transpose(inverse(mat3(pushConsts.transform))) * normal;
-
-	gl_Position = ubo.projView * fragPosition;
+	position.xy += projNormal.xy * outlineWidth;
+	gl_Position = position;
 }

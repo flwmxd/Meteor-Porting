@@ -1,0 +1,274 @@
+/* 
+	PScript by Peter Pon
+	
+	scene11
+*/
+#include "..\PScriptLib\Def.h"
+
+#include "..\PScriptLib\box.pst"
+#include "..\PScriptLib\desk.pst"
+#include "..\PScriptLib\chair.pst"
+#include "..\PScriptLib\jug.pst"
+
+/* team 1 */
+int g_iDoorMaxHP;
+int DoorState1HP;
+int DoorState2HP;
+int DoorState3HP;
+
+int ADoorHP;
+int BDoorHP;
+int ADoorAlive;
+int BDoorAlive;
+
+Scene_OnLoad()
+{
+	int i;
+	string name;
+	
+	g_iDoorMaxHP = g_iLevel11DoorMaxHP;
+	DoorState1HP = (g_iDoorMaxHP*3)/4;
+	DoorState2HP = (g_iDoorMaxHP*2)/4;
+	DoorState3HP = (g_iDoorMaxHP*1)/4;
+	
+	for ( i=1; i<=5; i++ )
+	{
+		MakeString(name, "D_APdoor", i);
+		SetSceneItem(name, "name", "machine");
+		SetSceneItem(name, "attribute", "collision", 0);
+		SetSceneItem(name, "pose", 0, 0);
+				
+		MakeString(name, "D_BPdoor", i);
+		SetSceneItem(name, "name", "machine");
+		SetSceneItem(name, "attribute", "collision", 0);
+		SetSceneItem(name, "pose", 0, 0);
+	}
+	
+	SetSceneItem("D_APdoor06", "name", "machine");
+	SetSceneItem("D_APdoor06", "attribute", "visible", 0);
+	SetSceneItem("D_APdoor06", "attribute", "collision", 1);
+	SetSceneItem("D_APdoor06", "pose", 0, 0);
+			
+	SetSceneItem("D_BPdoor06", "name", "machine");
+	SetSceneItem("D_BPdoor06", "attribute", "visible", 0);
+	SetSceneItem("D_BPdoor06", "attribute", "collision", 1);
+	SetSceneItem("D_BPdoor06", "pose", 0, 0);
+}
+
+Scene_OnInit()
+{
+	InitBoxes(g_iNumBoxes);
+	InitBBoxes(g_iNumBBoxes);
+	InitChairs(g_iNumChairs);
+	InitDeskes(g_iNumDeskes);
+	InitJugs(g_iNumJugs);
+
+	int i;
+	string name;
+	
+	ADoorHP = g_iDoorMaxHP;
+	ADoorAlive = 1;
+	BDoorHP = g_iDoorMaxHP;
+	BDoorAlive = 1;
+	
+	SetSceneItem("D_APdoor01", "attribute", "active", 1);	
+	SetSceneItem("D_APdoor01", "pose", 0, 0);
+
+	SetSceneItem("D_BPdoor01", "attribute", "active", 1);	
+	SetSceneItem("D_BPdoor01", "pose", 0, 0);
+	
+	for ( i=2; i<=5; i++ )
+	{
+		MakeString(name, "D_APdoor", i);
+		SetSceneItem(name, "attribute", "active", 0);	
+		SetSceneItem(name, "pose", 0, 0);
+		
+		MakeString(name, "D_BPdoor", i);
+		SetSceneItem(name, "attribute", "active", 0);
+		SetSceneItem(name, "pose", 0, 0);
+	}
+}
+
+D_APdoor01_OnAttack(int id, int CharacterId, int damage)
+{
+	int state = GetSceneItem(id, "state");
+	if ( state==3 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaHIT");
+		SetSceneItem(id, "pose", 1, 0);
+		NetEvent(0);
+	}
+	
+	ADoorHP = ADoorHP - damage;
+	Output("ADoor 1", ADoorHP);
+	if ( ADoorHP < DoorState1HP )
+	{
+		NetEvent(1);
+		SetSceneItem(id, "attribute", "active", 0);
+		SetSceneItem("D_APdoor02", "attribute", "active", 1);
+		NetEvent(0);
+	}
+}
+
+D_APdoor02_OnAttack(int id, int CharacterId, int damage)
+{
+	int state = GetSceneItem(id, "state");
+	if ( state==3 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaHIT");
+		SetSceneItem(id, "pose", 1, 0);
+		NetEvent(0);
+	}
+
+	ADoorHP = ADoorHP - damage;
+	Output("ADoor 2", ADoorHP);
+	if ( ADoorHP < DoorState2HP )
+	{
+		NetEvent(1);
+		SetSceneItem(id, "attribute", "active", 0);
+		SetSceneItem("D_APdoor03", "attribute", "active", 1);
+		NetEvent(0);
+	}
+}
+
+D_APdoor03_OnAttack(int id, int CharacterId, int damage)
+{
+	int state = GetSceneItem(id, "state");
+	if ( state==3 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaHIT");
+		SetSceneItem(id, "pose", 1, 0);
+		NetEvent(0);
+	}
+
+	ADoorHP = ADoorHP - damage;
+	Output("ADoor 3", ADoorHP);
+	if ( ADoorHP < DoorState3HP )
+	{
+		NetEvent(1);
+		SetSceneItem(id, "attribute", "active", 0);
+		SetSceneItem("D_APdoor04", "attribute", "active", 1);
+		NetEvent(0);
+	}
+}
+
+D_APdoor04_OnAttack(int id, int CharacterId, int damage)
+{
+	int state = GetSceneItem(id, "state");
+	if ( state==3 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaHIT");
+		SetSceneItem(id, "pose", 1, 0);
+		NetEvent(0);
+	}
+
+	ADoorHP = ADoorHP - damage;
+	Output("ADoor 4", ADoorHP);
+	if ( ADoorHP <= 0 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaBRK");
+		SetSceneItem(id, "attribute", "active", 0);
+		SetSceneItem("D_APdoor05", "attribute", "active", 1);
+		SetSceneItem("D_APdoor05", "attribute", "collision", 0);
+		SetSceneItem("D_APdoor05", "pose", 1, 0);
+		NetEvent(0);
+		GameCallBack("end", 2);
+	}
+}
+
+/* team 2 */
+D_BPdoor01_OnAttack(int id, int CharacterId, int damage)
+{
+	int state = GetSceneItem(id, "state");
+	if ( state==3 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaHIT");
+		SetSceneItem(id, "pose", 1, 0);
+		NetEvent(0);
+	}
+
+	BDoorHP = BDoorHP - damage;
+	Output("BDoor 1", BDoorHP);
+	if ( BDoorHP < DoorState1HP )
+	{
+		NetEvent(1);
+		SetSceneItem(id, "attribute", "active", 0);
+		SetSceneItem("D_BPdoor02", "attribute", "active", 1);
+		NetEvent(0);
+	}
+}
+
+D_BPdoor02_OnAttack(int id, int CharacterId, int damage)
+{
+	int state = GetSceneItem(id, "state");
+	if ( state==3 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaHIT");
+		SetSceneItem(id, "pose", 1, 0);
+		NetEvent(0);
+	}
+
+	BDoorHP = BDoorHP - damage;
+	Output("BDoor 2", BDoorHP);
+	if ( BDoorHP < DoorState2HP )
+	{
+		NetEvent(1);
+		SetSceneItem(id, "attribute", "active", 0);
+		SetSceneItem("D_BPdoor03", "attribute", "active", 1);
+		NetEvent(0);
+	}
+}
+
+D_BPdoor03_OnAttack(int id, int CharacterId, int damage)
+{
+	int state = GetSceneItem(id, "state");
+	if ( state==3 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaHIT");
+		SetSceneItem(id, "pose", 1, 0);
+		NetEvent(0);
+	}
+
+	BDoorHP = BDoorHP - damage;
+	Output("BDoor 3", BDoorHP);
+	if ( BDoorHP < DoorState3HP )
+	{
+		NetEvent(1);
+		SetSceneItem(id, "attribute", "active", 0);
+		SetSceneItem("D_BPdoor04", "attribute", "active", 1);
+		NetEvent(0);
+	}
+}
+
+D_BPdoor04_OnAttack(int id, int CharacterId, int damage)
+{
+	int state = GetSceneItem(id, "state");
+	if ( state==3 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaHIT");
+		SetSceneItem(id, "pose", 1, 0);
+		NetEvent(0);
+	}
+
+	BDoorHP = BDoorHP - damage;
+	Output("BDoor 4", BDoorHP);
+	if ( BDoorHP <= 0 )
+	{
+		NetEvent(1);
+		CreateEffect(id, "GiMaBRK");
+		SetSceneItem(id, "attribute", "active", 0);
+		SetSceneItem("D_BPdoor05", "attribute", "active", 1);
+		SetSceneItem("D_BPdoor05", "pose", 1, 0);
+		NetEvent(0);
+		GameCallBack("end", 1);
+	}
+}

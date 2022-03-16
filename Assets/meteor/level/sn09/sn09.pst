@@ -1,0 +1,99 @@
+/*
+	PScript for scene 09
+		by Peter Pon 2002/09/27
+*/
+#include "..\PScriptLib\Def.h"
+
+int g_iCurrentTime;
+int g_iPrevTime;
+int g_iShift;
+int g_iActiveState;
+int g_iActiveCount;
+int g_iMaxFloor;
+int g_iTimeStep;
+
+Scene_OnLoad()
+{
+	int i;
+	string name;
+	g_iMaxFloor = 100;
+	g_iTimeStep = g_iLevel09StepTime;
+	for ( i=1; i<=g_iMaxFloor; i=i+1 )
+	{
+		MakeString(name, "D_sn09f", i);
+		SetSceneItem(name, "name", "machine");
+		SetSceneItem(name, "attribute", "collision", 1);
+	}
+}
+
+Scene_OnInit()
+{
+	int i;
+	string name;
+
+	g_iCurrentTime = Misc("gettime");
+	g_iPrevTime = Misc("gettime");
+	g_iActiveCount = 1;
+	
+	for ( i=1; i<=g_iMaxFloor; i=i+1 )
+	{
+		MakeString(name, "D_sn09f", i);
+		SetSceneItem(name, "pose", 0, 0);
+	}
+	
+	Misc("randomseries", 0, 1, 36);
+	Misc("randomseries", 1, 37, 64);
+	Misc("randomseries", 2, 65, 84);
+	Misc("randomseries", 3, 85, 100);
+}
+
+Scene_OnIdle()
+{
+	if ( g_iActiveCount > g_iMaxFloor )
+	{
+		return 0;
+	}
+	
+	int diff;
+	string name;
+	g_iCurrentTime = Misc("gettime");
+	diff = g_iCurrentTime - g_iPrevTime;
+	
+	if ( diff > g_iTimeStep )
+	{
+		g_iPrevTime = g_iCurrentTime;
+
+		if ( g_iActiveCount<=36 )
+		{
+			g_iActiveState = 0;
+			g_iShift = 1;
+		}
+		
+		if ( g_iActiveCount>=37 && g_iActiveCount<=64 )
+		{
+			g_iActiveState = 1;
+			g_iShift = 37;
+		}
+		
+		if ( g_iActiveCount>=65 && g_iActiveCount<=84 )
+		{
+			g_iActiveState = 2;
+			g_iShift = 65;
+		}
+		
+		if ( g_iActiveCount>=85 && g_iActiveCount<=100 )
+		{
+			g_iActiveState = 3;
+			g_iShift = 85;
+		}
+		
+		int target = Misc("getseries", g_iActiveState, g_iActiveCount-g_iShift);
+		MakeString(name, "D_sn09f", target);
+		NetEvent(1);
+		SetSceneItem(name, "pose", 1, 0);	
+		NetEvent(0);
+		Output("Active", name, "State", g_iActiveState, g_iActiveCount);
+
+		g_iActiveCount = g_iActiveCount + 1;
+	}
+}

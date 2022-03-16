@@ -8,7 +8,7 @@ const float PBR_WORKFLOW_SEPARATE_TEXTURES = 0.0f;
 const float PBR_WORKFLOW_METALLIC_ROUGHNESS = 1.0f;
 const float PBR_WORKFLOW_SPECULAR_GLOSINESS = 2.0f;
 
-layout(location = 0) in vec3 fragColor;
+layout(location = 0) in vec4 fragColor;
 layout(location = 1) in vec2 fragTexCoord;
 layout(location = 2) in vec4 fragPosition;
 layout(location = 3) in vec3 fragNormal;
@@ -126,7 +126,7 @@ float linearDepth(float depth)
 
 void main()
 {
-	vec4 texColor = getAlbedo();
+	vec4 texColor = getAlbedo();// * fragColor;
 	if(texColor.w < 0.01)
 		discard;
 

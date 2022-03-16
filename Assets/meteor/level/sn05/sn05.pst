@@ -1,0 +1,29 @@
+/* 
+	PScript by Peter Pon
+	
+	scene05
+*/
+#include "..\PScriptLib\Def.h"
+
+#include "..\PScriptLib\box.pst"
+#include "..\PScriptLib\desk.pst"
+#include "..\PScriptLib\chair.pst"
+#include "..\PScriptLib\jug.pst"
+
+Scene_OnInit()
+{
+	InitBoxes(g_iNumBoxes);
+	InitBBoxes(g_iNumBBoxes);
+	InitChairs(g_iNumChairs);
+	InitDeskes(g_iNumDeskes);
+	InitJugs(g_iNumJugs);
+	
+	SetSceneItem("D_Door01", "name", "machine");
+	SetSceneItem("D_Door01", "attribute", "collision", 1);
+
+	SetSceneItem("D_Door02", "name", "machine");
+	SetSceneItem("D_Door02", "attribute", "collision", 1);
+
+	SetSceneItem("D_Door03", "name", "machine");
+	SetSceneItem("D_Door03", "attribute", "collision", 1);
+}
