@@ -1,7 +1,6 @@
 #version 450
 
 const int SSAO_KERNEL_SIZE = 64;
-const float SSAO_RADIUS = 0.25;
 
 layout (set = 0,binding = 0) uniform sampler2D uViewPositionSampler;
 layout (set = 0,binding = 1) uniform sampler2D uViewNormalSampler;
@@ -14,6 +13,7 @@ layout (set = 0,binding = 4) uniform UBOSSAOKernel
 layout (set = 0,binding = 5) uniform UBO 
 {
 	mat4 projection;
+	float ssaoRadius;
 } ubo;
 
 layout (location = 0) in vec2 inUV;
@@ -34,9 +34,9 @@ void main()
 	
 	// Create TBN matrix
  	vec3 randomVec = normalize(texture(uSsaoNoise, inUV * noiseScale).xyz);
-    vec3 tangent = normalize(randomVec - normal * dot(randomVec, normal));
-    vec3 bitangent = cross(normal, tangent);
-    mat3 TBN = mat3(tangent, bitangent, normal);
+    	vec3 tangent = normalize(randomVec - normal * dot(randomVec, normal));
+    	vec3 bitangent = cross(normal, tangent);
+    	mat3 TBN = mat3(tangent, bitangent, normal);
 
 	// Calculate occlusion value
 	float occlusion = 0.0f;
@@ -45,7 +45,7 @@ void main()
 	for(int i = 0; i < SSAO_KERNEL_SIZE; i++)
 	{		
 		vec3 samplePos = TBN * uboSSAOKernel.samples[i].xyz; 
-		samplePos = fragPos + samplePos * SSAO_RADIUS; 
+		samplePos = fragPos + samplePos * ubo.ssaoRadius; 
 		
 		// project
 		vec4 offset = vec4(samplePos, 1.0f);
@@ -55,7 +55,7 @@ void main()
 		
 		float sampleDepth = textureLod(uViewPositionSampler, offset.xy, 0).z;
 
-		float rangeCheck = smoothstep(0.0f, 1.0f, SSAO_RADIUS / abs(fragPos.z - sampleDepth));
+		float rangeCheck = smoothstep(0.0f, 1.0f, ubo.ssaoRadius / abs(fragPos.z - sampleDepth));
 		occlusion += (sampleDepth >= (samplePos.z + bias) ? 1.0f : 0.0f) * rangeCheck;           
 	}
 
