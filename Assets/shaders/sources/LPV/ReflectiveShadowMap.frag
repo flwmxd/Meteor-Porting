@@ -43,8 +43,9 @@ float lengthSquared(vec3 vec)
 
 void main()
 {
-	vec4 diffuse = getAlbedo();// * inColor;
-	vec4 flux = vec4( ( ubo.light.color.rgb * diffuse.rgb * ubo.light.intensity ) , 1.0 );
+	vec4 diffuse = getAlbedo() * inColor;
+	float intensity = pow(ubo.light.intensity,1.4) + 0.1;
+	vec4 flux = vec4( ( ubo.light.color.rgb * diffuse.rgb * intensity ) , 1.0 );
 	outColor = flux;
 	outPosition = inPosition;
 	outNormal = vec4(inNormal,1.0);

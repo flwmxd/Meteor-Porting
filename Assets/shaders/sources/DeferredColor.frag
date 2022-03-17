@@ -126,7 +126,7 @@ float linearDepth(float depth)
 
 void main()
 {
-	vec4 texColor = getAlbedo();// * fragColor;
+	vec4 texColor = getAlbedo() * fragColor;
 	if(texColor.w < 0.01)
 		discard;
 

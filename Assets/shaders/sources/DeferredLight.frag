@@ -81,6 +81,7 @@ layout(set = 0, binding = 12) uniform UniformBufferLight
 	int ssaoEnable;
 	int enableIndirectLight;
 	int enableShadow;
+	float indirectLightAttenuation;
 } ubo;
 
 /*layout(set = 0, binding = 12) uniform VirtualPointLight
@@ -209,7 +210,7 @@ float random(vec4 seed4)
 float textureProj(vec4 shadowCoord, vec2 offset, int cascadeIndex)
 {
 	float shadow = 1.0;
-	float ambient = 0.03;
+	float ambient = 0.01;
 	
 	if ( shadowCoord.z > -1.0 && shadowCoord.z < 1.0 && shadowCoord.w > 0)
 	{
@@ -381,7 +382,10 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 	{
 		Light light = ubo.lights[i];
 		float value = 1.0;
-		vec3 lightColor = light.color.xyz * light.intensity;
+
+		float intensity = pow(light.intensity,1.4) + 0.1;
+
+		vec3 lightColor = light.color.xyz * intensity;
 		vec3 indirect = vec3(0,0,0);
 		if(light.type == 2.0)
 		{
@@ -456,10 +460,9 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 		vec3 specularBRDF = (F * D * G) / max(EPSILON, 4.0 * cosLi * material.normalDotView);
 		
 		vec3 directShading = (diffuseBRDF + specularBRDF) * Lradiance * cosLi * value;
-		vec3 indirectShading = (diffuseBRDF + specularBRDF) * indirect * cosLi;
+		vec3 indirectShading = (diffuseBRDF + specularBRDF) * indirect * ubo.indirectLightAttenuation;
 
 		result += directShading + indirectShading;
-		//result += indirect;
 	}
 
 	return result ;
@@ -476,7 +479,7 @@ vec3 IBL(vec3 F0, vec3 Lr, Material material)
 	float level = float(ubo.cubeMapMipLevels);
 	if(textureSize(uIrradianceMap,0).x == 1)
 	{
-		return material.albedo.rgb * 0.04;
+		return vec3(0,0,0);
 	}
 	vec3 irradiance = texture(uIrradianceMap, material.normal).rgb;
 	vec3 F = fresnelSchlickRoughness(F0, material.normalDotView, material.roughness);
@@ -487,7 +490,7 @@ vec3 IBL(vec3 F0, vec3 Lr, Material material)
 	vec2 specularBRDF = texture(uPreintegratedFG, vec2(material.normalDotView, material.roughness)).rg;
 	vec3 specularIBL = specularIrradiance * (F0 * specularBRDF.x + specularBRDF.y);
 	
-	return (kd * diffuseIBL + specularIBL);
+	return kd * diffuseIBL + specularIBL;
 }
 
 vec3 gammaCorrectTextureRGB(vec3 texCol)
