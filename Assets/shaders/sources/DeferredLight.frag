@@ -460,7 +460,7 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 		vec3 specularBRDF = (F * D * G) / max(EPSILON, 4.0 * cosLi * material.normalDotView);
 		
 		vec3 directShading = (diffuseBRDF + specularBRDF) * Lradiance * cosLi * value;
-		vec3 indirectShading = (diffuseBRDF + specularBRDF) * indirect * ubo.indirectLightAttenuation;
+		vec3 indirectShading = diffuseBRDF * indirect * ubo.indirectLightAttenuation;
 
 		result += directShading + indirectShading;
 	}

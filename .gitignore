@@ -25,6 +25,8 @@ Assets/*.dll
 Assets/*.log
 Assets/*.pvf
 Assets/Debug
+Assets/MinSizeRel
+Assets/Release
 Assets/*.ilk
 MapleEngine.dll
 MapleLibrary.dll
