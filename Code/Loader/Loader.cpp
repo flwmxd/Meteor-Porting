@@ -11,6 +11,7 @@
 #include <Others/Console.h>
 #include <Others/StringUtils.h>
 #include <FileSystem/File.h>
+#include <FileSystem/MeshResource.h>
 #include <Scene/Component/Transform.h>
 
 #include <mio.hpp>
@@ -545,22 +546,22 @@ namespace meteor
 		}
 	}
 
-	auto GmbLoader::load(const std::string& name, const std::string& extension, std::unordered_map<std::string, std::shared_ptr<maple::Mesh>>& outMeshes) -> void
+	auto GmbLoader::load(const std::string& name, const std::string& extension, std::vector<std::shared_ptr<maple::IResource>>& out) -> void
 	{
 		auto objName = maple::StringUtils::getFileNameWithoutExtension(name);
 		auto& sceneObj = MeteorSceneObjectCache::get(objName);
 
 		loadDesFile(sceneObj.desFile, maple::StringUtils::removeExtension(name) + ".des");
 	
-
+		auto meshse = std::make_shared<maple::MeshResource>(name);
 
 		if (extension == "gmb") 
 		{
-			loadGmbFile(sceneObj.gmbFile, sceneObj.desFile, name, outMeshes);
+			loadGmbFile(sceneObj.gmbFile, sceneObj.desFile, name, meshse->getMeshes());
 		}
 		else if (extension == "gmc")
 		{
-			loadGmcFile(sceneObj.gmbFile, sceneObj.desFile, name, outMeshes);
+			loadGmcFile(sceneObj.gmbFile, sceneObj.desFile, name, meshse->getMeshes());
 		}
 
 		auto fmcFile = maple::StringUtils::removeExtension(name) + ".fmc";
@@ -568,5 +569,7 @@ namespace meteor
 		{
 			sceneObj.fmcFile = loadFmc(fmcFile);
 		}
+
+		out.emplace_back(meshse);
 	}
 }

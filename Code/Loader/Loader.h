@@ -5,7 +5,7 @@
 #pragma once
 #include "Cache.h"
 #include "MeteorResources.h"
-#include <FileSystem/MeshLoader.h>
+#include <Loaders/Loader.h>
 
 #include <vector>
 #include <memory>
@@ -13,11 +13,11 @@
 
 namespace meteor 
 {
-	class GmbLoader : public maple::ModelLoader
+	class GmbLoader : public maple::AssetsLoader
 	{
 	public:
 		static constexpr char* EXTENSIONS[] = { "gmb","gmc","GMB","GMC" };
-		auto load(const std::string& obj, const std::string & extension, std::unordered_map<std::string, std::shared_ptr<maple::Mesh>>&)-> void override;
+		auto load(const std::string& obj, const std::string & extension, std::vector<std::shared_ptr<maple::IResource>>& out)-> void override;
 	};
 
 	DEFINE_CACHE(MeteorSceneObject);

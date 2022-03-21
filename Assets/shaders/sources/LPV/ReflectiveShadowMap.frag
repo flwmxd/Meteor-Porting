@@ -31,6 +31,11 @@ layout(location = 0) out vec4 outColor;
 layout(location = 1) out vec4 outPosition;
 layout(location = 2) out vec4 outNormal;
 
+vec4 gammaCorrectTexture(vec4 samp)
+{
+	return vec4(pow(samp.rgb, vec3(2.2)), samp.a);
+}
+
 vec4 getAlbedo()
 {
 	return (1.0 - ubo.usingAlbedoMap) * ubo.albedoColor + ubo.usingAlbedoMap * texture(uDiffuseMap, inUV);
@@ -43,7 +48,7 @@ float lengthSquared(vec3 vec)
 
 void main()
 {
-	vec4 diffuse = getAlbedo() * inColor;
+	vec4 diffuse = gammaCorrectTexture(getAlbedo() * inColor);
 	float intensity = pow(ubo.light.intensity,1.4) + 0.1;
 	vec4 flux = vec4( ( ubo.light.color.rgb * diffuse.rgb * intensity ) , 1.0 );
 	outColor = flux;

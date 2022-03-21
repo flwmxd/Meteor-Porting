@@ -13,6 +13,5 @@ layout(set = 0,binding = 2) uniform UniformBufferObjectLod {
 void main()
 {    
     vec3 color = textureLod(uCubeMap, texCoords, ubo.lodLevel).rgb;
-    color = color / (color + vec3(1.0));
     outFrag = vec4(color, 1.0);
 }

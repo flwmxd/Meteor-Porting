@@ -60,17 +60,17 @@ layout(location = 4) out vec4 outViewPosition;
 layout(location = 5) out vec4 outViewNormal;
 layout(location = 6) out vec4 outVelocity;
 
+
 vec4 gammaCorrectTexture(vec4 samp)
 {
-	return samp;
 	return vec4(pow(samp.rgb, vec3(GAMMA)), samp.a);
 }
 
 vec3 gammaCorrectTextureRGB(vec4 samp)
 {
-	return samp.xyz;
 	return vec3(pow(samp.rgb, vec3(GAMMA)));
 }
+
 
 vec4 getAlbedo()
 {
@@ -89,12 +89,12 @@ float getRoughness()
 
 float getAO()
 {
-	return (1.0 - materialProperties.usingAOMap) + materialProperties.usingAOMap * texture(uAOMap, fragTexCoord).r;
+	return (1.0 - materialProperties.usingAOMap) + materialProperties.usingAOMap * gammaCorrectTextureRGB(texture(uAOMap, fragTexCoord)).r;
 }
 
 vec3 getEmissive()
 {
-	return (1.0 - materialProperties.usingEmissiveMap) * materialProperties.emissiveColor.rgb + materialProperties.usingEmissiveMap * texture(uEmissiveMap, fragTexCoord).rgb;
+	return (1.0 - materialProperties.usingEmissiveMap) * materialProperties.emissiveColor.rgb + materialProperties.usingEmissiveMap * gammaCorrectTextureRGB(texture(uEmissiveMap, fragTexCoord));
 }
 
 vec3 getNormalFromMap()
@@ -123,6 +123,7 @@ float linearDepth(float depth)
 	float z = depth * 2.0f - 1.0f; 
 	return (2.0f * ubo.nearPlane * ubo.farPlane) / (ubo.farPlane + ubo.nearPlane - z * (ubo.farPlane - ubo.nearPlane));	
 }
+
 
 void main()
 {
@@ -155,8 +156,8 @@ void main()
 
 	vec3 emissive   = getEmissive();
 
-
-    outColor    	= texColor;// + vec4(emissive,0);
+ 
+    outColor    	= gammaCorrectTexture(texColor);
 	outPosition		= vec4(fragPosition.xyz, emissive.x);
 	outNormal   	= vec4(getNormalFromMap(), emissive.y);
 	outPBR      	= vec4(metallic, roughness, ao, emissive.z);

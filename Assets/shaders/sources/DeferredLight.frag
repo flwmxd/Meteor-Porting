@@ -311,6 +311,18 @@ float ndfGGX(float cosLh, float roughness)
 	return alphaSq / (PI * denom * denom);
 }
 
+float GeometrySchlickGGX(float NdotV, float roughness)
+{
+    float r = (roughness + 1.0);
+    float k = (r*r) / 8.0;
+
+    float nom   = NdotV;
+    float denom = NdotV * (1.0 - k) + k;
+
+    return nom / denom;
+}
+
+
 // Single term for separable Schlick-GGX below.
 float gaSchlickG1(float cosTheta, float k)
 {
@@ -328,13 +340,17 @@ float gaSchlickGGX(float cosLi, float NdotV, float roughness)
 // Shlick's approximation of the Fresnel factor.
 vec3 fresnelSchlick(vec3 F0, float cosTheta)
 {
-	return F0 + (1.0 - F0) * pow(1.0 - cosTheta, 5.0);
+  	return F0 + (1.0 - F0) * pow(clamp(1.0 - cosTheta, 0.0, 1.0), 5.0);
 }
 
 vec3 fresnelSchlickRoughness(vec3 F0, float cosTheta, float roughness)
 {
     return F0 + (max(vec3(1.0 - roughness), F0) - F0) * pow(clamp(1.0 - cosTheta, 0.0, 1.0), 5.0);
 }
+
+
+
+
 /*
 vec3 calcVPLIrradiance(vec3 vVPLFlux, vec3 vVPLNormal, vec3 vVPLPos, vec3 vFragPos, vec3 vFragNormal)
 {
@@ -447,8 +463,8 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 		float cosLi = max(0.0, dot(material.normal, Li));
 		float cosLh = max(0.0, dot(material.normal, Lh));
 		
-		//vec3 F = fresnelSchlick(F0, max(0.0, dot(Lh, material.view)));
-		vec3 F = fresnelSchlickRoughness(F0, max(0.0, dot(Lh,  material.view)), material.roughness);
+		vec3 F = fresnelSchlick(F0, max(0.0, dot(Lh, material.view)));
+		//vec3 F = fresnelSchlickRoughness(F0, max(0.0, dot(Lh,  material.view)), material.roughness);
 		
 		float D = ndfGGX(cosLh, material.roughness);
 		float G = gaSchlickGGX(cosLi, material.normalDotView, material.roughness);
@@ -481,9 +497,10 @@ vec3 IBL(vec3 F0, vec3 Lr, Material material)
 	{
 		return vec3(0,0,0);
 	}
+
 	vec3 irradiance = texture(uIrradianceMap, material.normal).rgb;
 	vec3 F = fresnelSchlickRoughness(F0, material.normalDotView, material.roughness);
-	vec3 kd = (1.0 - F) * (1.0 - material.metallic.x);
+	vec3 kd = (1.0 - F) * (1.0 - material.metallic.r);
 	vec3 diffuseIBL = irradiance * material.albedo.rgb;
 
 	vec3 specularIrradiance = textureLod(uPrefilterMap, Lr, material.roughness * level).rgb;
@@ -519,9 +536,10 @@ void main()
     material.albedo			= albedo;
     material.metallic		= vec3(pbr.x);
     material.roughness		= pbr.y;
-    material.normal			= normalTex.xyz;
+    material.normal			= normalize(normalTex.xyz);
 	material.ao				= pbr.z;
 	material.ssao			= 1;
+	vec3 emissive = vec3(fragPosXyzw.w,normalTex.w,pbr.w);
 
 	if(ubo.ssaoEnable == 1)
 	{
@@ -547,12 +565,12 @@ void main()
 	vec3 Lr =  reflect(-material.view,material.normal); 
 	//2.0 * material.normalDotView * material.normal - material.view;
 	// Fresnel reflectance, metals use albedo
-	vec3 F0 = mix(Fdielectric, material.albedo.xyz, material.metallic.x);
+	vec3 F0 = mix(Fdielectric, material.albedo.rgb, material.metallic.r);
 	
 	vec3 lightContribution = lighting(F0, wsPos, material,fragTexCoord);
 	vec3 iblContribution = IBL(F0, Lr, material);
 
-	vec3 finalColor = (lightContribution + iblContribution) * material.ao * material.ssao;
+	vec3 finalColor = (lightContribution + iblContribution) * material.ao * material.ssao + emissive;
 
 	outColor = vec4(finalColor, 1.0);
 	//ubo.mode = 1;

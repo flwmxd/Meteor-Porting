@@ -137,7 +137,8 @@ void main()
 		//float mixVal = (texture(uDepthSampler, inUV).r < 1.0 ? 0.0 : 1.0);
 		//color = mix(color.xyz, cloud, mixVal);
 	}
-
+	//hdr
+    color = color / (color + vec3(1.0));
 
 	//col *= ubo.exposure;
 
