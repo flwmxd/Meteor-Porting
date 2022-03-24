@@ -23,7 +23,7 @@ namespace meteor
 
 	auto MeteorDelegate::onInit() -> void
 	{
-		maple::Application::getModelLoaderFactory()->addModelLoader<GmbLoader>();
+		maple::Application::getAssetsLoaderFactory()->addModelLoader<GmbLoader>();
 
 /*
 		auto scene = new maple::Scene("MeteorTest");

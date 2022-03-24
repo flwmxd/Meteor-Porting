@@ -86,16 +86,26 @@ void main()
 		 // No occlusion in the first step
 		if(ubo.step > 1)
 		{
-			vec3 halfDir =  0.5 * mainDirection;
-		    ivec3 occCoord = ivec3(volumeCellIndex - halfDir);
+			/*vec3 halfDir =  0.5 * mainDirection;
+		    ivec3 occCoord = ivec3(volumeCellIndex - halfDir);*/
 
-			vec4 redOccCoeffs = texelFetch2(uGeometryVolumeR, occCoord);
-            vec4 greenOccCoeffs = texelFetch2(uGeometryVolumeG, occCoord);
-            vec4 blueOccCoeffs = texelFetch2(uGeometryVolumeB, occCoord);
+			vec4 redOccCoeffs1 = texelFetch2(uGeometryVolumeR, volumeCellIndex);
+            vec4 greenOccCoeffs1 = texelFetch2(uGeometryVolumeG, volumeCellIndex);
+            vec4 blueOccCoeffs1 = texelFetch2(uGeometryVolumeB, volumeCellIndex);
 
-            redOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(redOccCoeffs, dirToSH(-mainDirection)), 0.0, 1.0);
-            greenOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(greenOccCoeffs, dirToSH(-mainDirection)), 0.0, 1.0);
-            blueOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(blueOccCoeffs, dirToSH(-mainDirection)), 0.0, 1.0);
+			vec4 redOccCoeffs2 = texelFetch2(uGeometryVolumeR, neighbourCellIndex);
+            vec4 greenOccCoeffs2 = texelFetch2(uGeometryVolumeG, neighbourCellIndex);
+            vec4 blueOccCoeffs2 = texelFetch2(uGeometryVolumeB, neighbourCellIndex);
+
+			vec4 redOccCoeffs = (redOccCoeffs1 + redOccCoeffs2) / 2.0;
+			vec4 greenOccCoeffs = (greenOccCoeffs1 + greenOccCoeffs2) / 2.0;
+			vec4 blueOccCoeffs  = (blueOccCoeffs1 + blueOccCoeffs2) / 2.0;
+
+			vec4 sh = dirToSH(-mainDirection);
+
+            redOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(redOccCoeffs, sh), 0.0, 1.0);
+            greenOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(greenOccCoeffs, sh), 0.0, 1.0);
+            blueOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(blueOccCoeffs,sh), 0.0, 1.0);
 		}
 
 		float rOccludedDirectFaceContribution = redOcclusionValue * directFaceSubtendedSolidAngle;
@@ -116,15 +126,23 @@ void main()
 			 // No occlusion in the first step
 			if(ubo.step > 1)
 			{
-				vec3 halfDir =  0.5 * mainDirection;
-		   		ivec3 occCoord = ivec3(volumeCellIndex - halfDir);
-				vec4 redOccCoeffs = texelFetch2(uGeometryVolumeR, occCoord);
-				vec4 greenOccCoeffs = texelFetch2(uGeometryVolumeG, occCoord);
-				vec4 blueOccCoeffs = texelFetch2(uGeometryVolumeB, occCoord);
+				vec4 redOccCoeffs1 = texelFetch2(uGeometryVolumeR, volumeCellIndex);
+				vec4 greenOccCoeffs1 = texelFetch2(uGeometryVolumeG, volumeCellIndex);
+				vec4 blueOccCoeffs1 = texelFetch2(uGeometryVolumeB, volumeCellIndex);
 
-				redOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(redOccCoeffs, dirToSH(-mainDirection)), 0.0, 1.0);
-				greenOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(greenOccCoeffs, dirToSH(-mainDirection)), 0.0, 1.0);
-				blueOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(blueOccCoeffs, dirToSH(-mainDirection)), 0.0, 1.0);
+				vec4 redOccCoeffs2 = texelFetch2(uGeometryVolumeR, neighbourCellIndex);
+				vec4 greenOccCoeffs2 = texelFetch2(uGeometryVolumeG, neighbourCellIndex);
+				vec4 blueOccCoeffs2 = texelFetch2(uGeometryVolumeB, neighbourCellIndex);
+
+				vec4 redOccCoeffs = (redOccCoeffs1 + redOccCoeffs2) / 2.0;
+				vec4 greenOccCoeffs = (greenOccCoeffs1 + greenOccCoeffs2) / 2.0;
+				vec4 blueOccCoeffs  = (blueOccCoeffs1 + blueOccCoeffs2) / 2.0;
+
+				vec4 sh = dirToSH(-mainDirection);
+
+				redOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(redOccCoeffs, sh), 0.0, 1.0);
+				greenOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(greenOccCoeffs, sh), 0.0, 1.0);
+				blueOcclusionValue = 1.0 - clamp(ubo.occlusionAmplifier * dot(blueOccCoeffs,sh), 0.0, 1.0);
 			}
 
 			rOccludedDirectFaceContribution = redOcclusionValue * sideFaceSubtendedSolidAngle;

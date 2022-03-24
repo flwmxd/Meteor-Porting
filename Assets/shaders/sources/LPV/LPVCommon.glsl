@@ -22,6 +22,13 @@
       imageAtomicAdd(img, ivec3(pos.x * 4 + 3, pos.y, pos.z ), uint(data.a * SH_F_TO_I))
 
 
+#define imgStoreMax(img, pos, data) \
+      imageAtomicMax(img, ivec3(pos.x * 4 + 0, pos.y, pos.z ), uint(data.r * SH_F_TO_I)); \
+      imageAtomicMax(img, ivec3(pos.x * 4 + 1, pos.y, pos.z ), uint(data.g * SH_F_TO_I)); \
+      imageAtomicMax(img, ivec3(pos.x * 4 + 2, pos.y, pos.z ), uint(data.b * SH_F_TO_I)); \
+      imageAtomicMax(img, ivec3(pos.x * 4 + 3, pos.y, pos.z ), uint(data.a * SH_F_TO_I))
+
+
 #define imgLoad(img, pos) \
   vec4( \
     imageLoad(img, ivec3(pos.x * 4 + 0, pos.y, pos.z)).r * SH_I_TO_F , \
