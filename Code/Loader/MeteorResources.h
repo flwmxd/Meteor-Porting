@@ -23,6 +23,19 @@ namespace meteor
 		float opaqueArg0;
 	};
 
+	struct CharacterMaterial
+	{
+		std::string texture;
+		std::string option;
+		glm::vec4 colorKey;
+		glm::vec3 ambient;
+		glm::vec3 diffuse;
+		glm::vec3 specular;
+		glm::vec3 emissive;
+		float opacity;
+		bool twoSide;
+	};
+
 	//GModel Binary File and GModel Geometry File
 	struct GModelFile// gmb and gmc
 	{
@@ -55,7 +68,7 @@ namespace meteor
 		std::unordered_map<std::string, DesItem> sceneItems;
 	};
 
-	struct FMCFrame
+	struct FmcFrame
 	{
 		int32_t frameIdx = 0;
 		std::vector<glm::vec3> pos;//pos for every objects
@@ -69,7 +82,7 @@ namespace meteor
 		int32_t frames = 0;
 		int32_t scemeObjCount = 0;
 		int32_t dummyObjCount = 0;
-		std::vector<FMCFrame> fmcFrames;
+		std::vector<FmcFrame> fmcFrames;
 	};
 
 	struct MeteorSceneObject 
@@ -79,5 +92,16 @@ namespace meteor
 		DesFile desFile; //SubMesh description;
 		GModelFile gmbFile;// MeshObject
 		std::shared_ptr<FmcFile> fmcFile;
+	};
+
+	//Character Skin
+	struct SkcFile
+	{
+		SkcFile(const std::string& name) :name(name) {};
+		std::string name;
+		int32_t staticSkins = 0;
+		int32_t dynmaicSkins = 0;
+		std::string skin;
+		std::vector<CharacterMaterial> materials;
 	};
 }

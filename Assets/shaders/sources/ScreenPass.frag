@@ -8,12 +8,11 @@ layout(location = 0) in vec2 inUV;
 layout(set = 0, binding = 0) uniform UniformBuffer
 {
 	float gamma;
+	float exposure;
 	int toneMapIndex;
 	int ssaoEnable;
 	int reflectEnable;
-
 	int cloudEnable;
-	int padding;
 	int padding1;
 	int padding2;
 } ubo;
@@ -108,6 +107,7 @@ vec3 Uncharted2ToneMapping(vec3 color)
 
 vec3 finalGamma(vec3 color)
 {
+	color = vec3(1.0) - exp(-color * ubo.exposure);
 	return pow(color, vec3(1.0 / ubo.gamma));
 }
 
@@ -138,8 +138,6 @@ void main()
 		//color = mix(color.xyz, cloud, mixVal);
 	}
 	//hdr
-    color = color / (color + vec3(1.0));
-
 	//col *= ubo.exposure;
 
 	int i = ubo.toneMapIndex;

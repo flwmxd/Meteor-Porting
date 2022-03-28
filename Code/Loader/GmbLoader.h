@@ -11,6 +11,9 @@
 #include <memory>
 
 
+/**
+ * Meteor Map Loader
+ */
 namespace meteor 
 {
 	class GmbLoader : public maple::AssetsLoader

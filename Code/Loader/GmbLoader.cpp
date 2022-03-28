@@ -2,7 +2,7 @@
 // This file is part of the Meteor-Remake                             		//
 //////////////////////////////////////////////////////////////////////////////
 
-#include "Loader.h"
+#include "GmbLoader.h"
 #include <Engine/Core.h>
 #include <Engine/Buffer.h>
 #include <Engine/Vertex.h>
