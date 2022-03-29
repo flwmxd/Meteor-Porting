@@ -24,4 +24,6 @@ namespace meteor
 	};
 
 	DEFINE_CACHE(SkcFile);
+
+	DEFINE_CACHE(BncFile);
 }

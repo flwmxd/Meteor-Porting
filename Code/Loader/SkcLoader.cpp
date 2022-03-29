@@ -3,8 +3,13 @@
 //////////////////////////////////////////////////////////////////////////////
 #include "SkcLoader.h"
 #include <FileSystem/MeshResource.h>
+#include <FileSystem/Skeleton.h>
 #include <Others/StringUtils.h>
+#include <Others/Console.h>
+#include <Engine/Core.h>
 #include <Engine/Material.h>
+#include <Engine/Profiler.h>
+#include <Scene/Component/Transform.h>
 
 #include <fstream>
 #include <sstream>
@@ -231,6 +236,113 @@ namespace meteor
 
 			return outMesh;
 		}
+
+		inline auto readBone(std::ifstream& fileIn, MeteorBone& bone) 
+		{
+			std::string line;
+			while (std::getline(fileIn, line))
+			{
+				maple::StringUtils::trim(line);
+				maple::StringUtils::trim(line, "\t");
+
+				if (maple::StringUtils::startWith(line, "{"))
+				{//start
+					continue;
+				}
+				if (maple::StringUtils::startWith(line, "}"))
+				{//end
+					break;
+				}
+
+				if (maple::StringUtils::startWith(line, "parent"))
+				{
+					std::stringstream sstream(line);
+					sstream >> line >> bone.name;
+					continue;
+				}
+
+				if (maple::StringUtils::startWith(line, "pivot"))
+				{
+					std::stringstream sstream(line);
+					sstream >> line;//pivot
+					sstream >> bone.offset.x >> bone.offset.z >> bone.offset.y;
+					continue;
+				}
+
+				if (maple::StringUtils::startWith(line, "quaternion"))
+				{
+					std::stringstream sstream(line);
+					sstream >> line;//pivot
+					sstream >> bone.rotation.w >> bone.rotation.x >> bone.rotation.z >> bone.rotation.y;
+					bone.rotation.x *= -1;
+					bone.rotation.y *= -1;
+					bone.rotation.z *= -1;
+					continue;
+				}
+
+				if (maple::StringUtils::startWith(line, "children"))
+				{
+					std::stringstream sstream(line);
+					sstream >> line;//pivot
+					sstream >> bone.children;
+					continue;
+				}
+			}
+		}
+
+		inline auto loadBone(const std::string& fileName, std::vector<std::shared_ptr<maple::IResource>>& out)
+		{
+			auto name = maple::StringUtils::removeExtension(fileName) + ".bnc";
+			auto& bncFile = BncFileCache::get(name);
+			std::ifstream bncIn;
+			bncIn.open(name);
+			std::string line;
+
+			while (std::getline(bncIn, line))
+			{
+				maple::StringUtils::trim(line, "\t");
+				if (maple::StringUtils::startWith(line, "#"))
+					continue;
+
+				if (bncFile.boneSize == 0 && bncFile.dummeySize == 0)
+				{
+					sscanf(line.c_str(), "Bones: %d Dummey: %d", &bncFile.boneSize, &bncFile.dummeySize);
+				}
+				bool isBone = maple::StringUtils::startWith(line, "bone");
+				bool isDummey = maple::StringUtils::startWith(line, "Dummey");
+				if (isBone || isDummey)
+				{
+					auto vec = maple::StringUtils::split(line, " ");
+					auto & bone = bncFile.bones.emplace_back();
+					bone.dummy = isDummey;
+					readBone(bncIn,bone);
+				}
+			}
+
+			if (!bncFile.bones.empty()) 
+			{
+				//convert to skeleton
+				auto skeleton = std::make_shared<maple::Skeleton>(maple::StringUtils::getFileNameWithoutExtension(fileName));
+
+				for (auto & b : bncFile.bones)
+				{
+					auto & bone = skeleton->createBone();
+					bone.name = b.name;
+					bone.localTransform = maple::component::Transform::createMatrix(b.offset, b.rotation);
+					bone.offsetMatrix = glm::mat4(1.f);
+				}
+
+				for (int32_t i = 0;i<bncFile.bones.size();i++)
+				{
+					auto& bone = skeleton->getBone(i);
+					bone.parentIdx = skeleton->getBoneIndex(bncFile.bones[i].parent);
+					auto & parent = skeleton->getBone(bone.parentIdx);
+					parent.children.emplace_back(i);
+				}
+				out.emplace_back(skeleton);
+			}
+			bncIn.close();
+		}
 	}
 
 	auto SkcLoader::load(const std::string& fileName, const std::string& extension, std::vector<std::shared_ptr<maple::IResource>>& out) -> void
@@ -245,6 +357,7 @@ namespace meteor
 		{
 			if (maple::StringUtils::startWith(line, "#")) 
 				continue;
+		
 			if (skcFile.staticSkins == 0 && skcFile.dynmaicSkins == 0) 
 			{
 				sscanf(line.c_str(), "Static Skins: %d Dynamic Skins: %d", &skcFile.staticSkins, &skcFile.dynmaicSkins);
@@ -256,6 +369,9 @@ namespace meteor
 				out.emplace_back(staticMesh);
 			}
 		}
+		
+		loadBone(fileName, out);
+
 		skcIn.close();
 	}
 }

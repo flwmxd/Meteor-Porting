@@ -104,4 +104,24 @@ namespace meteor
 		std::string skin;
 		std::vector<CharacterMaterial> materials;
 	};
+
+	struct MeteorBone 
+	{
+		std::string name;
+		std::string parent;
+		glm::vec3 offset;//local 
+		glm::quat rotation;//local
+		bool dummy;//unknown??
+		uint32_t children;
+	};
+
+	struct BncFile//skeleton
+	{
+		BncFile(const std::string& name) :fileName(name) {};
+		std::string fileName;
+
+		std::vector<MeteorBone> bones;
+		uint32_t boneSize = 0;
+		uint32_t dummeySize = 0;
+	};
 }
