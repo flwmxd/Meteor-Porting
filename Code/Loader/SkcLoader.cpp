@@ -86,7 +86,7 @@ namespace meteor
 			}
 		}
 		
-		inline auto readVerticesAndBone(std::ifstream& skcIn, maple::Vertex & vertex)
+		inline auto readVerticesAndBone(std::ifstream& skcIn, maple::SkinnedVertex & vertex)
 		{
 			std::string line;
 			std::getline(skcIn, line);
@@ -96,18 +96,21 @@ namespace meteor
 			sstream >> line;//vt
 			sstream >> vertex.texCoord.x >> vertex.texCoord.y;
 			sstream >> line;//bones
+			vertex.normal = {};
+			vertex.tangent = {};
+
 			uint32_t boneCount = 0;
 			sstream >> boneCount;
-			//vertex.boneIndices = {};
-			//vertex.boneWeights = {};
+			vertex.boneIndices = {};
+			vertex.boneWeights = {};
 			vertex.color = glm::vec4{ 1.f };
 			for (auto i = 0;i<boneCount;i++)
 			{
 				uint32_t index = 0;
 				float weight = 0.f;
 				sstream >> index >> weight;
-				//vertex.boneIndices[i] = index;
-				//vertex.boneWeights[i] = weight;
+				vertex.boneIndices[i] = index;
+				vertex.boneWeights[i] = weight;
 			}
 		}
 
@@ -139,7 +142,7 @@ namespace meteor
 			std::string line;
 			std::vector<CharacterMaterial> cMaterials;
 			std::vector<uint32_t> indices;
-			std::vector<maple::Vertex> vertices;
+			std::vector<maple::SkinnedVertex> vertices;
 			
 			auto outMesh = std::make_shared<maple::MeshResource>(file.name);
 
@@ -178,7 +181,6 @@ namespace meteor
 					int32_t count;
 					sscanf(line.c_str(), "Vertices: %d", &count);
 					vertices.resize(count);
-
 					for (auto i = 0; i < count; i++)
 					{
 						readVerticesAndBone(skcIn, vertices[i]);
@@ -257,7 +259,7 @@ namespace meteor
 				if (maple::StringUtils::startWith(line, "parent"))
 				{
 					std::stringstream sstream(line);
-					sstream >> line >> bone.name;
+					sstream >> line >> bone.parent;
 					continue;
 				}
 
@@ -315,6 +317,7 @@ namespace meteor
 					auto vec = maple::StringUtils::split(line, " ");
 					auto & bone = bncFile.bones.emplace_back();
 					bone.dummy = isDummey;
+					bone.name = vec[1];
 					readBone(bncIn,bone);
 				}
 			}
@@ -323,6 +326,8 @@ namespace meteor
 			{
 				//convert to skeleton
 				auto skeleton = std::make_shared<maple::Skeleton>(maple::StringUtils::getFileNameWithoutExtension(fileName));
+
+				skeleton->setBuildOffset(true);
 
 				for (auto & b : bncFile.bones)
 				{
@@ -335,9 +340,13 @@ namespace meteor
 				for (int32_t i = 0;i<bncFile.bones.size();i++)
 				{
 					auto& bone = skeleton->getBone(i);
-					bone.parentIdx = skeleton->getBoneIndex(bncFile.bones[i].parent);
-					auto & parent = skeleton->getBone(bone.parentIdx);
-					parent.children.emplace_back(i);
+					auto parentId = skeleton->getBoneIndex(bncFile.bones[i].parent);
+					if (parentId != -1) 
+					{
+						bone.parentIdx = parentId;
+						auto & parent = skeleton->getBone(parentId);
+						parent.children.emplace_back(bone.id);
+					}
 				}
 				out.emplace_back(skeleton);
 			}
