@@ -124,4 +124,14 @@ namespace meteor
 		uint32_t boneSize = 0;
 		uint32_t dummeySize = 0;
 	};
+
+/*
+	struct MeteorAnimationClip
+	{
+		int32_t flag;
+		glm::vec3 bonePos;//相对位置,每一帧只有首骨骼有
+		std::vector<glm::vec3> dummyPos;//虚拟对象相对位置
+		std::vector<glm::quat> boneQuat;//相对旋转.
+		std::vector<glm::quat> dummyQuat;//虚拟对象相对旋转
+	};*/
 }

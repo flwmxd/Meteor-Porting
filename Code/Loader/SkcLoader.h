@@ -6,13 +6,8 @@
 #include "Cache.h"
 #include "MeteorResources.h"
 #include <Loaders/Loader.h>
-
-#include <vector>
-#include <memory>
-
-
 /**
- * Meteor Map Loader
+ * Meteor Skeleton/Bone/Character Loader
  */
 namespace meteor
 {
@@ -20,7 +15,7 @@ namespace meteor
 	{
 	public:
 		static constexpr char* EXTENSIONS[] = { "skc" };
-		auto load(const std::string& obj, const std::string& extension, std::vector<std::shared_ptr<maple::IResource>>& out)-> void override;
+		auto load(const std::string& obj, const std::string& extension, std::vector<std::shared_ptr<maple::IResource>>& out) const -> void override;
 	};
 
 	DEFINE_CACHE(SkcFile);

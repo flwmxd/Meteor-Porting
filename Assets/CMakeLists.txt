@@ -40,7 +40,8 @@ set_property(
 
 target_link_libraries(MapleAssembly MapleLibrary)
 
-SET(LIBRARY_OUTPUT_PATH ${ASSET_DIR})
+set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+
 endif()
 
 

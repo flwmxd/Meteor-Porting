@@ -14,7 +14,7 @@
 #include <FileSystem/MeshResource.h>
 #include <Scene/Component/Transform.h>
 
-#include <mio.hpp>
+#include <mio/mmap.hpp>
 #include <fstream>
 #include <sstream>
 
@@ -546,7 +546,7 @@ namespace meteor
 		}
 	}
 
-	auto GmbLoader::load(const std::string& name, const std::string& extension, std::vector<std::shared_ptr<maple::IResource>>& out) -> void
+	auto GmbLoader::load(const std::string& name, const std::string& extension, std::vector<std::shared_ptr<maple::IResource>>& out) const -> void
 	{
 		auto objName = maple::StringUtils::getFileNameWithoutExtension(name);
 		auto& sceneObj = MeteorSceneObjectCache::get(objName);

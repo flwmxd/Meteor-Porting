@@ -354,7 +354,7 @@ namespace meteor
 		}
 	}
 
-	auto SkcLoader::load(const std::string& fileName, const std::string& extension, std::vector<std::shared_ptr<maple::IResource>>& out) -> void
+	auto SkcLoader::load(const std::string& fileName, const std::string& extension, std::vector<std::shared_ptr<maple::IResource>>& out) const -> void
 	{
 		std::ifstream skcIn;
 		skcIn.open(fileName);

@@ -154,10 +154,11 @@ set_property(TARGET Meteor  PROPERTY VS_DEBUGGER_WORKING_DIRECTORY ${ASSET_DIR})
 
 set_target_properties(Meteor PROPERTIES COMPILE_FLAGS "/MP /wd4819 /arch:SSE ")
 
-
 string(REPLACE "/" "\\" RUNTIME_PATH ${ASSET_DIR}/)
 
+set_target_properties(MapleLibrary MapleAssembly PROPERTIES FOLDER ScriptExtension)
 
+set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 add_custom_command(TARGET Meteor
 				   POST_BUILD
@@ -172,30 +173,19 @@ add_custom_command(TARGET Meteor
 #	COMMENT "Copying shaders...."
 #)
 
-#add_custom_command(TARGET Meteor
-#				   POST_BUILD
-#	COMMAND powershell Copy-Item ${ASSET_DIR}/${CMAKE_BUILD_TYPE}/MapleLibrary.dll ${RUNTIME_PATH} -Force
-#	COMMENT "POST_BUILD Copying MapleLibrary.dll "
-#)
-
-#add_custom_command(TARGET Meteor
-#				   POST_BUILD
-#	COMMAND powershell Copy-Item ${ASSET_DIR}/${CMAKE_BUILD_TYPE}/MapleEngine.dll ${RUNTIME_PATH} -Force
-#	COMMENT "POST_BUILD Copying MapleEngine.dll "
-#)
-
 add_custom_command(TARGET Meteor
 				   POST_BUILD
 	COMMAND powershell Copy-Item ${Toolchains} ${CMAKE_SOURCE_DIR} -recurse -Force
 	COMMENT "POST_BUILD Copying Toolchains.... "
 )
 
-set_target_properties(MapleLibrary MapleAssembly PROPERTIES FOLDER ScriptExtension)
+add_custom_target(LibCopy
+	COMMAND powershell Copy-Item ${CMAKE_BINARY_DIR}/$<CONFIG>/*.dll  ${RUNTIME_PATH} -Force
+	COMMENT "Copying binaries ............"
+)
 
-
-SET(LIBRARY_OUTPUT_PATH ${ASSET_DIR})
-#SET_TARGET_PROPERTIES(MapleEngine PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${ASSET_DIR})
-
+add_dependencies(LibCopy MapleEngine)
+add_dependencies(Meteor LibCopy)
 endif()
 
 

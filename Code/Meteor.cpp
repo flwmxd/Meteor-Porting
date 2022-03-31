@@ -9,6 +9,7 @@
 
 #include "Loader/GmbLoader.h"
 #include "Loader/SkcLoader.h"
+#include "Loader/AmbLoader.h"
 
 namespace meteor
 {
@@ -21,6 +22,7 @@ namespace meteor
 		maple::ImNotification::makeNotification("Loading...", "Meteor", maple::ImNotification::Type::Info);
 		maple::Application::getAssetsLoaderFactory()->addModelLoader<GmbLoader>();
 		maple::Application::getAssetsLoaderFactory()->addModelLoader<SkcLoader>();
+		maple::Application::getAssetsLoaderFactory()->addModelLoader<AmbLoader>();
 	}
 }
 
