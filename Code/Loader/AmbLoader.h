@@ -18,4 +18,6 @@ namespace meteor
 		static constexpr char* EXTENSIONS[] = { "amb" };
 		auto load(const std::string& obj, const std::string& extension, std::vector<std::shared_ptr<maple::IResource>>& out) const -> void override;
 	};
+
+	DEFINE_CACHE(Pose);
 }

@@ -125,7 +125,6 @@ namespace meteor
 		uint32_t dummeySize = 0;
 	};
 
-/*
 	struct MeteorAnimationClip
 	{
 		int32_t flag;
@@ -133,5 +132,73 @@ namespace meteor
 		std::vector<glm::vec3> dummyPos;//虚拟对象相对位置
 		std::vector<glm::quat> boneQuat;//相对旋转.
 		std::vector<glm::quat> dummyQuat;//虚拟对象相对旋转
-	};*/
+	};
+
+	//Blend/Action
+	struct PoseAction 
+	{
+		enum class Type
+		{
+			Blend,
+			Action
+		};
+		Type type;
+		int32_t start;
+		int32_t end;
+		float speed;
+	};
+
+	struct AttackInfo 
+	{
+		std::vector<std::string> bones;//攻击伤害盒
+		int32_t poseIdx;//伤害由哪个动作赋予，由动作可以反向查找技能，以此算伤害
+		int32_t start;
+		int32_t end;
+		int32_t attackType;//0普攻1破防
+		int32_t checkFriend;
+		float defenseValue;//防御僵硬
+		float defenseMove;//防御时移动.
+		float targetValue;//攻击僵硬
+		float targetMove;//攻击时移动
+		int32_t targetPose;//受击时播放动作
+		int32_t targetPoseFront;//挨打倒地096
+		int32_t targetPoseBack;//倒地前翻   099
+		int32_t targetPoseLeft;//倒地右翻   098
+		int32_t targetPoseRight;//倒地左翻  097
+	};
+
+	struct Drag 
+	{
+		
+	};
+
+	struct Pose
+	{
+		int32_t source;
+		int32_t start;
+		int32_t end;
+		int32_t loopStart;
+		int32_t loopEnd;
+		int32_t effectType;
+		std::string	effectID;
+		std::vector<PoseAction> actions;
+		int32_t link;
+		std::vector<AttackInfo> attackInfos;
+		
+		struct
+		{
+			int32_t start;
+			int32_t end;
+			float time;
+			glm::vec3 Color;
+		} drag;
+
+		struct 
+		{
+			int32_t start;
+			int32_t end;
+			float time;
+		}nextPose;
+	};
+
 }
