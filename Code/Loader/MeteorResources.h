@@ -167,11 +167,6 @@ namespace meteor
 		int32_t targetPoseRight;//µ¹µØ×ó·­  097
 	};
 
-	struct Drag 
-	{
-		
-	};
-
 	struct Pose
 	{
 		int32_t source;
@@ -200,5 +195,4 @@ namespace meteor
 			float time;
 		}nextPose;
 	};
-
 }

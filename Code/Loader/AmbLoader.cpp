@@ -19,14 +19,183 @@
 
 namespace meteor
 {
+
+#define READ_TO(Stream,Name,Value) \
+	if (maple::StringUtils::startWith(line, Name)) \
+	{	\
+		Stream >> Value; \
+	}
+
 	namespace 
 	{
+		inline auto readAttack(std::ifstream& fileIn, Pose& pose) 
+		{
+			auto & attackInfo = pose.attackInfos.emplace_back();
+			std::string line;
+
+			bool bone = false;
+
+			std::string boneValue;
+
+			while (std::getline(fileIn, line))
+			{
+				maple::StringUtils::trim(line);
+				maple::StringUtils::trim(line,"\t");
+
+				if (maple::StringUtils::startWith(line, "{"))
+				{
+					continue;
+				}
+				if (maple::StringUtils::endWith(line, "}"))
+				{
+					break;
+				}
+
+				if (maple::StringUtils::startWith(line, "bone"))
+				{
+					bone = true;
+					boneValue = line;
+				}
+				else 
+				{
+					if (maple::StringUtils::startWith(line, "\"")) 
+					{
+						boneValue.append(line);
+					}
+					else 
+					{
+						if (bone)
+						{
+							bone = false;
+							//handle bone.
+							auto firstValue = boneValue.find_first_of("=");
+							boneValue = boneValue.substr(firstValue, boneValue.length() - firstValue);
+							LOGI(boneValue);
+						}
+					}
+				}
+
+				if (!bone) 
+				{
+					std::stringstream sstream(line);
+					sstream >> line;
+					READ_TO(sstream, "Start", attackInfo.start);
+					READ_TO(sstream, "End", attackInfo.end);
+					READ_TO(sstream, "AttackType", attackInfo.attackType);
+					READ_TO(sstream, "CheckFriend", attackInfo.checkFriend);
+					READ_TO(sstream, "DefenseValue", attackInfo.defenseValue);
+					READ_TO(sstream, "DefenseMove", attackInfo.defenseMove);
+					READ_TO(sstream, "TargetValue", attackInfo.targetValue);
+					READ_TO(sstream, "TargetMove", attackInfo.targetMove);
+					READ_TO(sstream, "TargetPose", attackInfo.targetPose);
+					READ_TO(sstream, "TargetPoseFront", attackInfo.targetPoseFront);
+					READ_TO(sstream, "TargetPoseBack", attackInfo.targetPoseBack);
+					READ_TO(sstream, "TargetPoseLeft", attackInfo.targetPoseLeft);
+					READ_TO(sstream, "TargetPoseRight", attackInfo.targetPoseRight);
+				}
+			}
+		}
+
+		inline auto readPoseAction(std::ifstream& fileIn, Pose& pose, const std::string & name) 
+		{
+			std::string line;
+			auto& action = pose.actions.emplace_back();
+			action.type = name == "Blend" ? PoseAction::Type::Blend : PoseAction::Type::Action;
+			while (std::getline(fileIn, line))
+			{
+				if (maple::StringUtils::startWith(line, "{"))
+				{
+					continue;
+				}
+				if (maple::StringUtils::endWith(line, "}"))
+				{
+					break;
+				}
+
+				std::stringstream sstream(line);
+				sstream >> line;
+
+				if (maple::StringUtils::startWith(line, "Start"))
+				{
+					sstream >> action.start;
+				}
+
+				if (maple::StringUtils::startWith(line, "End"))
+				{
+					sstream >> action.end;
+				}
+
+				if (maple::StringUtils::startWith(line, "speed"))
+				{
+					sstream >> action.speed;
+				}
+			}
+		}
+
+		inline auto readPose(std::ifstream & fileIn, Pose & pose)
+		{
+			std::string line;
+			fileIn >> line;
+			int32_t value = 0;
+
+			maple::StringUtils::trim(line);
+			maple::StringUtils::trim(line,"\t");
+
+			READ_TO(fileIn, "source", pose.source);
+			READ_TO(fileIn, "Start", pose.start);
+			READ_TO(fileIn, "End", pose.end);
+			READ_TO(fileIn, "LoopStart", pose.loopStart);
+			READ_TO(fileIn, "LoopEnd", pose.loopEnd);
+			READ_TO(fileIn, "EffectType", pose.effectType);
+			READ_TO(fileIn, "EffectID", pose.effectID);
+			READ_TO(fileIn, "link", pose.link);
+			READ_TO(fileIn, "link", pose.link);
+
+			if (line == "Blend" || line == "Action")
+			{
+				readPoseAction(fileIn, pose, line);
+			}
+
+			if (line == "Attack") 
+			{
+				readAttack(fileIn, pose);
+			}
+		}
+
 		inline auto loadPose(const std::string& fileName)
 		{
 			std::ifstream fileIn(fileName);
+			std::string line;
 
+			std::vector<Pose> poses;
 
+			while (std::getline(fileIn, line))
+			{
+				maple::StringUtils::trim(line);
 
+				if (maple::StringUtils::endWith(line, "{}"))
+				{
+					continue;
+				}
+
+				if (maple::StringUtils::startWith(line, "{") || maple::StringUtils::startWith(line, "#"))
+				{
+					continue;
+				}
+				if (maple::StringUtils::endWith(line, "}"))
+				{
+					continue;
+				}
+
+				if (maple::StringUtils::startWith(line, "Pose"))
+				{
+					std::stringstream sstream(line);
+					int32_t pos;
+					sstream >> line >> pos;
+					readPose(fileIn, poses.emplace_back());
+					continue;
+				}
+			}
 
 			fileIn.close();
 		}
