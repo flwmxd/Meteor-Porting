@@ -185,7 +185,7 @@ namespace meteor
 			int32_t start;
 			int32_t end;
 			float time;
-			glm::vec3 Color;
+			glm::vec3 color;
 		} drag;
 
 		struct 
@@ -194,5 +194,11 @@ namespace meteor
 			int32_t end;
 			float time;
 		}nextPose;
+	};
+
+	struct MeteorAnimation
+	{
+		std::vector<MeteorAnimationClip> clips;
+		std::vector<Pose> poses;
 	};
 }

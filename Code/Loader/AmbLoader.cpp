@@ -21,13 +21,68 @@ namespace meteor
 {
 
 #define READ_TO(Stream,Name,Value) \
-	if (maple::StringUtils::startWith(line, Name)) \
+	if (maple::StringUtils::startWith(line, Name,true)) \
 	{	\
 		Stream >> Value; \
 	}
 
 	namespace 
 	{
+		inline auto readDrag(std::ifstream& fileIn, Pose& pose)
+		{
+			std::string line;
+			while (std::getline(fileIn, line))
+			{
+				maple::StringUtils::trim(line);
+				maple::StringUtils::trim(line, "\t");
+				if (maple::StringUtils::startWith(line, "{"))
+				{
+					continue;
+				}
+				if (maple::StringUtils::endWith(line, "}"))
+				{
+					break;
+				}
+
+				if (maple::StringUtils::startWith(line, "Color",true))
+				{
+					int32_t r, g, b;
+					sscanf(line.c_str(), "Color  %d,%d,%d", &r, &g, &b);
+					pose.drag.color = {r/255.f,g/255.f,b/255.f};
+					continue;
+				}
+
+				std::stringstream sstream(line);
+				sstream >> line;
+				READ_TO(sstream, "Start", pose.drag.start);
+				READ_TO(sstream, "End", pose.drag.end);
+				READ_TO(sstream, "Time", pose.drag.time);
+			}
+		}
+
+		inline auto readNextPose(std::ifstream& fileIn, Pose& pose)
+		{
+			std::string line;
+			while (std::getline(fileIn, line))
+			{
+				maple::StringUtils::trim(line);
+				maple::StringUtils::trim(line, "\t");
+				if (maple::StringUtils::startWith(line, "{"))
+				{
+					continue;
+				}
+				if (maple::StringUtils::endWith(line, "}"))
+				{
+					break;
+				}
+				std::stringstream sstream(line);
+				sstream >> line;
+				READ_TO(sstream, "start", pose.nextPose.start);
+				READ_TO(sstream, "end", pose.nextPose.end);
+				READ_TO(sstream, "Time", pose.nextPose.time);
+			}
+		}
+
 		inline auto readAttack(std::ifstream& fileIn, Pose& pose) 
 		{
 			auto & attackInfo = pose.attackInfos.emplace_back();
@@ -70,7 +125,17 @@ namespace meteor
 							//handle bone.
 							auto firstValue = boneValue.find_first_of("=");
 							boneValue = boneValue.substr(firstValue, boneValue.length() - firstValue);
-							LOGI(boneValue);
+							maple::StringUtils::trim(boneValue);
+							maple::StringUtils::trim(boneValue,"=");
+							maple::StringUtils::trim(boneValue);
+							auto results = maple::StringUtils::split(boneValue, ",");
+
+							for (auto str : results)
+							{
+								maple::StringUtils::trim(str);
+								maple::StringUtils::trim(str, "\"");
+								attackInfo.bones.emplace_back(str);
+							}
 						}
 					}
 				}
@@ -103,6 +168,9 @@ namespace meteor
 			action.type = name == "Blend" ? PoseAction::Type::Blend : PoseAction::Type::Action;
 			while (std::getline(fileIn, line))
 			{
+				maple::StringUtils::trim(line);
+				maple::StringUtils::trim(line, "\t");
+
 				if (maple::StringUtils::startWith(line, "{"))
 				{
 					continue;
@@ -115,41 +183,29 @@ namespace meteor
 				std::stringstream sstream(line);
 				sstream >> line;
 
-				if (maple::StringUtils::startWith(line, "Start"))
-				{
-					sstream >> action.start;
-				}
-
-				if (maple::StringUtils::startWith(line, "End"))
-				{
-					sstream >> action.end;
-				}
-
-				if (maple::StringUtils::startWith(line, "speed"))
-				{
-					sstream >> action.speed;
-				}
+				READ_TO(sstream, "Start", action.start);
+				READ_TO(sstream, "End", action.end);
+				READ_TO(sstream, "speed", action.speed);
 			}
 		}
 
-		inline auto readPose(std::ifstream & fileIn, Pose & pose)
+		inline auto readPose(std::ifstream& fileIn, std::string line, Pose & pose)
 		{
-			std::string line;
-			fileIn >> line;
-			int32_t value = 0;
 
 			maple::StringUtils::trim(line);
-			maple::StringUtils::trim(line,"\t");
+			maple::StringUtils::trim(line, "\t");
 
-			READ_TO(fileIn, "source", pose.source);
-			READ_TO(fileIn, "Start", pose.start);
-			READ_TO(fileIn, "End", pose.end);
-			READ_TO(fileIn, "LoopStart", pose.loopStart);
-			READ_TO(fileIn, "LoopEnd", pose.loopEnd);
-			READ_TO(fileIn, "EffectType", pose.effectType);
-			READ_TO(fileIn, "EffectID", pose.effectID);
-			READ_TO(fileIn, "link", pose.link);
-			READ_TO(fileIn, "link", pose.link);
+			std::stringstream sstream(line);
+			sstream >> line;
+
+			READ_TO(sstream, "source", pose.source);
+			READ_TO(sstream, "Start", pose.start);
+			READ_TO(sstream, "End", pose.end);
+			READ_TO(sstream, "LoopStart", pose.loopStart);
+			READ_TO(sstream, "LoopEnd", pose.loopEnd);
+			READ_TO(sstream, "EffectType", pose.effectType);
+			READ_TO(sstream, "EffectID", pose.effectID);
+			READ_TO(sstream, "link", pose.link);
 
 			if (line == "Blend" || line == "Action")
 			{
@@ -160,14 +216,22 @@ namespace meteor
 			{
 				readAttack(fileIn, pose);
 			}
+
+			if (line == "Drag")
+			{
+				readDrag(fileIn, pose);
+			}
+
+			if (line == "NextPose")
+			{
+				readNextPose(fileIn, pose);
+			}
 		}
 
-		inline auto loadPose(const std::string& fileName)
+		inline auto loadPose(const std::string& fileName, std::vector<Pose> & poses)
 		{
 			std::ifstream fileIn(fileName);
 			std::string line;
-
-			std::vector<Pose> poses;
 
 			while (std::getline(fileIn, line))
 			{
@@ -192,9 +256,11 @@ namespace meteor
 					std::stringstream sstream(line);
 					int32_t pos;
 					sstream >> line >> pos;
-					readPose(fileIn, poses.emplace_back());
+					auto& back = poses.emplace_back();
 					continue;
 				}
+
+				readPose(fileIn, line, poses.back());
 			}
 
 			fileIn.close();
@@ -215,11 +281,11 @@ namespace meteor
 		auto fps = binaryReader.read<int32_t>();
 		auto length = 1.0f / fps;
 
-		std::vector<MeteorAnimationClip> clips;
+		auto& animation = MeteorAnimationCache::get(fileName);
 
 		for (int32_t i = 0; i < frames; i++)
 		{
-			auto & clip = clips.emplace_back();
+			auto & clip = animation.clips.emplace_back();
 
 			auto flag = binaryReader.read<int32_t>();
 
@@ -263,6 +329,6 @@ namespace meteor
 
 		auto posFile = maple::StringUtils::removeExtension(fileName) + ".pos";
 
-		loadPose(posFile);
+		loadPose(posFile, animation.poses);
 	}
 }

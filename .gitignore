@@ -6,6 +6,7 @@
 *.lo
 *.o
 *.obj
+*.spv
 
 # Precompiled Headers
 *.gch
@@ -28,6 +29,7 @@ Assets/Debug
 Assets/MinSizeRel
 Assets/Release
 Assets/*.ilk
+Assets/RenderGraph.json
 MapleEngine.dll
 MapleLibrary.dll
 
