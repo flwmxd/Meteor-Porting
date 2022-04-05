@@ -43,6 +43,7 @@ struct Material
 
 
 layout(location = 0) in vec2 fragTexCoord;
+
 layout(location = 0) out vec4 outColor;
 
 layout(set = 0, binding = 0)  uniform sampler2D uColorSampler;
@@ -573,7 +574,7 @@ void main()
 	vec3 finalColor = (lightContribution + iblContribution) * material.ao * material.ssao + emissive;
 
 	outColor = vec4(finalColor, 1.0);
-	//ubo.mode = 1;
+
 	if(ubo.mode > 0)
 	{
 		switch(ubo.mode)

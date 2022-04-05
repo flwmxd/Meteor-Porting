@@ -19,6 +19,7 @@ layout(set = 0, binding = 0) uniform UniformBuffer
 
 layout(set = 0, binding = 0)  uniform sampler2D uScreenSampler;
 layout(set = 0, binding = 1)  uniform sampler2D uReflectionSampler;
+layout(set = 0, binding = 2)  uniform sampler2D uBloomSampler;
 //layout(set = 0, binding = 2)  uniform sampler2D uDepthSampler;
 //layout(set = 0, binding = 2)  uniform sampler2D uCloudSampler;
 
@@ -115,7 +116,8 @@ vec3 finalGamma(vec3 color)
 void main()
 {
 	vec4 albedo = texture(uScreenSampler, inUV);
-	vec3 color = albedo.rgb;
+	vec4 bloom = texture(uBloomSampler, inUV);
+	vec3 color = albedo.rgb + bloom.rgb;
 	
 	if( ubo.ssaoEnable == 1 && albedo.a >= 0.1)
 	{

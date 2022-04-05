@@ -281,11 +281,13 @@ namespace meteor
 		auto fps = binaryReader.read<int32_t>();
 		auto length = 1.0f / fps;
 
-		auto& animation = MeteorAnimationCache::get(fileName);
+		auto& meteorAnimation = MeteorAnimationCache::get(fileName);
+
+		auto animation = std::make_shared<maple::Animation>(fileName);
 
 		for (int32_t i = 0; i < frames; i++)
 		{
-			auto & clip = animation.clips.emplace_back();
+			auto & clip = meteorAnimation.clips.emplace_back();
 
 			auto flag = binaryReader.read<int32_t>();
 
@@ -297,6 +299,10 @@ namespace meteor
 			int32_t frameindex = binaryReader.read<int32_t>();
 
 			MAPLE_ASSERT(i == frameindex, "");
+
+			auto animClip = std::make_shared<maple::AnimationClip>();
+			animClip->length = length;
+			animClip->fps = fps;
 
 			float x = binaryReader.read<float>();
 			float y = binaryReader.read<float>();
@@ -310,6 +316,22 @@ namespace meteor
 				float zz = - binaryReader.read<float>();
 				float yy = - binaryReader.read<float>();
 				clip.boneQuat.emplace_back(w, xx, yy, zz);
+
+				const auto rotation = glm::degrees(glm::eulerAngles(clip.boneQuat.back()));
+
+				auto& curve0 = animClip->curves.emplace_back();
+				curve0.boneIndex = j;
+				auto& cur0 = curve0.properties.emplace_back();
+				cur0.type = maple::AnimationCurvePropertyType::LocalRotationX;
+				cur0.curve.addKey(length, rotation.x, 1, 1);
+
+				auto& cur1 = curve0.properties.emplace_back();
+				cur1.type = maple::AnimationCurvePropertyType::LocalRotationY;
+				cur1.curve.addKey(length, rotation.y, 1, 1);
+
+				auto& cur2 = curve0.properties.emplace_back();
+				cur2.type = maple::AnimationCurvePropertyType::LocalRotationZ;
+				cur2.curve.addKey(length, rotation.z, 1, 1);
 			}
 
 			for (int32_t k = 0; k < dummy; k++)
@@ -325,10 +347,14 @@ namespace meteor
 				clip.dummyPos.emplace_back(dx, dz, dy);
 				clip.dummyQuat.emplace_back(dw, dxx, dyy, dzz);
 			}
+
+			animation->addClip(animClip);
 		}
 
 		auto posFile = maple::StringUtils::removeExtension(fileName) + ".pos";
 
-		loadPose(posFile, animation.poses);
+		loadPose(posFile, meteorAnimation.poses);
+
+		out.emplace_back(animation);
 	}
 }
