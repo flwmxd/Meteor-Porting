@@ -279,16 +279,21 @@ namespace meteor
 		auto frames = binaryReader.read<int32_t>();
 
 		auto fps = binaryReader.read<int32_t>();
-		auto length = 1.0f / fps;
+		auto length = 1.0f / fps * frames;
 
 		auto& meteorAnimation = MeteorAnimationCache::get(fileName);
 
 		auto animation = std::make_shared<maple::Animation>(fileName);
 
+		auto animClip = std::make_shared<maple::AnimationClip>();
+		animClip->length = length;
+		animClip->fps = fps;
+
+		float timer = 0.f;
+
 		for (int32_t i = 0; i < frames; i++)
 		{
 			auto & clip = meteorAnimation.clips.emplace_back();
-
 			auto flag = binaryReader.read<int32_t>();
 
 			if (flag != -1) 
@@ -299,10 +304,6 @@ namespace meteor
 			int32_t frameindex = binaryReader.read<int32_t>();
 
 			MAPLE_ASSERT(i == frameindex, "");
-
-			auto animClip = std::make_shared<maple::AnimationClip>();
-			animClip->length = length;
-			animClip->fps = fps;
 
 			float x = binaryReader.read<float>();
 			float y = binaryReader.read<float>();
@@ -323,17 +324,17 @@ namespace meteor
 				curve0.boneIndex = j;
 				auto& cur0 = curve0.properties.emplace_back();
 				cur0.type = maple::AnimationCurvePropertyType::LocalRotationX;
-				cur0.curve.addKey(length, rotation.x, 1, 1);
+				cur0.curve.addKey(timer, rotation.x, 1, 1);
 
 				auto& cur1 = curve0.properties.emplace_back();
 				cur1.type = maple::AnimationCurvePropertyType::LocalRotationY;
-				cur1.curve.addKey(length, rotation.y, 1, 1);
+				cur1.curve.addKey(timer, rotation.y, 1, 1);
 
 				auto& cur2 = curve0.properties.emplace_back();
 				cur2.type = maple::AnimationCurvePropertyType::LocalRotationZ;
-				cur2.curve.addKey(length, rotation.z, 1, 1);
+				cur2.curve.addKey(timer, rotation.z, 1, 1);
 			}
-
+			timer += length;
 			for (int32_t k = 0; k < dummy; k++)
 			{
 				binaryReader.skip(5);
@@ -347,9 +348,9 @@ namespace meteor
 				clip.dummyPos.emplace_back(dx, dz, dy);
 				clip.dummyQuat.emplace_back(dw, dxx, dyy, dzz);
 			}
-
-			animation->addClip(animClip);
 		}
+		
+		animation->addClip(animClip);
 
 		auto posFile = maple::StringUtils::removeExtension(fileName) + ".pos";
 

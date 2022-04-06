@@ -13,7 +13,7 @@ layout(set = 0, binding = 0) uniform UniformBuffer
 	int ssaoEnable;
 	int reflectEnable;
 	int cloudEnable;
-	int padding1;
+	int bloomEnable;
 	int padding2;
 } ubo;
 
@@ -116,9 +116,14 @@ vec3 finalGamma(vec3 color)
 void main()
 {
 	vec4 albedo = texture(uScreenSampler, inUV);
-	vec4 bloom = texture(uBloomSampler, inUV);
-	vec3 color = albedo.rgb + bloom.rgb;
+	vec3 color = albedo.rgb;
 	
+	if(ubo.bloomEnable == 1)
+	{
+		vec4 bloom = texture(uBloomSampler, inUV);
+		color += bloom.rgb;
+	}
+
 	if( ubo.ssaoEnable == 1 && albedo.a >= 0.1)
 	{
 		//float ssao = texture(uSSAOSampler,inUV).r;
