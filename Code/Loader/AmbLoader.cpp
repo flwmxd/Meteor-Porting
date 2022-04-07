@@ -279,17 +279,17 @@ namespace meteor
 		auto frames = binaryReader.read<int32_t>();
 
 		auto fps = binaryReader.read<int32_t>();
-		auto length = 1.0f / fps * frames;
+		auto length = 1.0f / fps;
 
 		auto& meteorAnimation = MeteorAnimationCache::get(fileName);
 
 		auto animation = std::make_shared<maple::Animation>(fileName);
 
-		auto animClip = std::make_shared<maple::AnimationClip>();
-		animClip->length = length;
-		animClip->fps = fps;
-
+		std::shared_ptr<maple::AnimationClip> animClip = std::make_shared<maple::AnimationClip>();
 		float timer = 0.f;
+		animClip->length = length * frames;
+		animClip->fps = fps;
+		animation->addClip(animClip);
 
 		for (int32_t i = 0; i < frames; i++)
 		{
@@ -318,23 +318,50 @@ namespace meteor
 				float yy = - binaryReader.read<float>();
 				clip.boneQuat.emplace_back(w, xx, yy, zz);
 
-				const auto rotation = glm::degrees(glm::eulerAngles(clip.boneQuat.back()));
+				maple::AnimationCurveWrapper* curve = nullptr;
 
-				auto& curve0 = animClip->curves.emplace_back();
-				curve0.boneIndex = j;
-				auto& cur0 = curve0.properties.emplace_back();
-				cur0.type = maple::AnimationCurvePropertyType::LocalRotationX;
-				cur0.curve.addKey(timer, rotation.x, 1, 1);
+				if (animClip->curves.size() < bone)
+				{
+					auto& curve0 = animClip->curves.emplace_back();
+					curve = &curve0;
+					curve0.boneIndex = j;
 
-				auto& cur1 = curve0.properties.emplace_back();
-				cur1.type = maple::AnimationCurvePropertyType::LocalRotationY;
-				cur1.curve.addKey(timer, rotation.y, 1, 1);
+					auto& cur0 = curve->properties.emplace_back();
+					cur0.type = maple::AnimationCurvePropertyType::LocalQuaternionW;
+					cur0.curve.addKey(timer, w, 1, 1);
 
-				auto& cur2 = curve0.properties.emplace_back();
-				cur2.type = maple::AnimationCurvePropertyType::LocalRotationZ;
-				cur2.curve.addKey(timer, rotation.z, 1, 1);
+					auto& cur1 = curve->properties.emplace_back();
+					cur1.type = maple::AnimationCurvePropertyType::LocalQuaternionX;
+					cur1.curve.addKey(timer, xx, 1, 1);
+
+					auto& cur2 = curve->properties.emplace_back();
+					cur2.type = maple::AnimationCurvePropertyType::LocalQuaternionY;
+					cur2.curve.addKey(timer, yy, 1, 1);
+
+					auto& cur3 = curve->properties.emplace_back();
+					cur3.type = maple::AnimationCurvePropertyType::LocalQuaternionZ;
+					cur3.curve.addKey(timer, zz, 1, 1);
+				}
+				else 
+				{
+					curve = &animClip->curves[j];
+
+					auto& cur0 = curve->properties[0];
+					cur0.curve.addKey(timer, w, 1, 1);
+
+					auto& cur1 = curve->properties[1];
+					cur1.curve.addKey(timer, xx, 1, 1);
+
+					auto& cur2 = curve->properties[2];
+					cur2.curve.addKey(timer, yy, 1, 1);
+
+					auto& cur3 = curve->properties[3];
+					cur3.curve.addKey(timer, zz, 1, 1);
+				}
 			}
+
 			timer += length;
+			
 			for (int32_t k = 0; k < dummy; k++)
 			{
 				binaryReader.skip(5);
@@ -349,8 +376,6 @@ namespace meteor
 				clip.dummyQuat.emplace_back(dw, dxx, dyy, dzz);
 			}
 		}
-		
-		animation->addClip(animClip);
 
 		auto posFile = maple::StringUtils::removeExtension(fileName) + ".pos";
 

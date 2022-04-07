@@ -156,6 +156,13 @@ vec3 scatter(vec3 o, vec3 d, float L, vec3 Lo) {
             );
 }
 
+#define GAMMA 2.2
+
+vec3 gammaCorrectTextureRGB(vec3 texCol)
+{
+	return vec3(pow(texCol.rgb, vec3(GAMMA)));
+}
+
 
 void main()
 {
@@ -170,6 +177,7 @@ void main()
 	vec3 col = vec3(0.0);
     //atmosphereRadius 
 	float L = escape(O, D, ubo.mieScattering.w);
-	col = scatter(O, D, L, col);
+	col = gammaCorrectTextureRGB(scatter(O, D, L, col));
+
 	finalColor = vec4(col, 1.);
 }

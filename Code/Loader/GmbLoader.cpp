@@ -279,6 +279,7 @@ namespace meteor
 
 				mesh->setName(meshName);
 				mesh->setMaterial(materials);
+				mesh->setActive(!materials.empty());
 				mesh->setSubMeshCount(subMeshCount);
 				mesh->setSubMeshIndex(idxOffset);
 				MAPLE_ASSERT(subMeshCount == materials.size(), "the count subMesh is different from materials");

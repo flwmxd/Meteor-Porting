@@ -395,6 +395,11 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 {
 	vec3 result = vec3(0.0);
 	
+	if( ubo.lightCount == 0)
+	{
+		return material.albedo.rgb;
+	}
+	
 	for(int i = 0; i < ubo.lightCount; i++)
 	{
 		Light light = ubo.lights[i];
