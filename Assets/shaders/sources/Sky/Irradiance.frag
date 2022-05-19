@@ -4,11 +4,12 @@
 #extension GL_ARB_separate_shader_objects : enable
 #extension GL_ARB_shading_language_420pack : enable
 
+#include "../Common/Math.h"
+
 layout (location = 0) in vec3 sampleDirection;
 
 layout (set = 0,binding = 0) uniform samplerCube uCubeMapSampler;
 
-const float PI = 3.1415926536;
 
 layout (location = 0) out vec4 outColor;
 

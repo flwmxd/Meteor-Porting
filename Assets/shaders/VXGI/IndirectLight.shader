@@ -1,0 +1,1 @@
+#Compute shaders/spv/VXGI/IndirectLight.comp.spv

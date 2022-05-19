@@ -1,8 +1,8 @@
 #version 450
-
 #extension GL_ARB_separate_shader_objects : enable
 #extension GL_ARB_shading_language_420pack : enable
 
+#include "../Common/Math.h"
 
 layout (location = 0) in vec3 fragPos;
 
@@ -15,7 +15,7 @@ layout (set = 0,binding = 0) uniform UniformBufferRoughness
 
 layout (set = 0,binding = 1) uniform samplerCube uCubeMapSampler;
 
-const float PI = 3.14159265359;
+
 
 float DistributionGGX(vec3 N, vec3 H, float roughness)
 {

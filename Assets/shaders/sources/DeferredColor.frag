@@ -23,8 +23,7 @@ layout(set = 1, binding = 2) uniform sampler2D uRoughnessMap;
 layout(set = 1, binding = 3) uniform sampler2D uNormalMap;
 layout(set = 1, binding = 4) uniform sampler2D uAOMap;
 layout(set = 1, binding = 5) uniform sampler2D uEmissiveMap;
-
-layout(set = 1,binding = 6) uniform UniformMaterialData
+layout(set = 1, binding = 6) uniform UniformMaterialData
 {
 	vec4  albedoColor;
 	vec4  roughnessColor;
@@ -60,7 +59,6 @@ layout(location = 4) out vec4 outViewPosition;
 layout(location = 5) out vec4 outViewNormal;
 layout(location = 6) out vec4 outVelocity;
 
-
 vec4 gammaCorrectTexture(vec4 samp)
 {
 	return vec4(pow(samp.rgb, vec3(GAMMA)), samp.a);
@@ -70,7 +68,6 @@ vec3 gammaCorrectTextureRGB(vec4 samp)
 {
 	return vec3(pow(samp.rgb, vec3(GAMMA)));
 }
-
 
 vec4 getAlbedo()
 {
@@ -155,7 +152,6 @@ void main()
 	}
 
 	vec3 emissive   = getEmissive();
-
  
     outColor    	= gammaCorrectTexture(texColor);
 	outPosition		= vec4(fragPosition.xyz, emissive.x);
