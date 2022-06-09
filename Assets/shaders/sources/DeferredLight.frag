@@ -407,8 +407,8 @@ void main()
 	// Fresnel reflectance, metals use albedo
 	vec3 F0 = mix(Fdielectric, material.albedo.rgb, material.metallic.r);
 	
-	vec3 lightContribution = lighting(F0, wsPos, material,fragTexCoord);
 	vec3 iblContribution = IBL(F0, Lr, material);
+	vec3 lightContribution = lighting(F0, wsPos, material,fragTexCoord);
 
 	vec3 finalColor = (lightContribution + iblContribution) * material.ao * material.ssao + emissive;
 

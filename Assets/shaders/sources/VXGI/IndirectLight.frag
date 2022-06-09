@@ -4,7 +4,7 @@
 #include "../Common/Math.h"
 #include "VXGI.glsl"
 
-layout(binding = 0)  uniform usampler3D uVoxelTex; 
+layout(binding = 0)  uniform sampler3D uVoxelTex; 
 layout(binding = 1)  uniform sampler3D uVoxelTexMipmap[6];
 layout(binding = 7)  uniform sampler2D uColorSampler;
 layout(binding = 8)  uniform sampler2D uPositionSampler;
@@ -96,7 +96,7 @@ vec4 anistropicSample(vec3 coord, vec3 weight, uvec3 face, float lod)
     if(lod < 1.0f)
     {
         //ivec3 iCoord = ivec3(uboVXGI.voxelScale * coord);
-        vec4 baseColor = unpackUnorm4x8(texture(uVoxelTex, coord).x);
+        vec4 baseColor = texture(uVoxelTex, coord);
         anisoSample = mix(baseColor, anisoSample, clamp(lod, 0.0f, 1.0f));
     }
     return anisoSample;                    

@@ -10,10 +10,10 @@ layout (local_size_x = 8, local_size_y = 8, local_size_z = 8) in;
 const float EPSILON = 1e-30;
 const float SQRT_3 = 1.73205080f;
 
-layout(set = 0, binding = 0) uniform usampler3D uVoxelAlbedo;
-layout(set = 0, binding = 1, r32ui) uniform uimage3D uVoxelNormal;
-layout(set = 0, binding = 2, r32ui) uniform writeonly uimage3D uVoxelRadiance;
-layout(set = 0, binding = 3, r32ui) uniform readonly uimage3D uVoxelEmissive;
+layout(set = 0, binding = 0) uniform sampler3D uVoxelAlbedo;
+layout(set = 0, binding = 1, rgba8) uniform image3D uVoxelNormal;
+layout(set = 0, binding = 2, rgba8) uniform image3D uVoxelRadiance;
+layout(set = 0, binding = 3, rgba8) uniform readonly image3D uVoxelEmissive;
 layout(set = 0, binding = 4) uniform UniformBufferLight
 {
 	Light lights[MAX_LIGHTS];
@@ -23,7 +23,7 @@ layout(set = 0, binding = 4) uniform UniformBufferLight
     int padding3;
 }ubo;
 
-layout(set = 0, binding = 6) uniform UniformBufferVX
+layout(set = 0, binding = 5) uniform UniformBufferVX
 {
     vec4 worldMinPoint;
     float voxelSize;
@@ -59,7 +59,7 @@ float traceShadow(vec3 position, vec3 direction, float maxTracingDistance)
             break; 
         }
 
-        vec4 color = unpackUnorm4x8(texture(uVoxelAlbedo, samplePos).x);
+        vec4 color = texture(uVoxelAlbedo, samplePos);
 
         traceSample = ceil(color.a) * k;
         // hard shadows mode
@@ -196,18 +196,18 @@ void main()
 		gl_GlobalInvocationID.z >= uboVX.volumeDimension) return;
 
 	ivec3 writePos = ivec3(gl_GlobalInvocationID);
-	vec4 albedo = unpackUnorm4x8(texelFetch(uVoxelAlbedo, writePos, 0).x);
+	vec4 albedo = texelFetch(uVoxelAlbedo, writePos, 0);
     //ivec4 test = ivec4(packUnorm4x8(albedo));
 
     if(albedo.a < EPSILON) { return; }
 
     albedo.a = 0.0f;
     // voxel normal in 0-1 range
-    vec3 baseNormal = unpackUnorm4x8(imageLoad(uVoxelNormal, writePos).x).xyz;
+    vec3 baseNormal = imageLoad(uVoxelNormal, writePos).xyz;
     // normal is stored in 0-1 range, restore to -1-1
     vec3 normal = decodeNormal(baseNormal);
     // emission from voxel
-    vec3 emissive = unpackUnorm4x8(imageLoad(uVoxelEmissive, writePos).x).rgb;
+    vec3 emissive = imageLoad(uVoxelEmissive, writePos).rgb;
 
     if(any(greaterThan(albedo.rgb, vec3(0.0f))))
     {
@@ -219,11 +219,10 @@ void main()
         albedo = calculateDirectLighting(wsPosition, normal, albedo.rgb);
     }
 
-    ivec4 outNormal = ivec4(packUnorm4x8(vec4(baseNormal, albedo.a)));
     // store visibility in normal alpha
-    imageStore(uVoxelNormal, writePos, outNormal);
+    imageStore(uVoxelNormal, writePos, vec4(baseNormal, albedo.a));
 
     albedo.rgb += emissive;
     albedo.a = 1.0f;
-	imageStore(uVoxelRadiance, writePos, ivec4(packUnorm4x8(albedo)));
+	imageStore(uVoxelRadiance, writePos, albedo);
 }

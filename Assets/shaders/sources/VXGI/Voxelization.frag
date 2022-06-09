@@ -47,11 +47,27 @@ layout(set = 1, binding = 6) uniform UniformMaterialData
 } materialProperties;
 
 
-/*#define imageAtomicRGBA8Avg(grid, coords, v)        \
+vec4 convRGBA8ToVec4(uint val)
+{
+    return vec4(float((val & 0x000000FF)), 
+    float((val & 0x0000FF00) >> 8U), 
+    float((val & 0x00FF0000) >> 16U), 
+    float((val & 0xFF000000) >> 24U));
+}
+
+uint convVec4ToRGBA8(vec4 val)
+{
+    return (uint(val.w) & 0x000000FF) << 24U | 
+    (uint(val.z) & 0x000000FF) << 16U | 
+    (uint(val.y) & 0x000000FF) << 8U | 
+    (uint(val.x) & 0x000000FF);
+}
+
+#define imageAtomicRGBA8Avg(grid, coords, v)        \
 {                                                   \
     vec4 value = v;                                 \
     value.rgb *= 255.0;                             \
-    uint newVal = packUnorm4x8(value);           \
+    uint newVal = convVec4ToRGBA8(value);           \
     uint prevStoredVal = 0;                         \
     uint curStoredVal;                              \
     uint numIterations = 0;                         \
@@ -60,17 +76,17 @@ layout(set = 1, binding = 6) uniform UniformMaterialData
             && numIterations < 255)                 \
     {                                               \
         prevStoredVal = curStoredVal;               \
-        vec4 rval = unpackUnorm4x8(curStoredVal);  \
+        vec4 rval = convRGBA8ToVec4(curStoredVal);  \
         rval.rgb = (rval.rgb * rval.a);             \
         vec4 curValF = rval + value;                \
         curValF.rgb /= curValF.a;                   \
-        newVal = packUnorm4x8(curValF);          \
+        newVal = convVec4ToRGBA8(curValF);          \
         ++numIterations;                            \
     }                                               \
-}*/
+}
 
 //https://rauwendaal.net/2013/02/07/glslrunningaverage/
-#define imageAtomicRGBA8Avg( grid,  coords ,  val)  \
+/*#define imageAtomicRGBA8Avg( grid,  coords ,  val)  \
 {                                                   \
     uint newVal = packUnorm4x8(vec4(val.xyz, 1.0f / 255.0f)); \
     uint prevStoredVal = 0; \
@@ -87,7 +103,7 @@ layout(set = 1, binding = 6) uniform UniformMaterialData
         newVal = packUnorm4x8(vec4(x, (n + 1) / 255.0f));\
         ++numIterations;                            \
     }\
-}
+}*/
 
 vec4 getAlbedo()
 {

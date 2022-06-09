@@ -2,9 +2,8 @@
 //#extension GL_ARB_shader_image_load_store : require
 //#extension GL_ARB_separate_shader_objects : enable
 
-layout(set = 0, binding = 0) 	   uniform usampler3D uVoxelBuffer;
-layout(set = 0, binding = 1,rgba8) uniform image3D  uVoxelBuffer2;
-layout(set = 0, binding = 2) uniform UniformBufferObjectVert 
+layout(set = 0, binding = 0,rgba8) uniform image3D uVoxelBuffer;
+layout(set = 0, binding = 1) uniform UniformBufferObjectVert 
 {    
 	vec4 colorChannels;
     int volumeDimension;
@@ -26,14 +25,7 @@ void main()
 
 	ivec3 texPos = ivec3(position);
 	
-	if(ubo.type == 0)
-	{
-		albedo = unpackUnorm4x8(texelFetch(uVoxelBuffer, texPos,0).r);
-	}
-	else
-	{
-		albedo = imageLoad(uVoxelBuffer2, texPos);
-	}
+	albedo = imageLoad(uVoxelBuffer, texPos);
 
 	uvec4 channels = uvec4(floor(ubo.colorChannels));
 
