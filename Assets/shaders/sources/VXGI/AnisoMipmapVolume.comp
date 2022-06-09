@@ -1,11 +1,14 @@
 #version 450
+#extension GL_ARB_shader_image_load_store : require
+
 layout (local_size_x = 8, local_size_y = 8, local_size_z = 8) in;
 
 #include "VXGI.glsl"
 
 layout(binding = 0, rgba8) uniform writeonly image3D uVoxelMipmapOut[6];
 //0 1 2 3 4 5
-layout(binding = 6) 	   uniform sampler3D uVoxelMipmapIn[6];
+layout(binding = 6) uniform sampler3D uVoxelMipmapIn[6];
+//0 1 2 3 4 5
 //6 7 8 9 10 11
 layout(binding = 12) 	   uniform UniformBufferObject
 {
@@ -17,7 +20,7 @@ void fetchTexels(ivec3 pos, int dir, inout vec4 val[8])
 {
 	for(int i = 0; i < 8; i++)
 	{
-		val[i] = texelFetch(uVoxelMipmapIn[dir], pos + anisoOffsets[i], ubo.mipLevel);
+		val[i] = texelFetch(uVoxelMipmapIn[dir], pos + anisoOffsets[i],ubo.mipLevel);
 	}
 }
 

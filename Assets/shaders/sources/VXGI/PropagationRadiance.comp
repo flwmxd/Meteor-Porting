@@ -9,9 +9,9 @@ const float EPSILON = 1e-30;
 
 layout (local_size_x = 8, local_size_y = 8, local_size_z = 8) in;
 
-layout(binding = 0, rgba8) uniform image3D uVoxelComposite;
-layout(binding = 1) uniform sampler3D uVoxelAlbedo;
-layout(binding = 2) uniform sampler3D uVoxelNormal;
+layout(binding = 0, r32ui) uniform uimage3D uVoxelComposite;
+layout(binding = 1, r32ui) uniform uimage3D uVoxelAlbedo;
+layout(binding = 2, r32ui) uniform uimage3D uVoxelNormal;
 layout(binding = 3) uniform sampler3D uVoxelTexMipmap[6];
 //3 4 5 6 7 8
 layout(binding = 9) uniform UniformBufferObject
@@ -134,12 +134,14 @@ void main()
         gl_GlobalInvocationID.z >= ubo.volumeDimension) return;
 
     ivec3 writePos = ivec3(gl_GlobalInvocationID);
-    vec4 albedo = texelFetch(uVoxelAlbedo, writePos, 0);
+    vec4 albedo = unpackUnorm4x8(imageLoad(uVoxelAlbedo, writePos).x);
 
     if(albedo.a < EPSILON) { return; }
 
-    vec4 directLight = imageLoad(uVoxelComposite, writePos);
-    vec3 normal = texelFetch(uVoxelNormal, writePos, 0).xyz;
+    vec4 directLight = unpackUnorm4x8(imageLoad(uVoxelComposite, writePos).x);
+
+    vec3 normal = unpackUnorm4x8(imageLoad(uVoxelNormal, writePos).x).xyz;
+
     normal = normalize(decodeNormal(normal));
     // calculate indirect lighting - first bounce onto the voxel texture
     vec3 position = vec3(writePos) / ubo.volumeDimension;
@@ -147,5 +149,6 @@ void main()
     indirectLighting *= albedo;
     vec4 radiance = directLight + indirectLighting;
     radiance.a = directLight.a;
-    imageStore(uVoxelComposite, writePos, radiance);
+
+    imageStore(uVoxelComposite, writePos, ivec4(packUnorm4x8(radiance)));
 }

@@ -1,1 +1,2 @@
-#Compute shaders/spv/VXGI/IndirectLight.comp.spv
+#Vertex shaders/spv/ScreenQuad.vert.spv
+#Fragment shaders/spv/VXGI/IndirectLight.frag.spv

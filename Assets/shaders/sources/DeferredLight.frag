@@ -253,6 +253,7 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 
 		vec3 lightColor = light.color.xyz * intensity;
 		vec3 indirect = vec3(0,0,0);
+		vec3 lightDir = vec3(0,0,0);
 		if(light.type == 2.0)
 		{
 		    // Vector to light
@@ -267,8 +268,7 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 			float atten = light.radius / (pow(dist, 2.0) + 1.0);
 			
 			value = atten;
-			
-			light.direction = vec4(L,1.0);
+			lightDir = L;
 		}
 		else if (light.type == 1.0)
 		{
@@ -276,7 +276,7 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 			float cutoffAngle   = 1.0f - light.angle;      
 			float dist          = length(L);
 			L = normalize(L);
-			float theta         = dot(L.xyz, light.direction.xyz);
+			float theta         = dot(L.xyz, L);
 			float epsilon       = cutoffAngle - cutoffAngle * 0.9f;
 			float attenuation 	= ((theta - cutoffAngle) / epsilon); // atteunate when approaching the outer cone
 			attenuation         *= light.radius / (pow(dist, 2.0) + 1.0);//saturate(1.0f - dist / light.range);
@@ -284,11 +284,11 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 			// Erase light if there is no need to compute it
 			intensity *= step(theta, cutoffAngle);
 			value = clamp(attenuation, 0.0, 1.0);
+			lightDir = L;
 		}
 		else
 		{
-			light.direction.xyz *= -1;
-			
+			lightDir = light.direction.xyz * -1;
 			if(ubo.enableShadow == 1.0)
 			{
 				int cascadeIndex = calculateCascadeIndex(
@@ -300,7 +300,7 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 			}
 		}
 
-		vec3 Li = light.direction.xyz;
+		vec3 Li = lightDir.xyz;
 		vec3 Lradiance = lightColor;
 		vec3 Lh = normalize(Li + material.view);
 		
@@ -320,6 +320,12 @@ vec3 lighting(vec3 F0, vec3 wsPos, Material material,vec2 fragTexCoord)
 		vec3 specularBRDF = (F * D * G) / max(EPSILON, 4.0 * cosLi * material.normalDotView);
 		
 		vec4 indirectShading = texture(uIndirectLight,fragTexCoord);
+
+		if(ubo.enableLPV == 1)
+		{
+			vec3 indirect = ( diffuseBRDF + specularBRDF ) * indirectShading.rgb;
+			indirectShading = vec4(indirect,1);
+		}	
 
 		vec3 directShading = (diffuseBRDF + specularBRDF) * Lradiance * cosLi * value;
 
@@ -453,7 +459,7 @@ void main()
 			outColor = texture(uPBRSampler,fragTexCoord);
 			break;			
 			case 11:
-			//outColor = vec4(texture(uOutputSampler,fragTexCoord).rgb,1);
+			outColor = vec4(texture(uShadowMap,vec3(fragTexCoord,0)).rgb,1);
 			break;
 		}
 	}

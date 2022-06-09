@@ -1,5 +1,6 @@
 #version 450
 #extension GL_ARB_shader_image_load_store : require
+#extension GL_ARB_separate_shader_objects : enable
 
 #include "VXGI.glsl"
 
@@ -13,7 +14,6 @@ layout(location = 0) in GeometryOut
 } In;
 
 layout (location = 0) out vec4 fragColor;
-layout (pixel_center_integer) in vec4 gl_FragCoord;
 
 layout(set = 2, binding = 0, r32ui) uniform volatile coherent uimage3D uVoxelAlbedo;
 layout(set = 2, binding = 1, r32ui) uniform volatile coherent uimage3D uVoxelNormal;
@@ -47,28 +47,11 @@ layout(set = 1, binding = 6) uniform UniformMaterialData
 } materialProperties;
 
 
-
-vec4 convRGBA8ToVec4(uint val)
-{
-    return vec4(float((val & 0x000000FF)), 
-    float((val & 0x0000FF00) >> 8U), 
-    float((val & 0x00FF0000) >> 16U), 
-    float((val & 0xFF000000) >> 24U));
-}
-
-uint convVec4ToRGBA8(vec4 val)
-{
-    return (uint(val.w) & 0x000000FF) << 24U | 
-    (uint(val.z) & 0x000000FF) << 16U | 
-    (uint(val.y) & 0x000000FF) << 8U | 
-    (uint(val.x) & 0x000000FF);
-}
-
-#define imageAtomicRGBA8Avg(grid, coords, v)        \
+/*#define imageAtomicRGBA8Avg(grid, coords, v)        \
 {                                                   \
     vec4 value = v;                                 \
     value.rgb *= 255.0;                             \
-    uint newVal = convVec4ToRGBA8(value);           \
+    uint newVal = packUnorm4x8(value);           \
     uint prevStoredVal = 0;                         \
     uint curStoredVal;                              \
     uint numIterations = 0;                         \
@@ -77,13 +60,33 @@ uint convVec4ToRGBA8(vec4 val)
             && numIterations < 255)                 \
     {                                               \
         prevStoredVal = curStoredVal;               \
-        vec4 rval = convRGBA8ToVec4(curStoredVal);  \
+        vec4 rval = unpackUnorm4x8(curStoredVal);  \
         rval.rgb = (rval.rgb * rval.a);             \
         vec4 curValF = rval + value;                \
         curValF.rgb /= curValF.a;                   \
-        newVal = convVec4ToRGBA8(curValF);          \
+        newVal = packUnorm4x8(curValF);          \
         ++numIterations;                            \
     }                                               \
+}*/
+
+//https://rauwendaal.net/2013/02/07/glslrunningaverage/
+#define imageAtomicRGBA8Avg( grid,  coords ,  val)  \
+{                                                   \
+    uint newVal = packUnorm4x8(vec4(val.xyz, 1.0f / 255.0f)); \
+    uint prevStoredVal = 0; \
+    uint curStoredVal;\
+    uint numIterations = 0;                         \
+    while((curStoredVal = imageAtomicCompSwap(grid, coords, prevStoredVal, newVal)) \
+          != prevStoredVal && numIterations < 255)\
+    {\
+        prevStoredVal = curStoredVal;\
+        vec4 unpacked = unpackUnorm4x8(curStoredVal);\
+        vec3 x = unpacked.xyz;\
+        float n = unpacked.w * 255.0f;\
+        x = (x * n + val.xyz) / (n + 1);\
+        newVal = packUnorm4x8(vec4(x, (n + 1) / 255.0f));\
+        ++numIterations;                            \
+    }\
 }
 
 vec4 getAlbedo()

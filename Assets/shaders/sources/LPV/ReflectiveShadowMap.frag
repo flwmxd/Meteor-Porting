@@ -18,14 +18,22 @@ layout( location = 1 ) in vec2 inUV;
 layout( location = 2 ) in vec3 inNormal;
 layout( location = 3 ) in vec4 inColor;
 
-layout(set = 1, binding = 0) uniform sampler2D uDiffuseMap;
+layout(set = 1, binding = 0) uniform sampler2D uAlbedoMap;
 
-layout(set = 1 , binding = 1) uniform UBO
+layout(set = 1 , binding = 1) uniform UniformMaterialAlbedo
 {
-    Light light;
 	vec4 albedoColor;
 	float usingAlbedoMap;
+	float padding0;
+	float padding1;
+	float padding2;
 }ubo;
+
+layout(set = 2, binding = 0 ) uniform LightUBO
+{
+    Light light;
+}uboLight;
+
 
 layout(location = 0) out vec4 outColor;
 layout(location = 1) out vec4 outPosition;
@@ -38,7 +46,7 @@ vec4 gammaCorrectTexture(vec4 samp)
 
 vec4 getAlbedo()
 {
-	return (1.0 - ubo.usingAlbedoMap) * ubo.albedoColor + ubo.usingAlbedoMap * texture(uDiffuseMap, inUV);
+	return (1.0 - ubo.usingAlbedoMap) * ubo.albedoColor + ubo.usingAlbedoMap * texture(uAlbedoMap, inUV);
 }
 
 float lengthSquared(vec3 vec)
@@ -49,8 +57,8 @@ float lengthSquared(vec3 vec)
 void main()
 {
 	vec4 diffuse = gammaCorrectTexture(getAlbedo() * inColor);
-	float intensity = pow(ubo.light.intensity,1.4) + 0.1;
-	vec4 flux = vec4( ( ubo.light.color.rgb * diffuse.rgb * intensity ) , 1.0 );
+	float intensity = pow(uboLight.light.intensity,1.4) + 0.1;
+	vec4 flux = vec4( ( uboLight.light.color.rgb * diffuse.rgb * intensity ) , 1.0 );
 	outColor = flux;
 	outPosition = inPosition;
 	outNormal = vec4(inNormal,1.0);

@@ -1,4 +1,5 @@
 #version 450
+//#extension GL_ARB_separate_shader_objects : enable
 
 #include "VXGI.glsl"
 
@@ -46,6 +47,7 @@ void main()
 		vec4(-0.5f, -0.5f,  0.5f, 0.0f),
 		vec4(-0.5f, -0.5f, -0.5f, 0.0f)
 	);
+
 	const int cubeIndices[24]  = int[24] 
 	(
 		0, 2, 1, 3, // right
@@ -63,26 +65,27 @@ void main()
     );
 
 	vec3 extent = vec3(ubo.voxelSize);
+	const float EPSILON = 1e-30;
 
-	if(inAlbedo[0].a == 0.0f || !voxelInFrustum(center, extent)) { return; }
+	if(inAlbedo[0].a <= EPSILON || !voxelInFrustum(center, extent)) { return; }
 
 	vec4 projectedVertices[8];
 
-	for(int i = 0; i < 8; ++i)
+	for(int i = 0; i < 8; i++)
 	{
 		vec4 vertex = gl_in[0].gl_Position + cubeVertices[i];
 		projectedVertices[i] = ubo.mvp * vertex;
 	}
 
-	for(int face = 0; face < 6; ++face)
+	for(int face = 0; face < 6; face++)
 	{
-		for(int vertex = 0; vertex < 4; ++vertex)
+		for(int vertex = 0; vertex < 4; vertex++)
 		{
 			gl_Position = projectedVertices[cubeIndices[face * 4 + vertex]];
 			outVoxelColor = inAlbedo[0];
 			outVoxelColor.a = 1;
 			EmitVertex();
 		}
-		EndPrimitive();
 	}
+	EndPrimitive();
 }

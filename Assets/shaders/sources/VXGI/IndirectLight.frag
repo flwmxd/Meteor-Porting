@@ -4,17 +4,13 @@
 #include "../Common/Math.h"
 #include "VXGI.glsl"
 
-layout (local_size_x = 16, local_size_y = 16, local_size_z = 1) in;
-
-
-layout(binding = 0) uniform sampler3D uVoxelTex; 
-layout(binding = 1) uniform sampler3D uVoxelTexMipmap[6];
-layout(rgba32f,binding = 7) uniform image2D uIndirectLight;
-layout(binding = 8)  uniform sampler2D uColorSampler;
-layout(binding = 9)  uniform sampler2D uPositionSampler;
-layout(binding = 10) uniform sampler2D uNormalSampler;
-layout(binding = 11) uniform sampler2D uPBRSampler;
-layout(binding = 12) uniform UniformBufferVXGI
+layout(binding = 0)  uniform usampler3D uVoxelTex; 
+layout(binding = 1)  uniform sampler3D uVoxelTexMipmap[6];
+layout(binding = 7)  uniform sampler2D uColorSampler;
+layout(binding = 8)  uniform sampler2D uPositionSampler;
+layout(binding = 9)  uniform sampler2D uNormalSampler;
+layout(binding = 10) uniform sampler2D uPBRSampler;
+layout(binding = 11) uniform UniformBufferVXGI
 {
 	float voxelScale;
 	float maxTracingDistanceGlobal;
@@ -32,10 +28,12 @@ layout(binding = 12) uniform UniformBufferVXGI
 	int volumeDimension;
 	float worldSize; //max in aabb
 	float padding;
-	float padding;
+	float padding1;
 } uboVXGI;
 
+layout(location = 0) in vec2 inUV;
 
+layout(location = 0) out vec4 outColor;
 
 struct Material
 {
@@ -97,7 +95,8 @@ vec4 anistropicSample(vec3 coord, vec3 weight, uvec3 face, float lod)
     // linearly interpolate on base level
     if(lod < 1.0f)
     {
-        vec4 baseColor = texture(uVoxelTex, coord);
+        //ivec3 iCoord = ivec3(uboVXGI.voxelScale * coord);
+        vec4 baseColor = unpackUnorm4x8(texture(uVoxelTex, coord).x);
         anisoSample = mix(baseColor, anisoSample, clamp(lod, 0.0f, 1.0f));
     }
     return anisoSample;                    
@@ -204,12 +203,11 @@ vec4 calculateIndirectLightingFromVXGI(vec3 position, vec3 normal, vec3 viewDir,
 
 void main()
 {
-    ivec2 pixel = ivec2(gl_GlobalInvocationID.xy);
 
-	vec4 albedo = texelFetch (uColorSampler, pixel,0);
-	vec4 fragPosXyzw = texelFetch(uPositionSampler,pixel,0);
-	vec4 normalTex	 = texelFetch(uNormalSampler,pixel,0);
-	vec4 pbr		 = texelFetch(uPBRSampler,  pixel,0);
+	vec4 albedo      = texture(uColorSampler, inUV);
+	vec4 fragPosXyzw = texture(uPositionSampler, inUV);
+	vec4 normalTex	 = texture(uNormalSampler, inUV);
+	vec4 pbr		 = texture(uPBRSampler, inUV);
 	
 	Material material;
     material.albedo		= albedo;
@@ -220,8 +218,6 @@ void main()
     
 	material.view 			= normalize(uboVXGI.cameraPosition.xyz - fragPosXyzw.xyz);
 	material.normalDotView  = max(dot(material.normal, material.view), 0.0);
-
-    vec4 indirectShading = calculateIndirectLightingFromVXGI(fragPosXyzw.xyz, material.normal, material.view, material.albedo.xyz, material.roughness ,true);
-
-    imageStore(uIndirectLight,pixel,indirectShading);
+    vec4 color = calculateIndirectLightingFromVXGI(fragPosXyzw.xyz, material.normal, material.view, material.albedo.xyz, material.roughness ,true);
+    outColor = vec4(color.rgb,1.0);
 }
