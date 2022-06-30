@@ -159,7 +159,7 @@ add_custom_command(TARGET Meteor
 )
 
 add_custom_target(LibCopy
-	COMMAND powershell Copy-Item ${CMAKE_BINARY_DIR}/$<CONFIG>/*.dll  ${RUNTIME_PATH} -Force
+	COMMAND powershell Copy-Item ${CMAKE_BINARY_DIR}/bin/$<CONFIG>/*.dll  ${RUNTIME_PATH} -Force
 	COMMENT "Copying binaries ............"
 )
 
