@@ -277,6 +277,8 @@ namespace meteor
 				maple::Mesh::generateTangents(vertices, indicies);
 				auto mesh = std::make_shared<maple::Mesh>(indicies, vertices);
 
+				idxOffset.emplace_back(indicies.size());
+
 				mesh->setName(meshName);
 				mesh->setMaterial(materials);
 				mesh->setActive(!materials.empty());
@@ -473,6 +475,9 @@ namespace meteor
 					maple::Mesh::generateNormals(vertices, indices);
 					maple::Mesh::generateTangents(vertices, indices);
 					auto mesh = std::make_shared<maple::Mesh>(indices,vertices);
+
+					idxOffset.emplace_back(indices.size());
+
 					mesh->setName(meshName);
 					mesh->setMaterial(materials);
 					mesh->setSubMeshCount(subMeshCount);

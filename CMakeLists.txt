@@ -83,26 +83,6 @@ file(GLOB METEOR_EDITOR_SRC
 	${GAME_SRC_DIR}/Editor/*.h	
 )
 
-file(GLOB_RECURSE SHADERS_GLSL 
-	${ASSET_SHADER_DIR}/*.vert 
-	${ASSET_SHADER_DIR}/*.frag 
-	${ASSET_SHADER_DIR}/*.comp 
-	${ASSET_SHADER_DIR}/*.geom 
-	${ASSET_SHADER_DIR}/*.tesc 
-	${ASSET_SHADER_DIR}/*.tese 
-	${ASSET_SHADER_DIR}/*.mesh 
-	${ASSET_SHADER_DIR}/*.task 
-	${ASSET_SHADER_DIR}/*.rgen
-	${ASSET_SHADER_DIR}/*.rchit 
-	${ASSET_SHADER_DIR}/*.rmiss
-	${ASSET_SHADER_DIR}/*.shader
-	${ASSET_SHADER_DIR}/*.glsl
-)
-
-foreach(FILE ${SHADERS_GLSL})
-	MESSAGE(STATUS ${FILE})
-endforeach()
-
 
 if(${BuildType} MATCHES "Editor")
 	add_definitions(-DBUILD_EDITOR)
@@ -127,10 +107,9 @@ set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER "Maple")
 
 source_group(TREE ${APP_SRC_DIR} FILES ${METEOR_APP_SRC} ${METEOR_EDITOR_SRC})
 
-source_group(TREE ${ASSET_DIR} FILES ${SHADERS_GLSL})
 
 if(${BuildType} MATCHES "Editor")
-	add_executable(Meteor ${METEOR_APP_SRC} ${METEOR_EDITOR_SRC} ${SHADERS_GLSL})
+	add_executable(Meteor ${METEOR_APP_SRC} ${METEOR_EDITOR_SRC} )
 	target_link_libraries(
 		Meteor 
 		MapleEngine
@@ -150,7 +129,7 @@ target_include_directories(Meteor PUBLIC
 	${GAME_SRC_DIR}
 )
 
-set_property(TARGET Meteor  PROPERTY VS_DEBUGGER_WORKING_DIRECTORY ${ASSET_DIR})
+set_property(TARGET Meteor PROPERTY VS_DEBUGGER_WORKING_DIRECTORY ${ASSET_DIR})
 
 set_target_properties(Meteor PROPERTIES COMPILE_FLAGS "/MP /wd4819 /arch:SSE ")
 
@@ -183,6 +162,7 @@ add_custom_target(LibCopy
 	COMMAND powershell Copy-Item ${CMAKE_BINARY_DIR}/$<CONFIG>/*.dll  ${RUNTIME_PATH} -Force
 	COMMENT "Copying binaries ............"
 )
+
 
 add_dependencies(LibCopy MapleEngine)
 add_dependencies(Meteor LibCopy)
