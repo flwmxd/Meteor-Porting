@@ -227,6 +227,8 @@ namespace meteor
 
 					maple::Mesh::generateNormals(vertices, indices);
 					maple::Mesh::generateTangents(vertices, indices);
+					//maple::Mesh::generateBitangents(vertices, indices);
+
 					auto mesh = std::make_shared<maple::Mesh>(indices, vertices);
 					mesh->setName(skinName);
 					mesh->setMaterial(materials);
