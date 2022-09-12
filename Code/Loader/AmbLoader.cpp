@@ -269,6 +269,7 @@ namespace meteor
 
 	auto AmbLoader::load(const std::string& fileName, const std::string& extension, std::vector<std::shared_ptr<maple::IResource>>& out) const -> void
 	{
+
 		mio::mmap_source mmap(fileName);
 		MAPLE_ASSERT(mmap.is_open(), "open animation file failed");
 		maple::BinaryReader binaryReader((const uint8_t*)mmap.data(), mmap.length());

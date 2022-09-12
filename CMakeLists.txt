@@ -4,6 +4,7 @@ option(ENGINE_AS_LIBRARY "build engine as dynamic library" ON)
 option(MAPLE_OPENGL "Opengl as the default renderer" ON)
 option(MAPLE_VULKAN "Vulkan as the default renderer" OFF)
 
+
 if(MAPLE_OPENGL)
 	project(Meteor-Mobile-OpenGL)
 endif()
@@ -46,6 +47,7 @@ get_filename_component(Toolchains
 					   
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 
+set(CMAKE_INSTALL_PREFIX  ${CMAKE_SOURCE_DIR}/Assets)
 
 message(${CMAKE_BUILD_TYPE})
 
@@ -92,6 +94,7 @@ endif()
 if (${Target} MATCHES "Windows")
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 
 add_compile_options("/std:c++17")
 
@@ -160,9 +163,9 @@ add_custom_command(TARGET Meteor
 
 add_custom_target(LibCopy
 	COMMAND powershell Copy-Item ${CMAKE_BINARY_DIR}/bin/$<CONFIG>/*.dll  ${RUNTIME_PATH} -Force
+	COMMAND powershell Copy-Item ${LIB_SRC_DIR}/FBXSDK/lib/x64/*.dll  ${RUNTIME_PATH} -Force
 	COMMENT "Copying binaries ............"
 )
-
 
 add_dependencies(LibCopy MapleEngine)
 add_dependencies(Meteor LibCopy)
