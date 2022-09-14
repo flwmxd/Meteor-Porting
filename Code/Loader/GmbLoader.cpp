@@ -8,8 +8,8 @@
 #include <Engine/Material.h>
 #include <Engine/Mesh.h>
 #include <Engine/Vertex.h>
-#include <FileSystem/File.h>
-#include <FileSystem/MeshResource.h>
+#include <Assets/File.h>
+#include <Assets/MeshResource.h>
 #include <Others/Console.h>
 #include <Others/StringUtils.h>
 #include <Scene/Component/Transform.h>

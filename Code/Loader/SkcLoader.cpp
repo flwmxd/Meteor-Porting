@@ -2,8 +2,7 @@
 // This file is part of the Meteor-Remake                             		//
 //////////////////////////////////////////////////////////////////////////////
 #include "SkcLoader.h"
-#include <FileSystem/MeshResource.h>
-#include <FileSystem/Skeleton.h>
+#include <Assets/MeshResource.h>
 #include <Others/StringUtils.h>
 #include <Others/Console.h>
 #include <Engine/Core.h>
@@ -327,8 +326,9 @@ namespace meteor
 			if (!bncFile.bones.empty()) 
 			{
 				//convert to skeleton
-				auto skeleton = std::make_shared<maple::Skeleton>(maple::StringUtils::getFileNameWithoutExtension(fileName));
+				//auto skeleton = std::make_shared<maple::Skeleton>(maple::StringUtils::getFileNameWithoutExtension(fileName));
 
+/*
 				skeleton->setBuildOffset(true);
 
 				for (auto & b : bncFile.bones)
@@ -350,7 +350,7 @@ namespace meteor
 						parent.children.emplace_back(bone.id);
 					}
 				}
-				out.emplace_back(skeleton);
+				out.emplace_back(skeleton);*/
 			}
 			bncIn.close();
 		}

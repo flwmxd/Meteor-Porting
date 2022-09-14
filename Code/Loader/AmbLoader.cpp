@@ -2,9 +2,7 @@
 // This file is part of the Meteor-Remake                             		//
 //////////////////////////////////////////////////////////////////////////////
 #include "AmbLoader.h"
-#include <Animation/Animation.h>
-#include <FileSystem/MeshResource.h>
-#include <FileSystem/Skeleton.h>
+#include <Assets/MeshResource.h>
 #include <Others/StringUtils.h>
 #include <Others/Console.h>
 #include <Engine/Core.h>
@@ -284,6 +282,7 @@ namespace meteor
 
 		auto& meteorAnimation = MeteorAnimationCache::get(fileName);
 
+/*
 		auto animation = std::make_shared<maple::Animation>(fileName);
 
 		std::shared_ptr<maple::AnimationClip> animClip = std::make_shared<maple::AnimationClip>();
@@ -376,12 +375,12 @@ namespace meteor
 				clip.dummyPos.emplace_back(dx, dz, dy);
 				clip.dummyQuat.emplace_back(dw, dxx, dyy, dzz);
 			}
-		}
+		}*/
 
 		auto posFile = maple::StringUtils::removeExtension(fileName) + ".pos";
 
 		loadPose(posFile, meteorAnimation.poses);
 
-		out.emplace_back(animation);
+		//out.emplace_back(animation);
 	}
 }
