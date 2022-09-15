@@ -20,9 +20,9 @@ namespace meteor
 	auto MeteorDelegate::onInit() -> void
 	{
 		maple::ImNotification::makeNotification("Loading...", "Meteor", maple::ImNotification::Type::Info);
-		maple::Application::getAssetsLoaderFactory()->addModelLoader<GmbLoader>();
-		maple::Application::getAssetsLoaderFactory()->addModelLoader<SkcLoader>();
-		maple::Application::getAssetsLoaderFactory()->addModelLoader<AmbLoader>();
+		maple::loaders::addLoader<GmbLoader>();
+		maple::loaders::addLoader<SkcLoader>();
+		maple::loaders::addLoader<AmbLoader>();
 	}
 }
 

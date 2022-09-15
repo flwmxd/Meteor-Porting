@@ -11,7 +11,7 @@
  */
 namespace meteor 
 {
-	class GmbLoader : public maple::AssetsLoader
+	class GmbLoader : public maple::loaders::AssetsLoader
 	{
 	public:
 		static constexpr char* EXTENSIONS[] = { "gmb","gmc","GMB","GMC" };

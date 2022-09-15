@@ -12,7 +12,7 @@
  */
 namespace meteor
 {
-	class AmbLoader : public maple::AssetsLoader
+	class AmbLoader : public maple::loaders::AssetsLoader
 	{
 	public:
 		static constexpr char* EXTENSIONS[] = { "amb" };
