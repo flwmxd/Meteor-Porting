@@ -32,6 +32,7 @@ Assets/*.ilk
 Assets/RenderGraph.json
 MapleEngine.dll
 MapleLibrary.dll
+*.json
 
 # Fortran module files
 *.mod

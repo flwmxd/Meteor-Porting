@@ -11,7 +11,7 @@
  */
 namespace meteor
 {
-	class SkcLoader : public maple::loaders::AssetsLoader
+	class SkcLoader : public maple::io::AssetsArchive
 	{
 	public:
 		static constexpr char* EXTENSIONS[] = { "skc" };
