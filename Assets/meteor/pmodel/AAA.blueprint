@@ -1,0 +1,155 @@
+{
+    "value0": {
+        "Type": 1,
+        "Graph": {
+            "NextId": 7,
+            "Nodes": [
+                {
+                    "key": 1,
+                    "value": {
+                        "ptr_wrapper": {
+                            "id": 2147483649,
+                            "data": {
+                                "value0": 1,
+                                "value1": "Entry",
+                                "value2": {
+                                    "value0": 0.0,
+                                    "value1": 0.0
+                                },
+                                "value3": {
+                                    "value0": 1.0,
+                                    "value1": 0.30000001192092898,
+                                    "value2": 0.30000001192092898,
+                                    "value3": 1.0
+                                },
+                                "value4": 6,
+                                "value5": [],
+                                "value6": [
+                                    2
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": 3,
+                    "value": {
+                        "ptr_wrapper": {
+                            "id": 2147483650,
+                            "data": {
+                                "value0": 3,
+                                "value1": "p0.ozz",
+                                "value2": {
+                                    "value0": 0.0,
+                                    "value1": 0.0
+                                },
+                                "value3": {
+                                    "value0": 1.0,
+                                    "value1": 0.30000001192092898,
+                                    "value2": 0.30000001192092898,
+                                    "value3": 1.0
+                                },
+                                "value4": 5,
+                                "value5": [
+                                    4
+                                ],
+                                "value6": [
+                                    5
+                                ],
+                                "value7": ".\\meteor\\pmodel\\p0.ozz",
+                                "value8": 0.0
+                            }
+                        }
+                    }
+                }
+            ],
+            "Links": [
+                {
+                    "key": 6,
+                    "value": {
+                        "ptr_wrapper": {
+                            "id": 2147483651,
+                            "data": {
+                                "value0": 6,
+                                "value1": 2,
+                                "value2": 4,
+                                "value3": {
+                                    "value0": 1.0,
+                                    "value1": 1.0,
+                                    "value2": 1.0
+                                },
+                                "value4": []
+                            }
+                        }
+                    }
+                }
+            ],
+            "Pins": [
+                {
+                    "key": 2,
+                    "value": {
+                        "ptr_wrapper": {
+                            "id": 2147483652,
+                            "data": {
+                                "value0": 2,
+                                "value1": 0,
+                                "value2": 0,
+                                "value3": "",
+                                "value4": {
+                                    "value0": 1,
+                                    "value1": "",
+                                    "value2": false
+                                },
+                                "value5": 6,
+                                "value6": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": 4,
+                    "value": {
+                        "ptr_wrapper": {
+                            "id": 2147483653,
+                            "data": {
+                                "value0": 4,
+                                "value1": 0,
+                                "value2": 1,
+                                "value3": "",
+                                "value4": {
+                                    "value0": 1,
+                                    "value1": "",
+                                    "value2": false
+                                },
+                                "value5": 6,
+                                "value6": 3
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": 5,
+                    "value": {
+                        "ptr_wrapper": {
+                            "id": 2147483654,
+                            "data": {
+                                "value0": 5,
+                                "value1": 0,
+                                "value2": 0,
+                                "value3": "",
+                                "value4": {
+                                    "value0": 1,
+                                    "value1": "",
+                                    "value2": false
+                                },
+                                "value5": 4294967295,
+                                "value6": 3
+                            }
+                        }
+                    }
+                }
+            ],
+            "LocalVariables": []
+        }
+    }
+}

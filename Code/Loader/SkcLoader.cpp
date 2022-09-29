@@ -423,6 +423,7 @@ namespace meteor
 				rawSkeleton.roots.emplace_back(rawJoints[0]);
 				auto skeleton = std::make_shared<maple::animation::Skeleton>(rawSkeleton);
 				out.emplace_back(skeleton);
+				skeleton->save(maple::StringUtils::removeExtension(fileName) + ".skeleton.ozz");
 			}
 			bncIn.close();
 		}

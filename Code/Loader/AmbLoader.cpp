@@ -2,32 +2,31 @@
 // This file is part of the Meteor-Remake                             		//
 //////////////////////////////////////////////////////////////////////////////
 #include "AmbLoader.h"
+#include <Animation/Animation.h>
+#include <Animation/Skeleton.h>
 #include <Assets/MeshResource.h>
-#include <Others/StringUtils.h>
-#include <Others/Console.h>
+#include <Engine/Buffer.h>
 #include <Engine/Core.h>
 #include <Engine/Material.h>
 #include <Engine/Profiler.h>
-#include <Engine/Buffer.h>
-#include <Animation/Animation.h>
+#include <Others/Console.h>
+#include <Others/StringUtils.h>
 
 #include <fstream>
-#include <sstream>
 #include <mio/mmap.hpp>
-
+#include <sstream>
 
 namespace meteor
 {
-
-#define READ_TO(Stream,Name,Value) \
-	if (maple::StringUtils::startWith(line, Name,true)) \
-	{	\
-		Stream >> Value; \
+#define READ_TO(Stream, Name, Value)                     \
+	if (maple::StringUtils::startWith(line, Name, true)) \
+	{                                                    \
+		Stream >> Value;                                 \
 	}
 
-	namespace 
+	namespace
 	{
-		inline auto readDrag(std::ifstream& fileIn, Pose& pose)
+		inline auto readDrag(std::ifstream &fileIn, Pose &pose)
 		{
 			std::string line;
 			while (std::getline(fileIn, line))
@@ -43,11 +42,11 @@ namespace meteor
 					break;
 				}
 
-				if (maple::StringUtils::startWith(line, "Color",true))
+				if (maple::StringUtils::startWith(line, "Color", true))
 				{
 					int32_t r, g, b;
 					sscanf(line.c_str(), "Color  %d,%d,%d", &r, &g, &b);
-					pose.drag.color = {r/255.f,g/255.f,b/255.f};
+					pose.drag.color = {r / 255.f, g / 255.f, b / 255.f};
 					continue;
 				}
 
@@ -59,7 +58,7 @@ namespace meteor
 			}
 		}
 
-		inline auto readNextPose(std::ifstream& fileIn, Pose& pose)
+		inline auto readNextPose(std::ifstream &fileIn, Pose &pose)
 		{
 			std::string line;
 			while (std::getline(fileIn, line))
@@ -82,9 +81,9 @@ namespace meteor
 			}
 		}
 
-		inline auto readAttack(std::ifstream& fileIn, Pose& pose) 
+		inline auto readAttack(std::ifstream &fileIn, Pose &pose)
 		{
-			auto & attackInfo = pose.attackInfos.emplace_back();
+			auto &      attackInfo = pose.attackInfos.emplace_back();
 			std::string line;
 
 			bool bone = false;
@@ -94,7 +93,7 @@ namespace meteor
 			while (std::getline(fileIn, line))
 			{
 				maple::StringUtils::trim(line);
-				maple::StringUtils::trim(line,"\t");
+				maple::StringUtils::trim(line, "\t");
 
 				if (maple::StringUtils::startWith(line, "{"))
 				{
@@ -107,25 +106,25 @@ namespace meteor
 
 				if (maple::StringUtils::startWith(line, "bone"))
 				{
-					bone = true;
+					bone      = true;
 					boneValue = line;
 				}
-				else 
+				else
 				{
-					if (maple::StringUtils::startWith(line, "\"")) 
+					if (maple::StringUtils::startWith(line, "\""))
 					{
 						boneValue.append(line);
 					}
-					else 
+					else
 					{
 						if (bone)
 						{
 							bone = false;
 							//handle bone.
 							auto firstValue = boneValue.find_first_of("=");
-							boneValue = boneValue.substr(firstValue, boneValue.length() - firstValue);
+							boneValue       = boneValue.substr(firstValue, boneValue.length() - firstValue);
 							maple::StringUtils::trim(boneValue);
-							maple::StringUtils::trim(boneValue,"=");
+							maple::StringUtils::trim(boneValue, "=");
 							maple::StringUtils::trim(boneValue);
 							auto results = maple::StringUtils::split(boneValue, ",");
 
@@ -139,7 +138,7 @@ namespace meteor
 					}
 				}
 
-				if (!bone) 
+				if (!bone)
 				{
 					std::stringstream sstream(line);
 					sstream >> line;
@@ -160,11 +159,11 @@ namespace meteor
 			}
 		}
 
-		inline auto readPoseAction(std::ifstream& fileIn, Pose& pose, const std::string & name) 
+		inline auto readPoseAction(std::ifstream &fileIn, Pose &pose, const std::string &name)
 		{
 			std::string line;
-			auto& action = pose.actions.emplace_back();
-			action.type = name == "Blend" ? PoseAction::Type::Blend : PoseAction::Type::Action;
+			auto &      action = pose.actions.emplace_back();
+			action.type        = name == "Blend" ? PoseAction::Type::Blend : PoseAction::Type::Action;
 			while (std::getline(fileIn, line))
 			{
 				maple::StringUtils::trim(line);
@@ -188,9 +187,8 @@ namespace meteor
 			}
 		}
 
-		inline auto readPose(std::ifstream& fileIn, std::string line, Pose & pose)
+		inline auto readPose(std::ifstream &fileIn, std::string line, Pose &pose)
 		{
-
 			maple::StringUtils::trim(line);
 			maple::StringUtils::trim(line, "\t");
 
@@ -211,7 +209,7 @@ namespace meteor
 				readPoseAction(fileIn, pose, line);
 			}
 
-			if (line == "Attack") 
+			if (line == "Attack")
 			{
 				readAttack(fileIn, pose);
 			}
@@ -227,10 +225,10 @@ namespace meteor
 			}
 		}
 
-		inline auto loadPose(const std::string& fileName, std::vector<Pose> & poses)
+		inline auto loadPose(const std::string &fileName, std::vector<Pose> &poses)
 		{
 			std::ifstream fileIn(fileName);
-			std::string line;
+			std::string   line;
 
 			while (std::getline(fileIn, line))
 			{
@@ -253,9 +251,9 @@ namespace meteor
 				if (maple::StringUtils::startWith(line, "Pose"))
 				{
 					std::stringstream sstream(line);
-					int32_t pos;
+					int32_t           pos;
 					sstream >> line >> pos;
-					auto& back = poses.emplace_back();
+					auto &back = poses.emplace_back();
 					continue;
 				}
 
@@ -264,80 +262,95 @@ namespace meteor
 
 			fileIn.close();
 		}
-	}
+	}        // namespace
 
-	auto AmbLoader::load(const std::string& fileName, const std::string& extension, std::vector<std::shared_ptr<maple::IResource>>& out) const -> void
+	auto AmbLoader::load(const std::string &fileName, const std::string &extension, std::vector<std::shared_ptr<maple::IResource>> &out) const -> void
 	{
-
 		mio::mmap_source mmap(fileName);
 		MAPLE_ASSERT(mmap.is_open(), "open animation file failed");
-		maple::BinaryReader binaryReader((const uint8_t*)mmap.data(), mmap.length());
-		binaryReader.skip(5);//header -> BANIM 
-		
-		auto bone = binaryReader.read<int32_t>();
-		auto dummy = binaryReader.read<int32_t>();
+		maple::BinaryReader binaryReader((const uint8_t *) mmap.data(), mmap.length());
+		binaryReader.skip(5);        //header -> BANIM
+
+		auto bone   = binaryReader.read<int32_t>();
+		auto dummy  = binaryReader.read<int32_t>();
 		auto frames = binaryReader.read<int32_t>();
 
-		auto fps = binaryReader.read<int32_t>();
+		auto fps    = binaryReader.read<int32_t>();
 		auto length = 1.0f / fps;
 
-		auto& meteorAnimation = MeteorAnimationCache::get(fileName);
+		auto &                                meteorAnimation = MeteorAnimationCache::get(fileName);
 		ozz::animation::offline::RawAnimation rawAnimation;
 
-		float timer = 0.f;
+		float timer           = 0.f;
 		rawAnimation.duration = length * frames;
+
+		auto skeletonFile = maple::StringUtils::removeExtension(fileName) + ".skeleton.ozz";
+
+		auto ske = maple::io::load(skeletonFile);
+
+		std::shared_ptr<maple::animation::Skeleton> skeleton;
+
+		if (!ske.empty())
+		{
+			for (auto &res : ske)
+			{
+				if (res->getResourceType() == maple::FileType::Skeleton)
+				{	// baking into the skeleton.
+					skeleton = std::static_pointer_cast<maple::animation::Skeleton>(res);
+				}
+			}
+		}
+
+		MAPLE_ASSERT(skeleton != nullptr, "Bake animation fail....skeleton missing..")
 
 		for (int32_t i = 0; i < frames; i++)
 		{
-			auto & clip = meteorAnimation.clips.emplace_back();
-			auto flag = binaryReader.read<int32_t>();
+			auto &clip = meteorAnimation.clips.emplace_back();
+			auto  flag = binaryReader.read<int32_t>();
 
-			if (flag != -1) 
+			if (flag != -1)
 			{
-				LOGE("frame: {} flag:{}",i, flag);
+				LOGE("frame: {} flag:{}", i, flag);
 			}
 
 			int32_t frameindex = binaryReader.read<int32_t>();
 
 			MAPLE_ASSERT(i == frameindex, "");
 
-			float x = binaryReader.read<float>();
-			float y = binaryReader.read<float>();
-			float z = binaryReader.read<float>();
-			glm::vec3 bonePos = { x, z, y };//首骨骼的相对坐标.
-			
+			float     x       = binaryReader.read<float>();
+			float     y       = binaryReader.read<float>();
+			float     z       = binaryReader.read<float>();
+			glm::vec3 bonePos = {x, z, y};        //首骨骼的相对坐标.
+
+			rawAnimation.tracks.resize(bone);
+
 			for (int32_t j = 0; j < bone; j++)
 			{
-				float w = binaryReader.read<float>();
-				float xx = - binaryReader.read<float>();
-				float zz = - binaryReader.read<float>();
-				float yy = - binaryReader.read<float>();
+				float w  = binaryReader.read<float>();
+				float xx = -binaryReader.read<float>();
+				float zz = -binaryReader.read<float>();
+				float yy = -binaryReader.read<float>();
 				clip.boneQuat.emplace_back(w, xx, yy, zz);
 
-				if (rawAnimation.num_tracks() < bone)
-				{
-					auto& curve0 = rawAnimation.tracks.emplace_back();
-					auto& rotation = curve0.rotations.emplace_back();
-					rotation.time = timer;
-					rotation.value = {xx,yy,zz,w};
-				}
-				else 
-				{
-					auto& rotation = rawAnimation.tracks[j].rotations.emplace_back();
-					rotation.time = timer;
-					rotation.value = {xx,yy,zz,w};
-				}
+				auto &rotation = rawAnimation.tracks[j].rotations.emplace_back();
+				rotation.time  = timer;
+				rotation.value = {xx, yy, zz, w};
+
+				auto &translate = rawAnimation.tracks[j].translations.emplace_back();
+				translate.time  = timer;
+				auto pos        = skeleton->getJoint(j).localTransform[3];
+				translate.value = {pos.x, pos.y, pos.z};
 			}
 
 			timer += length;
-			
+
 			for (int32_t k = 0; k < dummy; k++)
 			{
 				binaryReader.skip(5);
-				float dx = binaryReader.read<float>();
-				float dy = binaryReader.read<float>();
-				float dz = binaryReader.read<float>();
-				float dw = binaryReader.read<float>();
+				float dx  = binaryReader.read<float>();
+				float dy  = binaryReader.read<float>();
+				float dz  = binaryReader.read<float>();
+				float dw  = binaryReader.read<float>();
 				float dxx = -binaryReader.read<float>();
 				float dzz = -binaryReader.read<float>();
 				float dyy = -binaryReader.read<float>();
@@ -350,5 +363,13 @@ namespace meteor
 
 		loadPose(posFile, meteorAnimation.poses);
 		auto animation = std::make_shared<maple::animation::Animation>(rawAnimation);
+		out.emplace_back(animation);
+
+		auto ozzFile = maple::StringUtils::removeExtension(fileName) + ".ozz";
+		animation->save(ozzFile);
 	}
-}
+
+	auto AmbLoader::save(const std::string &fileName) const -> void
+	{
+	}
+}        // namespace meteor
