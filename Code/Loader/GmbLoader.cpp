@@ -271,6 +271,10 @@ namespace meteor
 					binaryReader.skip(12);        //3 * sizeof(int32_t)
 				}
 
+				if (subMeshCount == 0)
+					continue;
+
+
 				maple::Mesh::generateNormals(vertices, indicies);
 				maple::Mesh::generateTangents(vertices, indicies);
 				//maple::Mesh::generateBitangents(vertices, indicies);
@@ -465,6 +469,10 @@ namespace meteor
 							offset += 3;
 						}
 					}
+
+					if (subMeshCount == 0)
+						continue;
+
 					maple::Mesh::generateNormals(vertices, indices);
 					maple::Mesh::generateTangents(vertices, indices);
 					//maple::Mesh::generateBitangents(vertices, indices);
