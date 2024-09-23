@@ -233,6 +233,8 @@ namespace meteor
 					vertex.color.b  = binaryReader.read<uint8_t>() / 255.f;
 					vertex.color.a  = binaryReader.read<uint8_t>() / 255.f;
 					vertex.texCoord = binaryReader.readVec2();
+
+					vertex.color = {1, 1, 1, 1};
 				}
 
 				std::vector<std::shared_ptr<maple::Material>> materials;

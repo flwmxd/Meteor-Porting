@@ -1,0 +1,124 @@
+{
+	"data": {
+		"uuid": "1666895148837",
+		"id": "37blutubpjey",
+		"token": "159fc80b100ad9bdc5c90746134d0338",
+		"categories": [
+			{
+				"id": 261,
+				"label": "设施构建-中式结构-柱体",
+				"label_zh": "设施构建-中式结构-柱体",
+				"label_en": "Composition-Chinese Comp-Pillar"
+			}
+		],
+		"name": "木柱",
+		"name_en": "Wooden Pillar",
+		"totalSize": 41736151,
+		"isFavorite": false,
+		"preview": "https://public.pbrmaxassets.com/1/7781525357092102144.png",
+		"isSSS": 0,
+		"localPath": "F:\\PRBResources\\117622\\assets\\Wooden Pillar_Composition-Chinese Comp-Pillar_37blutubpjey",
+		"fileInfo": [
+			{
+				"fileName": "8bit_T_Wooden Pillar_Displacement_2K.exr",
+				"url": "https://asset.pbrmaxassets.com/202210280225/864800beeb6e2c0da9c531848549f595/7781531498357919744/T_7781531498357919744_Displacement_2K.exr?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_Displacement_2K.exr",
+				"size": 33587531
+			},
+			{
+				"fileName": "8bit_T_Wooden Pillar_Normal_2K_LOD5.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/93fafeaf93ecd4e4a2be20c9dfe4b2de/7781531498357919744/T_7781531498357919744_Normal_2K_8bit_LOD5.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_Normal_2K_LOD5.jpg",
+				"size": 1109673
+			},
+			{
+				"fileName": "8bit_T_Wooden Pillar_Normal_2K_LOD4.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/5ce05a86f8511c07701e65e5da15dab6/7781531498357919744/T_7781531498357919744_Normal_2K_8bit_LOD4.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_Normal_2K_LOD4.jpg",
+				"size": 1102073
+			},
+			{
+				"fileName": "8bit_T_Wooden Pillar_Normal_2K_LOD3.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/4bff739d658247853c91929b3f4db6d3/7781531498357919744/T_7781531498357919744_Normal_2K_8bit_LOD3.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_Normal_2K_LOD3.jpg",
+				"size": 1098530
+			},
+			{
+				"fileName": "8bit_T_Wooden Pillar_AO_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/f8aa0fab4c81c023d910bd11eb0ff958/7781531498357919744/T_7781531498357919744_AO_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_AO_2K.jpg",
+				"size": 850211
+			},
+			{
+				"fileName": "8bit_T_Wooden Pillar_Albedo_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/f21484db99a7edd3e3c70ac9792c8d8a/7781531498357919744/T_7781531498357919744_Albedo_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_Albedo_2K.jpg",
+				"size": 803296
+			},
+			{
+				"fileName": "8bit_T_Wooden Pillar_Cavity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/f0a12ee4cc161bfabd1b4bc679427fad/7781531498357919744/T_7781531498357919744_Cavity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_Cavity_2K.jpg",
+				"size": 737810
+			},
+			{
+				"fileName": "Wooden Pillar_LOD3.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280225/7fdbd5a1274fe2560c9307c1ed4031c5/7781531498357919744/7781531498357919744_LOD3.fbx?response-content-disposition=attachment;filename=Wooden Pillar_LOD3.fbx",
+				"size": 669680
+			},
+			{
+				"fileName": "Wooden Pillar_LOD4.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280225/fc393928b3fab55ed0e04dc8b728d5a5/7781531498357919744/7781531498357919744_LOD4.fbx?response-content-disposition=attachment;filename=Wooden Pillar_LOD4.fbx",
+				"size": 452384
+			},
+			{
+				"fileName": "8bit_T_Wooden Pillar_Specular_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/358ce4b835241add8e627fc612f0bab8/7781531498357919744/T_7781531498357919744_Specular_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_Specular_2K.jpg",
+				"size": 291163
+			},
+			{
+				"fileName": "8bit_T_Wooden Pillar_Gloss_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/85b2575de0f85918e1eca7e6c852eb60/7781531498357919744/T_7781531498357919744_Gloss_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_Gloss_2K.jpg",
+				"size": 285049
+			},
+			{
+				"fileName": "8bit_T_Wooden Pillar_Roughness_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/00ad659239b9952c0730e00584fd3192/7781531498357919744/T_7781531498357919744_Roughness_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_Roughness_2K.jpg",
+				"size": 283398
+			},
+			{
+				"fileName": "8bit_T_Wooden Pillar_Displacement_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/1fa61d0e0dc4d4234eb50a3dbe099f7f/7781531498357919744/T_7781531498357919744_Displacement_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_Displacement_2K.jpg",
+				"size": 267736
+			},
+			{
+				"fileName": "Wooden Pillar_LOD5.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280225/e643301ef6d3f6061a74d35b48e6661f/7781531498357919744/7781531498357919744_LOD5.fbx?response-content-disposition=attachment;filename=Wooden Pillar_LOD5.fbx",
+				"size": 181072
+			},
+			{
+				"fileName": "8bit_T_Wooden Pillar_Metallic_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/1a582969bc0391bd4bb791d8ba1d54de/4741888582829158400/T_4741888582829158400_Metallic_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Pillar_Metallic_2K.jpg",
+				"size": 16545
+			}
+		],
+		"currentSize": 0,
+		"settings": {
+			"albedo": "JPG",
+			"normal": "JPG",
+			"roughness": "JPG",
+			"metallic": "JPG",
+			"displacement": [
+				"JPG",
+				"EXR"
+			],
+			"ao": "JPG",
+			"specular": "JPG",
+			"gloss": "JPG",
+			"cavity": "JPG",
+			"format": "JPG",
+			"mesh_format": "FBX",
+			"model_levels": [
+				"LOD3",
+				"LOD4",
+				"LOD5"
+			],
+			"preset": "ALL",
+			"text_resolution": "2K",
+			"color_depth": "8bit"
+		}
+	}
+}

@@ -1,0 +1,124 @@
+{
+	"data": {
+		"uuid": "1666894522678",
+		"id": "762rdnk7l5re1",
+		"token": "07697d0a4f84a9fb3a54544f6b941a3f",
+		"categories": [
+			{
+				"id": 265,
+				"label": "设施构建-中式结构-梁托",
+				"label_zh": "设施构建-中式结构-梁托",
+				"label_en": "Composition-Chinese Comp-Corbel"
+			}
+		],
+		"name": "梁托",
+		"name_en": "Wood Corbel",
+		"totalSize": 42595048,
+		"isFavorite": false,
+		"preview": "https://public.pbrmaxassets.com/1/4665055176552689664.png",
+		"isSSS": 0,
+		"localPath": "F:\\PRBResources\\117622\\assets\\Wood Corbel_Composition-Chinese Comp-Corbel_762rdnk7l5re1",
+		"fileInfo": [
+			{
+				"fileName": "8bit_T_Wood Corbel_Displacement_2K.exr",
+				"url": "https://asset.pbrmaxassets.com/202210280215/8b785747518695edbe83cd5349bcb887/V2/4712753439174623232/T_4712753439174623232_Displacement_2K.exr?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_Displacement_2K.exr",
+				"size": 33587531
+			},
+			{
+				"fileName": "8bit_T_Wood Corbel_Normal_2K_LOD4.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/d5be44659126878ff8f7e8855b04d8c0/4712753439174623232/T_4712753439174623232_Normal_2K_8bit_LOD4.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_Normal_2K_LOD4.jpg",
+				"size": 1286265
+			},
+			{
+				"fileName": "8bit_T_Wood Corbel_Normal_2K_LOD5.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/7861ea9c1e3bfdd0a3cc3f627d1d9cb9/4712753439174623232/T_4712753439174623232_Normal_2K_8bit_LOD5.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_Normal_2K_LOD5.jpg",
+				"size": 1282140
+			},
+			{
+				"fileName": "8bit_T_Wood Corbel_Normal_2K_LOD3.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/37e1eed798639580836e3e172746e1c0/4712753439174623232/T_4712753439174623232_Normal_2K_8bit_LOD3.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_Normal_2K_LOD3.jpg",
+				"size": 1279790
+			},
+			{
+				"fileName": "8bit_T_Wood Corbel_Albedo_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/63aad4774f53afa4d0e7e87578c4fc20/4712753439174623232/T_4712753439174623232_Albedo_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_Albedo_2K.jpg",
+				"size": 908880
+			},
+			{
+				"fileName": "8bit_T_Wood Corbel_AO_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/d2be2fc4275bd9fc0bca7c90e3f8ef6b/4712753439174623232/T_4712753439174623232_AO_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_AO_2K.jpg",
+				"size": 875680
+			},
+			{
+				"fileName": "8bit_T_Wood Corbel_Cavity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/ebd6d976c87c9e6d1a4021b5f47700e2/4712753439174623232/T_4712753439174623232_Cavity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_Cavity_2K.jpg",
+				"size": 819450
+			},
+			{
+				"fileName": "8bit_T_Wood Corbel_Gloss_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/5d640dab047b97d2aa0043cc6a21c8ce/4712753439174623232/T_4712753439174623232_Gloss_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_Gloss_2K.jpg",
+				"size": 650685
+			},
+			{
+				"fileName": "8bit_T_Wood Corbel_Roughness_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/0d5f8d16a15a43aad35faf258fa277c0/4712753439174623232/T_4712753439174623232_Roughness_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_Roughness_2K.jpg",
+				"size": 649036
+			},
+			{
+				"fileName": "Wood Corbel_LOD3.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/f1eb471e22f12cefedd1861c9a3b0c2e/4712753439174623232/4712753439174623232_LOD3.fbx?response-content-disposition=attachment;filename=Wood Corbel_LOD3.fbx",
+				"size": 477616
+			},
+			{
+				"fileName": "Wood Corbel_LOD4.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/ec7bb882486bee77806f08dbf841e7b4/4712753439174623232/4712753439174623232_LOD4.fbx?response-content-disposition=attachment;filename=Wood Corbel_LOD4.fbx",
+				"size": 297504
+			},
+			{
+				"fileName": "8bit_T_Wood Corbel_Specular_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/a528af49a7cb641305c379220a876aa4/4712753439174623232/T_4712753439174623232_Specular_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_Specular_2K.jpg",
+				"size": 218855
+			},
+			{
+				"fileName": "Wood Corbel_LOD5.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/662402656012649487e0ae29c3c236d0/4712753439174623232/4712753439174623232_LOD5.fbx?response-content-disposition=attachment;filename=Wood Corbel_LOD5.fbx",
+				"size": 125600
+			},
+			{
+				"fileName": "8bit_T_Wood Corbel_Displacement_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/d5c8205207894572dfe5237ed0b27ed3/4712753439174623232/T_4712753439174623232_Displacement_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_Displacement_2K.jpg",
+				"size": 119471
+			},
+			{
+				"fileName": "8bit_T_Wood Corbel_Metallic_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/7e7b7663dcd761120b5a811904b1a2f1/4741888582829158400/T_4741888582829158400_Metallic_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Corbel_Metallic_2K.jpg",
+				"size": 16545
+			}
+		],
+		"currentSize": 0,
+		"settings": {
+			"albedo": "JPG",
+			"normal": "JPG",
+			"roughness": "JPG",
+			"metallic": "JPG",
+			"displacement": [
+				"JPG",
+				"EXR"
+			],
+			"ao": "JPG",
+			"specular": "JPG",
+			"gloss": "JPG",
+			"cavity": "JPG",
+			"format": "JPG",
+			"mesh_format": "FBX",
+			"model_levels": [
+				"LOD3",
+				"LOD4",
+				"LOD5"
+			],
+			"preset": "ALL",
+			"text_resolution": "2K",
+			"color_depth": "8bit"
+		}
+	}
+}

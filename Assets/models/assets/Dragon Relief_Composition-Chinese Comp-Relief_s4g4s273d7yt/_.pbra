@@ -1,0 +1,124 @@
+{
+	"data": {
+		"uuid": "1666894498289",
+		"id": "s4g4s273d7yt",
+		"token": "9a0846bcefb70e1bee12bae5efa6f14b",
+		"categories": [
+			{
+				"id": 260,
+				"label": "设施构建-中式结构-浮雕",
+				"label_zh": "设施构建-中式结构-浮雕",
+				"label_en": "Composition-Chinese Comp-Relief"
+			}
+		],
+		"name": "龙腾浮雕",
+		"name_en": "Dragon Relief",
+		"totalSize": 41495631,
+		"isFavorite": false,
+		"preview": "https://public.pbrmaxassets.com/1/4673741231708688384.png",
+		"isSSS": 0,
+		"localPath": "F:\\PRBResources\\117622\\assets\\Dragon Relief_Composition-Chinese Comp-Relief_s4g4s273d7yt",
+		"fileInfo": [
+			{
+				"fileName": "8bit_T_Dragon Relief_Displacement_2K.exr",
+				"url": "https://asset.pbrmaxassets.com/202210280215/f7289c21634b7ce98f795cba07094bed/V2/4699640130657386496/T_4699640130657386496_Displacement_2K.exr?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_Displacement_2K.exr",
+				"size": 33587531
+			},
+			{
+				"fileName": "8bit_T_Dragon Relief_Albedo_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/6975dd2b0096031ad4e53ea39359881b/4699640130657386496/T_4699640130657386496_Albedo_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_Albedo_2K.jpg",
+				"size": 1157498
+			},
+			{
+				"fileName": "8bit_T_Dragon Relief_Normal_2K_LOD4.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/8b707f70324c7d6df25fd6e39192fe32/4699640130657386496/T_4699640130657386496_Normal_2K_8bit_LOD4.jpg?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_Normal_2K_LOD4.jpg",
+				"size": 1144663
+			},
+			{
+				"fileName": "8bit_T_Dragon Relief_Normal_2K_LOD3.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/3f2a0f82e570d8f18b606225d498ab78/4699640130657386496/T_4699640130657386496_Normal_2K_8bit_LOD3.jpg?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_Normal_2K_LOD3.jpg",
+				"size": 1130400
+			},
+			{
+				"fileName": "8bit_T_Dragon Relief_Normal_2K_LOD5.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/4b993e9e5ce6613cd4a1b7d058347dcc/4699640130657386496/T_4699640130657386496_Normal_2K_8bit_LOD5.jpg?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_Normal_2K_LOD5.jpg",
+				"size": 1129595
+			},
+			{
+				"fileName": "8bit_T_Dragon Relief_AO_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/e2dbbe0dd278be034c9cef0d0b46a5b9/4699640130657386496/T_4699640130657386496_AO_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_AO_2K.jpg",
+				"size": 825283
+			},
+			{
+				"fileName": "8bit_T_Dragon Relief_Cavity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/4e9640bd7d3ff4f118a18eb19e4fd9c4/4699640130657386496/T_4699640130657386496_Cavity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_Cavity_2K.jpg",
+				"size": 633874
+			},
+			{
+				"fileName": "8bit_T_Dragon Relief_Displacement_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/5a0befc658e45863f81fef902b83e1bc/4699640130657386496/T_4699640130657386496_Displacement_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_Displacement_2K.jpg",
+				"size": 427080
+			},
+			{
+				"fileName": "Dragon Relief_LOD3.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/74d4d2fc14e2e06b685c5e8274941b0b/4699640130657386496/4699640130657386496_LOD3.fbx?response-content-disposition=attachment;filename=Dragon Relief_LOD3.fbx",
+				"size": 378480
+			},
+			{
+				"fileName": "8bit_T_Dragon Relief_Gloss_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/48324ad29028fc0fec185debba3aa55b/4699640130657386496/T_4699640130657386496_Gloss_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_Gloss_2K.jpg",
+				"size": 351512
+			},
+			{
+				"fileName": "8bit_T_Dragon Relief_Roughness_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/554e50c1ede6e542e0985dd6a84e0879/4699640130657386496/T_4699640130657386496_Roughness_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_Roughness_2K.jpg",
+				"size": 350018
+			},
+			{
+				"fileName": "Dragon Relief_LOD4.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/5eae55e099905aaf4d3a92c227df219b/4699640130657386496/4699640130657386496_LOD4.fbx?response-content-disposition=attachment;filename=Dragon Relief_LOD4.fbx",
+				"size": 246720
+			},
+			{
+				"fileName": "8bit_T_Dragon Relief_Specular_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/2e94bfadcd404c71d594d53ab35c3c19/4699640130657386496/T_4699640130657386496_Specular_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_Specular_2K.jpg",
+				"size": 64416
+			},
+			{
+				"fileName": "Dragon Relief_LOD5.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/123b700e1ea08c5375c3ad25702d2a0e/4699640130657386496/4699640130657386496_LOD5.fbx?response-content-disposition=attachment;filename=Dragon Relief_LOD5.fbx",
+				"size": 52016
+			},
+			{
+				"fileName": "8bit_T_Dragon Relief_Metallic_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/7e7b7663dcd761120b5a811904b1a2f1/4741888582829158400/T_4741888582829158400_Metallic_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Dragon Relief_Metallic_2K.jpg",
+				"size": 16545
+			}
+		],
+		"currentSize": 0,
+		"settings": {
+			"albedo": "JPG",
+			"normal": "JPG",
+			"roughness": "JPG",
+			"metallic": "JPG",
+			"displacement": [
+				"JPG",
+				"EXR"
+			],
+			"ao": "JPG",
+			"specular": "JPG",
+			"gloss": "JPG",
+			"cavity": "JPG",
+			"format": "JPG",
+			"mesh_format": "FBX",
+			"model_levels": [
+				"LOD3",
+				"LOD4",
+				"LOD5"
+			],
+			"preset": "ALL",
+			"text_resolution": "2K",
+			"color_depth": "8bit"
+		}
+	}
+}

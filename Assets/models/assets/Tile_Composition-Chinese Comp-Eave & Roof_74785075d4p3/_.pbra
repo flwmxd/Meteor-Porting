@@ -1,0 +1,124 @@
+{
+	"data": {
+		"uuid": "1666894526074",
+		"id": "74785075d4p3",
+		"token": "7b68cc3b4f4d13551ee90782c0d634c0",
+		"categories": [
+			{
+				"id": 267,
+				"label": "设施构建-中式结构-屋檐屋顶",
+				"label_zh": "设施构建-中式结构-屋檐屋顶",
+				"label_en": "Composition-Chinese Comp-Eave & Roof"
+			}
+		],
+		"name": "瓦片",
+		"name_en": "Tile",
+		"totalSize": 43734339,
+		"isFavorite": false,
+		"preview": "https://public.pbrmaxassets.com/1/4664151806149586944.png",
+		"isSSS": 0,
+		"localPath": "F:\\PRBResources\\117622\\assets\\Tile_Composition-Chinese Comp-Eave & Roof_74785075d4p3",
+		"fileInfo": [
+			{
+				"fileName": "8bit_T_Tile_Displacement_2K.exr",
+				"url": "https://asset.pbrmaxassets.com/202210280215/b76e7865e3a56d66cb8690353f1659ee/V2/4700607222537846784/T_4700607222537846784_Displacement_2K.exr?response-content-disposition=attachment;filename=8bit_T_Tile_Displacement_2K.exr",
+				"size": 33587531
+			},
+			{
+				"fileName": "8bit_T_Tile_Normal_2K_LOD5.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/65091d10895829740eedee632ce9ee2c/4700607222537846784/T_4700607222537846784_Normal_2K_8bit_LOD5.jpg?response-content-disposition=attachment;filename=8bit_T_Tile_Normal_2K_LOD5.jpg",
+				"size": 1264421
+			},
+			{
+				"fileName": "8bit_T_Tile_Normal_2K_LOD4.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/e979cfd985f016a27162bbfb19a4afd0/4700607222537846784/T_4700607222537846784_Normal_2K_8bit_LOD4.jpg?response-content-disposition=attachment;filename=8bit_T_Tile_Normal_2K_LOD4.jpg",
+				"size": 1261800
+			},
+			{
+				"fileName": "8bit_T_Tile_Normal_2K_LOD3.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/538c1962d35028f2ee7e2e551b9f5251/4700607222537846784/T_4700607222537846784_Normal_2K_8bit_LOD3.jpg?response-content-disposition=attachment;filename=8bit_T_Tile_Normal_2K_LOD3.jpg",
+				"size": 1257705
+			},
+			{
+				"fileName": "Tile_LOD3.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/6aea13594fbf9d7167c9991eb7a117ec/4700607222537846784/4700607222537846784_LOD3.fbx?response-content-disposition=attachment;filename=Tile_LOD3.fbx",
+				"size": 1168464
+			},
+			{
+				"fileName": "8bit_T_Tile_Albedo_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/e7b70f30a11e6f3fc17159baa673d0bd/4700607222537846784/T_4700607222537846784_Albedo_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tile_Albedo_2K.jpg",
+				"size": 1081661
+			},
+			{
+				"fileName": "8bit_T_Tile_AO_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/09308377a5e05926ddce2274ebfb8d9c/4700607222537846784/T_4700607222537846784_AO_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tile_AO_2K.jpg",
+				"size": 1054179
+			},
+			{
+				"fileName": "Tile_LOD4.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/7bab873780057cedfd869d7fd5bbabb5/4700607222537846784/4700607222537846784_LOD4.fbx?response-content-disposition=attachment;filename=Tile_LOD4.fbx",
+				"size": 638480
+			},
+			{
+				"fileName": "8bit_T_Tile_Cavity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/1b6fbafabd4e673bc72fd7d6b425f1a5/4700607222537846784/T_4700607222537846784_Cavity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tile_Cavity_2K.jpg",
+				"size": 577103
+			},
+			{
+				"fileName": "8bit_T_Tile_Gloss_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/cea95b66e7c4e08344137db77eaf231e/4700607222537846784/T_4700607222537846784_Gloss_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tile_Gloss_2K.jpg",
+				"size": 505267
+			},
+			{
+				"fileName": "8bit_T_Tile_Roughness_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/bfa80a6322caf7cf214c7787173c3955/4700607222537846784/T_4700607222537846784_Roughness_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tile_Roughness_2K.jpg",
+				"size": 503709
+			},
+			{
+				"fileName": "8bit_T_Tile_Displacement_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/1e74708080368a17b694c4f1e1f6fe23/4700607222537846784/T_4700607222537846784_Displacement_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tile_Displacement_2K.jpg",
+				"size": 389158
+			},
+			{
+				"fileName": "Tile_LOD5.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/f51f2d0056c50cd52e35faf50b791542/4700607222537846784/4700607222537846784_LOD5.fbx?response-content-disposition=attachment;filename=Tile_LOD5.fbx",
+				"size": 328112
+			},
+			{
+				"fileName": "8bit_T_Tile_Specular_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/cf1a3602abd6795262a0d57f703046c9/4700607222537846784/T_4700607222537846784_Specular_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tile_Specular_2K.jpg",
+				"size": 100204
+			},
+			{
+				"fileName": "8bit_T_Tile_Metallic_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/7e7b7663dcd761120b5a811904b1a2f1/4741888582829158400/T_4741888582829158400_Metallic_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tile_Metallic_2K.jpg",
+				"size": 16545
+			}
+		],
+		"currentSize": 0,
+		"settings": {
+			"albedo": "JPG",
+			"normal": "JPG",
+			"roughness": "JPG",
+			"metallic": "JPG",
+			"displacement": [
+				"JPG",
+				"EXR"
+			],
+			"ao": "JPG",
+			"specular": "JPG",
+			"gloss": "JPG",
+			"cavity": "JPG",
+			"format": "JPG",
+			"mesh_format": "FBX",
+			"model_levels": [
+				"LOD3",
+				"LOD4",
+				"LOD5"
+			],
+			"preset": "ALL",
+			"text_resolution": "2K",
+			"color_depth": "8bit"
+		}
+	}
+}

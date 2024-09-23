@@ -1,0 +1,124 @@
+{
+	"data": {
+		"uuid": "1666894503972",
+		"id": "ita1fcwdj5yh",
+		"token": "f5e8d32ec20f6f96f77202251e5fc75d",
+		"categories": [
+			{
+				"id": 261,
+				"label": "设施构建-中式结构-柱体",
+				"label_zh": "设施构建-中式结构-柱体",
+				"label_en": "Composition-Chinese Comp-Pillar"
+			}
+		],
+		"name": "木柱",
+		"name_en": "Wood Pillar",
+		"totalSize": 46551142,
+		"isFavorite": false,
+		"preview": "https://public.pbrmaxassets.com/1/4664543622056980480.png",
+		"isSSS": 0,
+		"localPath": "F:\\PRBResources\\117622\\assets\\Wood Pillar_Composition-Chinese Comp-Pillar_ita1fcwdj5yh",
+		"fileInfo": [
+			{
+				"fileName": "8bit_T_Wood Pillar_Displacement_2K.exr",
+				"url": "https://asset.pbrmaxassets.com/202210280215/bf8fe08d80a14affe8152c70f1fafeee/V2/4712754661629689856/T_4712754661629689856_Displacement_2K.exr?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_Displacement_2K.exr",
+				"size": 33587531
+			},
+			{
+				"fileName": "8bit_T_Wood Pillar_Normal_2K_LOD3.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/b8c6ae05092368472e1250b41c5047d7/4712754661629689856/T_4712754661629689856_Normal_2K_8bit_LOD3.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_Normal_2K_LOD3.jpg",
+				"size": 1823954
+			},
+			{
+				"fileName": "8bit_T_Wood Pillar_Normal_2K_LOD4.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/24739720cb066403c183aa88fa50ca6e/4712754661629689856/T_4712754661629689856_Normal_2K_8bit_LOD4.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_Normal_2K_LOD4.jpg",
+				"size": 1823318
+			},
+			{
+				"fileName": "8bit_T_Wood Pillar_Normal_2K_LOD5.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/c4624bfae3b408a46dfbeb82fa848b02/4712754661629689856/T_4712754661629689856_Normal_2K_8bit_LOD5.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_Normal_2K_LOD5.jpg",
+				"size": 1818546
+			},
+			{
+				"fileName": "Wood Pillar_LOD3.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/07caa524f5ef9fcec00ecd2ed2cabe5a/4712754661629689856/4712754661629689856_LOD3.fbx?response-content-disposition=attachment;filename=Wood Pillar_LOD3.fbx",
+				"size": 1389392
+			},
+			{
+				"fileName": "8bit_T_Wood Pillar_Roughness_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/09eed579f5bab31fbf68472a50bc8e42/4712754661629689856/T_4712754661629689856_Roughness_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_Roughness_2K.jpg",
+				"size": 999296
+			},
+			{
+				"fileName": "8bit_T_Wood Pillar_Cavity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/6f3065f842c12c9cf80d384cc78a7481/4712754661629689856/T_4712754661629689856_Cavity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_Cavity_2K.jpg",
+				"size": 992433
+			},
+			{
+				"fileName": "8bit_T_Wood Pillar_Albedo_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/3d19db0fd6a3e8c0ad8fd4729654a196/4712754661629689856/T_4712754661629689856_Albedo_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_Albedo_2K.jpg",
+				"size": 987308
+			},
+			{
+				"fileName": "8bit_T_Wood Pillar_Gloss_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/f8a390692355f990807d83c8a21f8c24/4712754661629689856/T_4712754661629689856_Gloss_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_Gloss_2K.jpg",
+				"size": 731172
+			},
+			{
+				"fileName": "Wood Pillar_LOD4.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/be7df6982003f320b17f94a9c778023c/4712754661629689856/4712754661629689856_LOD4.fbx?response-content-disposition=attachment;filename=Wood Pillar_LOD4.fbx",
+				"size": 719328
+			},
+			{
+				"fileName": "8bit_T_Wood Pillar_AO_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/6e20cebff24365efe828b5c8f24084c2/4712754661629689856/T_4712754661629689856_AO_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_AO_2K.jpg",
+				"size": 714698
+			},
+			{
+				"fileName": "8bit_T_Wood Pillar_Displacement_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/af04639bbbe21d7bb94b5dbcd17b86be/4712754661629689856/T_4712754661629689856_Displacement_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_Displacement_2K.jpg",
+				"size": 388080
+			},
+			{
+				"fileName": "Wood Pillar_LOD5.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/9fcd0cd3774523b8934764e8621f4a93/4712754661629689856/4712754661629689856_LOD5.fbx?response-content-disposition=attachment;filename=Wood Pillar_LOD5.fbx",
+				"size": 366016
+			},
+			{
+				"fileName": "8bit_T_Wood Pillar_Specular_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/c6fbd26bc0f7e522ac93d452482d002e/4712754661629689856/T_4712754661629689856_Specular_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_Specular_2K.jpg",
+				"size": 193525
+			},
+			{
+				"fileName": "8bit_T_Wood Pillar_Metallic_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/7e7b7663dcd761120b5a811904b1a2f1/4741888582829158400/T_4741888582829158400_Metallic_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wood Pillar_Metallic_2K.jpg",
+				"size": 16545
+			}
+		],
+		"currentSize": 0,
+		"settings": {
+			"albedo": "JPG",
+			"normal": "JPG",
+			"roughness": "JPG",
+			"metallic": "JPG",
+			"displacement": [
+				"JPG",
+				"EXR"
+			],
+			"ao": "JPG",
+			"specular": "JPG",
+			"gloss": "JPG",
+			"cavity": "JPG",
+			"format": "JPG",
+			"mesh_format": "FBX",
+			"model_levels": [
+				"LOD3",
+				"LOD4",
+				"LOD5"
+			],
+			"preset": "ALL",
+			"text_resolution": "2K",
+			"color_depth": "8bit"
+		}
+	}
+}

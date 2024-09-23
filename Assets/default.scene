@@ -1,0 +1,85 @@
+{
+    "value0": 3,
+    "value1": 4293918721,
+    "value2": 0,
+    "value3": 2097151,
+    "value4": 1,
+    "value5": 0,
+    "value6": {
+        "Scale": 100.0,
+        "Aspect": 1.3333333730697632,
+        "FOV": 45.0,
+        "Near": 0.009999999776482582,
+        "Far": 100.0
+    },
+    "value7": 1,
+    "value8": 0,
+    "value9": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value10": 0,
+    "value11": 0,
+    "value12": 0,
+    "value13": 1,
+    "value14": 0,
+    "value15": {
+        "value0": "Main Camera"
+    },
+    "value16": 0,
+    "value17": 0,
+    "value18": 0,
+    "value19": 0,
+    "value20": 0,
+    "value21": 0,
+    "value22": 0,
+    "value23": 0,
+    "value24": 0,
+    "value25": 0,
+    "value26": 0,
+    "value27": 0,
+    "value28": 0,
+    "value29": 0,
+    "value30": 0,
+    "value31": 0,
+    "value32": 0
+}

@@ -8,6 +8,7 @@
 #include <map>
 #include <cstdint>
 #include <memory>
+#include <string>
 
 namespace meteor 
 {

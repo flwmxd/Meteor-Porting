@@ -1,2 +1,1 @@
-#Vertex shaders/spv/ScreenQuad.vert.spv
-#Fragment shaders/spv/PostProcess/GaussBlur.frag.spv
+#Compute shaders/spv/PostProcess/GaussBlur.comp.spv

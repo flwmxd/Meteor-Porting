@@ -1,0 +1,124 @@
+{
+	"data": {
+		"uuid": "1666894510148",
+		"id": "i7i1z295hle9",
+		"token": "eacf9324f90732b35604412e543c3003",
+		"categories": [
+			{
+				"id": 262,
+				"label": "设施构建-中式结构-地台",
+				"label_zh": "设施构建-中式结构-地台",
+				"label_en": "Composition-Chinese Comp-Pedestal"
+			}
+		],
+		"name": "中式石座",
+		"name_en": "Stub",
+		"totalSize": 42325721,
+		"isFavorite": false,
+		"preview": "https://public.pbrmaxassets.com/1/4673672033073442816.png",
+		"isSSS": 0,
+		"localPath": "F:\\PRBResources\\117622\\assets\\Stub_Composition-Chinese Comp-Pedestal_i7i1z295hle9",
+		"fileInfo": [
+			{
+				"fileName": "8bit_T_Stub_Displacement_2K.exr",
+				"url": "https://asset.pbrmaxassets.com/202210280215/62b079c9c27f5e7c0202de3f49cb04dc/V2/4700701956094623744/T_4700701956094623744_Displacement_2K.exr?response-content-disposition=attachment;filename=8bit_T_Stub_Displacement_2K.exr",
+				"size": 33587531
+			},
+			{
+				"fileName": "8bit_T_Stub_Normal_2K_LOD5.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/7f2be5769b2f1911d46ed07b1f2a8efd/4700701956094623744/T_4700701956094623744_Normal_2K_8bit_LOD5.jpg?response-content-disposition=attachment;filename=8bit_T_Stub_Normal_2K_LOD5.jpg",
+				"size": 1335299
+			},
+			{
+				"fileName": "8bit_T_Stub_Normal_2K_LOD4.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/f0da4870e40a3f784c02420af624c399/4700701956094623744/T_4700701956094623744_Normal_2K_8bit_LOD4.jpg?response-content-disposition=attachment;filename=8bit_T_Stub_Normal_2K_LOD4.jpg",
+				"size": 1335147
+			},
+			{
+				"fileName": "8bit_T_Stub_Normal_2K_LOD3.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/5589058fb0e91788ca0d7e5e54a65c29/4700701956094623744/T_4700701956094623744_Normal_2K_8bit_LOD3.jpg?response-content-disposition=attachment;filename=8bit_T_Stub_Normal_2K_LOD3.jpg",
+				"size": 1334645
+			},
+			{
+				"fileName": "Stub_LOD3.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/56fb19e19efe2fce9024ba6ff563771e/4700701956094623744/4700701956094623744_LOD3.fbx?response-content-disposition=attachment;filename=Stub_LOD3.fbx",
+				"size": 983616
+			},
+			{
+				"fileName": "8bit_T_Stub_Albedo_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/be20f80b49fe6398d1a89cdbc20eb455/4700701956094623744/T_4700701956094623744_Albedo_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Stub_Albedo_2K.jpg",
+				"size": 923587
+			},
+			{
+				"fileName": "8bit_T_Stub_AO_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/39617e3dcdab682c41a8f9a9ac98807b/4700701956094623744/T_4700701956094623744_AO_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Stub_AO_2K.jpg",
+				"size": 739934
+			},
+			{
+				"fileName": "8bit_T_Stub_Cavity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/fb068a5a1f48b06cb4472271fe2d5247/4700701956094623744/T_4700701956094623744_Cavity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Stub_Cavity_2K.jpg",
+				"size": 657657
+			},
+			{
+				"fileName": "Stub_LOD4.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/84612e7d5a8e4d3377fd9626656827dc/4700701956094623744/4700701956094623744_LOD4.fbx?response-content-disposition=attachment;filename=Stub_LOD4.fbx",
+				"size": 528800
+			},
+			{
+				"fileName": "Stub_LOD5.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/c518591f3e59e90704d5275b41e3f299/4700701956094623744/4700701956094623744_LOD5.fbx?response-content-disposition=attachment;filename=Stub_LOD5.fbx",
+				"size": 249504
+			},
+			{
+				"fileName": "8bit_T_Stub_Displacement_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/e23d899ad1f6a0ae30b3715a9b663ba5/4700701956094623744/T_4700701956094623744_Displacement_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Stub_Displacement_2K.jpg",
+				"size": 184598
+			},
+			{
+				"fileName": "8bit_T_Stub_Roughness_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/2f778e2528a6412ef73945fc75980d06/4700701956094623744/T_4700701956094623744_Roughness_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Stub_Roughness_2K.jpg",
+				"size": 167867
+			},
+			{
+				"fileName": "8bit_T_Stub_Gloss_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/9883589902145fcf42bf771461dc6a74/4700701956094623744/T_4700701956094623744_Gloss_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Stub_Gloss_2K.jpg",
+				"size": 167839
+			},
+			{
+				"fileName": "8bit_T_Stub_Specular_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/8f6f08bb7480bf32eb1ed7c25419ec1b/4700701956094623744/T_4700701956094623744_Specular_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Stub_Specular_2K.jpg",
+				"size": 111420
+			},
+			{
+				"fileName": "8bit_T_Stub_Metallic_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/3f64c2b1d5c054352b3138eb2a52f802/4700701956094623744/T_4700701956094623744_Metallic_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Stub_Metallic_2K.jpg",
+				"size": 18277
+			}
+		],
+		"currentSize": 0,
+		"settings": {
+			"albedo": "JPG",
+			"normal": "JPG",
+			"roughness": "JPG",
+			"metallic": "JPG",
+			"displacement": [
+				"JPG",
+				"EXR"
+			],
+			"ao": "JPG",
+			"specular": "JPG",
+			"gloss": "JPG",
+			"cavity": "JPG",
+			"format": "JPG",
+			"mesh_format": "FBX",
+			"model_levels": [
+				"LOD3",
+				"LOD4",
+				"LOD5"
+			],
+			"preset": "ALL",
+			"text_resolution": "2K",
+			"color_depth": "8bit"
+		}
+	}
+}

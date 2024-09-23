@@ -1,0 +1,12 @@
+{
+    "value0": {
+        "Type": 0,
+        "Graph": {
+            "NextId": 1,
+            "Nodes": [],
+            "Links": [],
+            "Pins": [],
+            "LocalVariables": []
+        }
+    }
+}

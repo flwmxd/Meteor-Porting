@@ -1,0 +1,124 @@
+{
+	"data": {
+		"uuid": "1666895141276",
+		"id": "lq221o12n0qb",
+		"token": "0cd699725f7870c768702a178b626097",
+		"categories": [
+			{
+				"id": 264,
+				"label": "设施构建-中式结构-门窗",
+				"label_zh": "设施构建-中式结构-门窗",
+				"label_en": "Composition-Chinese Comp-Panel"
+			}
+		],
+		"name": "间隔板",
+		"name_en": "Clapboard",
+		"totalSize": 43287196,
+		"isFavorite": false,
+		"preview": "https://public.pbrmaxassets.com/1/6296104478002487296.png",
+		"isSSS": 0,
+		"localPath": "F:\\PRBResources\\117622\\assets\\Clapboard_Composition-Chinese Comp-Panel_lq221o12n0qb",
+		"fileInfo": [
+			{
+				"fileName": "8bit_T_Clapboard_Displacement_2K.exr",
+				"url": "https://asset.pbrmaxassets.com/202210280225/c4bacc5a22f9916c087381f0cbac9ae6/V2/6432658950605504512/T_6432658950605504512_Displacement_2K.exr?response-content-disposition=attachment;filename=8bit_T_Clapboard_Displacement_2K.exr",
+				"size": 33587531
+			},
+			{
+				"fileName": "8bit_T_Clapboard_Normal_2K_LOD3.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/d3d3c94002bae1b642663113e11efcae/6432658950605504512/T_6432658950605504512_Normal_2K_8bit_LOD3.jpg?response-content-disposition=attachment;filename=8bit_T_Clapboard_Normal_2K_LOD3.jpg",
+				"size": 1696611
+			},
+			{
+				"fileName": "8bit_T_Clapboard_Normal_2K_LOD4.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/7e5ed548e060f6be041efc6373069cce/6432658950605504512/T_6432658950605504512_Normal_2K_8bit_LOD4.jpg?response-content-disposition=attachment;filename=8bit_T_Clapboard_Normal_2K_LOD4.jpg",
+				"size": 1679504
+			},
+			{
+				"fileName": "8bit_T_Clapboard_Normal_2K_LOD5.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/a79a05c03ca7c8834252021f4dc08d78/6432658950605504512/T_6432658950605504512_Normal_2K_8bit_LOD5.jpg?response-content-disposition=attachment;filename=8bit_T_Clapboard_Normal_2K_LOD5.jpg",
+				"size": 1658459
+			},
+			{
+				"fileName": "8bit_T_Clapboard_Albedo_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/8c69376ca7e8c7832278b0206ad6cd7e/6432658950605504512/T_6432658950605504512_Albedo_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Clapboard_Albedo_2K.jpg",
+				"size": 912425
+			},
+			{
+				"fileName": "8bit_T_Clapboard_AO_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/c06fcaf20726389f8fd1f30d53bcb4a1/6432658950605504512/T_6432658950605504512_AO_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Clapboard_AO_2K.jpg",
+				"size": 791457
+			},
+			{
+				"fileName": "Clapboard_LOD3.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280225/7c79836b2d00bf0afc338034ca0ddc32/6432658950605504512/6432658950605504512_LOD3.fbx?response-content-disposition=attachment;filename=Clapboard_LOD3.fbx",
+				"size": 696336
+			},
+			{
+				"fileName": "8bit_T_Clapboard_Cavity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/0b5470c51283cc048ac0ec830a66a623/6432658950605504512/T_6432658950605504512_Cavity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Clapboard_Cavity_2K.jpg",
+				"size": 561514
+			},
+			{
+				"fileName": "Clapboard_LOD4.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280225/9d603de5b226b59a36678be72a57c860/6432658950605504512/6432658950605504512_LOD4.fbx?response-content-disposition=attachment;filename=Clapboard_LOD4.fbx",
+				"size": 468240
+			},
+			{
+				"fileName": "Clapboard_LOD5.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280225/b577c18a7e088950854fea7f5db64d0f/6432658950605504512/6432658950605504512_LOD5.fbx?response-content-disposition=attachment;filename=Clapboard_LOD5.fbx",
+				"size": 316544
+			},
+			{
+				"fileName": "8bit_T_Clapboard_Displacement_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/b90a31b7d83a209c4c7a47e9194c9fd2/6432658950605504512/T_6432658950605504512_Displacement_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Clapboard_Displacement_2K.jpg",
+				"size": 280070
+			},
+			{
+				"fileName": "8bit_T_Clapboard_Roughness_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/ece8f7d9a20764b55eec63b6c19e4a28/6432658950605504512/T_6432658950605504512_Roughness_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Clapboard_Roughness_2K.jpg",
+				"size": 239194
+			},
+			{
+				"fileName": "8bit_T_Clapboard_Gloss_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/b679f63813879e5d95de7dfd6c493d31/6432658950605504512/T_6432658950605504512_Gloss_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Clapboard_Gloss_2K.jpg",
+				"size": 239174
+			},
+			{
+				"fileName": "8bit_T_Clapboard_Specular_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/4ad4fcd03a908e3ba3f2940e4080475c/6432658950605504512/T_6432658950605504512_Specular_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Clapboard_Specular_2K.jpg",
+				"size": 140192
+			},
+			{
+				"fileName": "8bit_T_Clapboard_Metallic_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/a68eacb9de561d7571bff02f44b8dece/6432658950605504512/T_6432658950605504512_Metallic_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Clapboard_Metallic_2K.jpg",
+				"size": 19945
+			}
+		],
+		"currentSize": 0,
+		"settings": {
+			"albedo": "JPG",
+			"normal": "JPG",
+			"roughness": "JPG",
+			"metallic": "JPG",
+			"displacement": [
+				"JPG",
+				"EXR"
+			],
+			"ao": "JPG",
+			"specular": "JPG",
+			"gloss": "JPG",
+			"cavity": "JPG",
+			"format": "JPG",
+			"mesh_format": "FBX",
+			"model_levels": [
+				"LOD3",
+				"LOD4",
+				"LOD5"
+			],
+			"preset": "ALL",
+			"text_resolution": "2K",
+			"color_depth": "8bit"
+		}
+	}
+}

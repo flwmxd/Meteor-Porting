@@ -18,11 +18,5 @@
 
 namespace meteor 
 {
-	class MeteorDelegate : public maple::AppDelegate
-	{
-	public:
-		MeteorDelegate();
-		virtual auto onInit() -> void override;
-		virtual auto onDestory() -> void override {};
-	};
+
 }

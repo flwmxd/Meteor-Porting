@@ -2,13 +2,44 @@
     "value0": {
         "Type": 1,
         "Graph": {
-            "NextId": 16,
+            "NextId": 21,
             "Nodes": [
+                {
+                    "key": 17,
+                    "value": {
+                        "ptr_wrapper": {
+                            "id": 2147483649,
+                            "data": {
+                                "value0": 17,
+                                "value1": "walking_mixamo.com.ozz",
+                                "value2": {
+                                    "value0": 0.0,
+                                    "value1": 0.0
+                                },
+                                "value3": {
+                                    "value0": 1.0,
+                                    "value1": 0.30000001192092898,
+                                    "value2": 0.30000001192092898,
+                                    "value3": 1.0
+                                },
+                                "value4": 5,
+                                "value5": [
+                                    18
+                                ],
+                                "value6": [
+                                    19
+                                ],
+                                "value7": ".\\models\\walking_mixamo.com.ozz",
+                                "value8": 0.0
+                            }
+                        }
+                    }
+                },
                 {
                     "key": 1,
                     "value": {
                         "ptr_wrapper": {
-                            "id": 2147483649,
+                            "id": 2147483650,
                             "data": {
                                 "value0": 1,
                                 "value1": "Entry",
@@ -30,107 +61,33 @@
                             }
                         }
                     }
-                },
-                {
-                    "key": 9,
-                    "value": {
-                        "ptr_wrapper": {
-                            "id": 2147483650,
-                            "data": {
-                                "value0": 9,
-                                "value1": "Idle_mixamo.com.ozz",
-                                "value2": {
-                                    "value0": 0.0,
-                                    "value1": 0.0
-                                },
-                                "value3": {
-                                    "value0": 1.0,
-                                    "value1": 0.30000001192092898,
-                                    "value2": 0.30000001192092898,
-                                    "value3": 1.0
-                                },
-                                "value4": 5,
-                                "value5": [
-                                    10
-                                ],
-                                "value6": [
-                                    11
-                                ],
-                                "value7": ".\\models\\Idle_mixamo.com.ozz",
-                                "value8": 1.0333333015441895
-                            }
-                        }
-                    }
-                },
-                {
-                    "key": 3,
-                    "value": {
-                        "ptr_wrapper": {
-                            "id": 2147483651,
-                            "data": {
-                                "value0": 3,
-                                "value1": "running_mixamo.com.ozz",
-                                "value2": {
-                                    "value0": 0.0,
-                                    "value1": 0.0
-                                },
-                                "value3": {
-                                    "value0": 1.0,
-                                    "value1": 0.30000001192092898,
-                                    "value2": 0.30000001192092898,
-                                    "value3": 1.0
-                                },
-                                "value4": 5,
-                                "value5": [
-                                    4
-                                ],
-                                "value6": [
-                                    5
-                                ],
-                                "value7": ".\\models\\running_mixamo.com.ozz",
-                                "value8": 1.894763708114624
-                            }
-                        }
-                    }
-                },
-                {
-                    "key": 6,
-                    "value": {
-                        "ptr_wrapper": {
-                            "id": 2147483652,
-                            "data": {
-                                "value0": 6,
-                                "value1": "walking_mixamo.com.ozz",
-                                "value2": {
-                                    "value0": 0.0,
-                                    "value1": 0.0
-                                },
-                                "value3": {
-                                    "value0": 1.0,
-                                    "value1": 0.30000001192092898,
-                                    "value2": 0.30000001192092898,
-                                    "value3": 1.0
-                                },
-                                "value4": 5,
-                                "value5": [
-                                    7
-                                ],
-                                "value6": [
-                                    8
-                                ],
-                                "value7": ".\\models\\walking_mixamo.com.ozz",
-                                "value8": 1.8086283206939698
-                            }
-                        }
-                    }
                 }
             ],
             "Links": [
                 {
+                    "key": 20,
+                    "value": {
+                        "ptr_wrapper": {
+                            "id": 2147483651,
+                            "data": {
+                                "value0": 20,
+                                "value1": 2,
+                                "value2": 18,
+                                "value3": {
+                                    "value0": 1.0,
+                                    "value1": 1.0,
+                                    "value2": 1.0
+                                },
+                                "value4": []
+                            }
+                        }
+                    }
+                },
+                {
                     "key": 12,
                     "value": {
                         "ptr_wrapper": {
-                            "id": 2147483653,
+                            "id": 2147483652,
                             "data": {
                                 "value0": 12,
                                 "value1": 2,
@@ -149,7 +106,7 @@
                     "key": 13,
                     "value": {
                         "ptr_wrapper": {
-                            "id": 2147483654,
+                            "id": 2147483653,
                             "data": {
                                 "value0": 13,
                                 "value1": 11,
@@ -177,7 +134,7 @@
                     "key": 14,
                     "value": {
                         "ptr_wrapper": {
-                            "id": 2147483655,
+                            "id": 2147483654,
                             "data": {
                                 "value0": 14,
                                 "value1": 11,
@@ -200,14 +157,54 @@
                             }
                         }
                     }
+                },
+                {
+                    "key": 16,
+                    "value": {
+                        "ptr_wrapper": {
+                            "id": 2147483655,
+                            "data": {
+                                "value0": 16,
+                                "value1": 2,
+                                "value2": 4,
+                                "value3": {
+                                    "value0": 1.0,
+                                    "value1": 1.0,
+                                    "value2": 1.0
+                                },
+                                "value4": []
+                            }
+                        }
+                    }
                 }
             ],
             "Pins": [
                 {
-                    "key": 2,
+                    "key": 18,
                     "value": {
                         "ptr_wrapper": {
                             "id": 2147483656,
+                            "data": {
+                                "value0": 18,
+                                "value1": 0,
+                                "value2": 1,
+                                "value3": "",
+                                "value4": {
+                                    "value0": 1,
+                                    "value1": "",
+                                    "value2": false
+                                },
+                                "value5": 20,
+                                "value6": 17
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": 2,
+                    "value": {
+                        "ptr_wrapper": {
+                            "id": 2147483657,
                             "data": {
                                 "value0": 2,
                                 "value1": 0,
@@ -218,7 +215,7 @@
                                     "value1": "",
                                     "value2": false
                                 },
-                                "value5": 12,
+                                "value5": 20,
                                 "value6": 1
                             }
                         }
@@ -228,7 +225,7 @@
                     "key": 10,
                     "value": {
                         "ptr_wrapper": {
-                            "id": 2147483657,
+                            "id": 2147483658,
                             "data": {
                                 "value0": 10,
                                 "value1": 0,
@@ -239,8 +236,8 @@
                                     "value1": "",
                                     "value2": false
                                 },
-                                "value5": 3722304989,
-                                "value6": 9
+                                "value5": 4294967295,
+                                "value6": 4294967295
                             }
                         }
                     }
@@ -249,7 +246,7 @@
                     "key": 4,
                     "value": {
                         "ptr_wrapper": {
-                            "id": 2147483658,
+                            "id": 2147483659,
                             "data": {
                                 "value0": 4,
                                 "value1": 0,
@@ -260,8 +257,8 @@
                                     "value1": "",
                                     "value2": false
                                 },
-                                "value5": 13,
-                                "value6": 3
+                                "value5": 16,
+                                "value6": 0
                             }
                         }
                     }
@@ -270,7 +267,7 @@
                     "key": 5,
                     "value": {
                         "ptr_wrapper": {
-                            "id": 2147483659,
+                            "id": 2147483660,
                             "data": {
                                 "value0": 5,
                                 "value1": 0,
@@ -282,7 +279,7 @@
                                     "value2": false
                                 },
                                 "value5": 4294967295,
-                                "value6": 3
+                                "value6": 0
                             }
                         }
                     }
@@ -291,7 +288,7 @@
                     "key": 7,
                     "value": {
                         "ptr_wrapper": {
-                            "id": 2147483660,
+                            "id": 2147483661,
                             "data": {
                                 "value0": 7,
                                 "value1": 0,
@@ -303,7 +300,7 @@
                                     "value2": false
                                 },
                                 "value5": 14,
-                                "value6": 6
+                                "value6": 4294967295
                             }
                         }
                     }
@@ -312,7 +309,7 @@
                     "key": 8,
                     "value": {
                         "ptr_wrapper": {
-                            "id": 2147483661,
+                            "id": 2147483662,
                             "data": {
                                 "value0": 8,
                                 "value1": 0,
@@ -323,8 +320,8 @@
                                     "value1": "",
                                     "value2": false
                                 },
-                                "value5": 3722304989,
-                                "value6": 6
+                                "value5": 4294967295,
+                                "value6": 4294967295
                             }
                         }
                     }
@@ -333,7 +330,7 @@
                     "key": 11,
                     "value": {
                         "ptr_wrapper": {
-                            "id": 2147483662,
+                            "id": 2147483663,
                             "data": {
                                 "value0": 11,
                                 "value1": 0,
@@ -345,7 +342,28 @@
                                     "value2": false
                                 },
                                 "value5": 14,
-                                "value6": 9
+                                "value6": 4294967295
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": 19,
+                    "value": {
+                        "ptr_wrapper": {
+                            "id": 2147483664,
+                            "data": {
+                                "value0": 19,
+                                "value1": 0,
+                                "value2": 0,
+                                "value3": "",
+                                "value4": {
+                                    "value0": 1,
+                                    "value1": "",
+                                    "value2": false
+                                },
+                                "value5": 4294967295,
+                                "value6": 17
                             }
                         }
                     }

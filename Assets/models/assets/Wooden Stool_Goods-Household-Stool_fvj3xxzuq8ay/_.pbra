@@ -1,0 +1,124 @@
+{
+	"data": {
+		"uuid": "1666894517221",
+		"id": "fvj3xxzuq8ay",
+		"token": "3da549acfc7f005b35a2fc193818fd3e",
+		"categories": [
+			{
+				"id": 196,
+				"label": "商品货物-家居用品-凳子",
+				"label_zh": "商品货物-家居用品-凳子",
+				"label_en": "Goods-Household-Stool"
+			}
+		],
+		"name": "木凳子",
+		"name_en": "Wooden Stool",
+		"totalSize": 44291334,
+		"isFavorite": false,
+		"preview": "https://public.pbrmaxassets.com/1/4664858742733746176.png",
+		"isSSS": 0,
+		"localPath": "F:\\PRBResources\\117622\\assets\\Wooden Stool_Goods-Household-Stool_fvj3xxzuq8ay",
+		"fileInfo": [
+			{
+				"fileName": "8bit_T_Wooden Stool_Displacement_2K.exr",
+				"url": "https://asset.pbrmaxassets.com/202210280215/0c197d6eb06944d283df538ef511b9a6/V2/4712614673613127680/T_4712614673613127680_Displacement_2K.exr?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_Displacement_2K.exr",
+				"size": 33587531
+			},
+			{
+				"fileName": "8bit_T_Wooden Stool_Gloss_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/9508a5a077ed62a3ffbbdd81ca076344/4712614673613127680/T_4712614673613127680_Gloss_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_Gloss_2K.jpg",
+				"size": 1302970
+			},
+			{
+				"fileName": "8bit_T_Wooden Stool_Roughness_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/117acae09f7501f6115bcdd2af909b84/4712614673613127680/T_4712614673613127680_Roughness_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_Roughness_2K.jpg",
+				"size": 1302682
+			},
+			{
+				"fileName": "8bit_T_Wooden Stool_Albedo_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/f666ffae445092875e009a795d4576df/4712614673613127680/T_4712614673613127680_Albedo_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_Albedo_2K.jpg",
+				"size": 1198466
+			},
+			{
+				"fileName": "8bit_T_Wooden Stool_Normal_2K_LOD5.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/b3cf1f2c8c92bd496b4be4c96687485f/4712614673613127680/T_4712614673613127680_Normal_2K_8bit_LOD5.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_Normal_2K_LOD5.jpg",
+				"size": 1115200
+			},
+			{
+				"fileName": "8bit_T_Wooden Stool_Normal_2K_LOD4.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/d379b21753057ced2663150a53926763/4712614673613127680/T_4712614673613127680_Normal_2K_8bit_LOD4.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_Normal_2K_LOD4.jpg",
+				"size": 1108654
+			},
+			{
+				"fileName": "8bit_T_Wooden Stool_Normal_2K_LOD3.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/918ab28f46af5e3a980a437be576662b/4712614673613127680/T_4712614673613127680_Normal_2K_8bit_LOD3.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_Normal_2K_LOD3.jpg",
+				"size": 1069771
+			},
+			{
+				"fileName": "Wooden Stool_LOD3.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/4966194b55b2892156534f5f60e408e6/4712614673613127680/4712614673613127680_LOD3.fbx?response-content-disposition=attachment;filename=Wooden Stool_LOD3.fbx",
+				"size": 1067984
+			},
+			{
+				"fileName": "8bit_T_Wooden Stool_AO_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/cb1bdd6d6d7ce1666c4a9268d9bb8ff4/4712614673613127680/T_4712614673613127680_AO_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_AO_2K.jpg",
+				"size": 822420
+			},
+			{
+				"fileName": "Wooden Stool_LOD4.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/5b2bb2bbd9da77f1538d15573d229ec3/4712614673613127680/4712614673613127680_LOD4.fbx?response-content-disposition=attachment;filename=Wooden Stool_LOD4.fbx",
+				"size": 591200
+			},
+			{
+				"fileName": "8bit_T_Wooden Stool_Cavity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/d8d0ac978756c1bc7f8a59532455ea63/4712614673613127680/T_4712614673613127680_Cavity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_Cavity_2K.jpg",
+				"size": 396273
+			},
+			{
+				"fileName": "8bit_T_Wooden Stool_Displacement_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/5651ad58ee6351a816c9b5516de39a94/4712614673613127680/T_4712614673613127680_Displacement_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_Displacement_2K.jpg",
+				"size": 365313
+			},
+			{
+				"fileName": "Wooden Stool_LOD5.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/d6c8a7247a49624432884b50c535f8a4/4712614673613127680/4712614673613127680_LOD5.fbx?response-content-disposition=attachment;filename=Wooden Stool_LOD5.fbx",
+				"size": 228288
+			},
+			{
+				"fileName": "8bit_T_Wooden Stool_Specular_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/6a278ecef75811306696ec2f8c066384/4712614673613127680/T_4712614673613127680_Specular_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_Specular_2K.jpg",
+				"size": 118037
+			},
+			{
+				"fileName": "8bit_T_Wooden Stool_Metallic_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/7e7b7663dcd761120b5a811904b1a2f1/4741888582829158400/T_4741888582829158400_Metallic_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Wooden Stool_Metallic_2K.jpg",
+				"size": 16545
+			}
+		],
+		"currentSize": 0,
+		"settings": {
+			"albedo": "JPG",
+			"normal": "JPG",
+			"roughness": "JPG",
+			"metallic": "JPG",
+			"displacement": [
+				"JPG",
+				"EXR"
+			],
+			"ao": "JPG",
+			"specular": "JPG",
+			"gloss": "JPG",
+			"cavity": "JPG",
+			"format": "JPG",
+			"mesh_format": "FBX",
+			"model_levels": [
+				"LOD3",
+				"LOD4",
+				"LOD5"
+			],
+			"preset": "ALL",
+			"text_resolution": "2K",
+			"color_depth": "8bit"
+		}
+	}
+}

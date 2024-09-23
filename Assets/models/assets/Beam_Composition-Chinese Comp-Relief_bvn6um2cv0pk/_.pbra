@@ -1,0 +1,124 @@
+{
+	"data": {
+		"uuid": "1666895138857",
+		"id": "bvn6um2cv0pk",
+		"token": "11a727073ac12f2ef52f90ffb4b7cf49",
+		"categories": [
+			{
+				"id": 260,
+				"label": "设施构建-中式结构-浮雕",
+				"label_zh": "设施构建-中式结构-浮雕",
+				"label_en": "Composition-Chinese Comp-Relief"
+			}
+		],
+		"name": "横梁",
+		"name_en": "Beam",
+		"totalSize": 43102188,
+		"isFavorite": false,
+		"preview": "https://public.pbrmaxassets.com/1/4997186165515460608.png",
+		"isSSS": 0,
+		"localPath": "F:\\PRBResources\\117622\\assets\\Beam_Composition-Chinese Comp-Relief_bvn6um2cv0pk",
+		"fileInfo": [
+			{
+				"fileName": "8bit_T_Beam_Displacement_2K.exr",
+				"url": "https://asset.pbrmaxassets.com/202210280225/e5b26c180063054845c224e03256c7f9/V2/4997252474979311616/T_4997252474979311616_Displacement_2K.exr?response-content-disposition=attachment;filename=8bit_T_Beam_Displacement_2K.exr",
+				"size": 33587531
+			},
+			{
+				"fileName": "8bit_T_Beam_Normal_2K_LOD5.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/399b178a0b34bf82fa28419b748fc647/4997252474979311616/T_4997252474979311616_Normal_2K_8bit_LOD5.jpg?response-content-disposition=attachment;filename=8bit_T_Beam_Normal_2K_LOD5.jpg",
+				"size": 1354873
+			},
+			{
+				"fileName": "8bit_T_Beam_Normal_2K_LOD4.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/015342172160f75de0a75ace5d1b1338/4997252474979311616/T_4997252474979311616_Normal_2K_8bit_LOD4.jpg?response-content-disposition=attachment;filename=8bit_T_Beam_Normal_2K_LOD4.jpg",
+				"size": 1353688
+			},
+			{
+				"fileName": "8bit_T_Beam_Normal_2K_LOD3.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/bc84bda5a3af74be7930466b4401650d/4997252474979311616/T_4997252474979311616_Normal_2K_8bit_LOD3.jpg?response-content-disposition=attachment;filename=8bit_T_Beam_Normal_2K_LOD3.jpg",
+				"size": 1336803
+			},
+			{
+				"fileName": "8bit_T_Beam_Albedo_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/cf06d9a87d47ebde09ca82c25041c195/4997252474979311616/T_4997252474979311616_Albedo_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Beam_Albedo_2K.jpg",
+				"size": 1089496
+			},
+			{
+				"fileName": "8bit_T_Beam_AO_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/e4cb26c77f34306feccf3a566a3cb127/4997252474979311616/T_4997252474979311616_AO_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Beam_AO_2K.jpg",
+				"size": 852662
+			},
+			{
+				"fileName": "8bit_T_Beam_Gloss_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/7f3dd53489e5e9eac7ced2b1ef41914a/4997252474979311616/T_4997252474979311616_Gloss_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Beam_Gloss_2K.jpg",
+				"size": 752661
+			},
+			{
+				"fileName": "8bit_T_Beam_Roughness_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/71c78d3f0f16421f1c259a7ec72c69f1/4997252474979311616/T_4997252474979311616_Roughness_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Beam_Roughness_2K.jpg",
+				"size": 752327
+			},
+			{
+				"fileName": "8bit_T_Beam_Cavity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/73ccc1e75685ada5f0905020bc571f03/4997252474979311616/T_4997252474979311616_Cavity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Beam_Cavity_2K.jpg",
+				"size": 712501
+			},
+			{
+				"fileName": "8bit_T_Beam_Displacement_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/9fbe1838db28ade42afbaa40d77b8fc3/4997252474979311616/T_4997252474979311616_Displacement_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Beam_Displacement_2K.jpg",
+				"size": 332439
+			},
+			{
+				"fileName": "Beam_LOD4.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280225/e5a7a295c32653589afcc0037904dbb9/4997252474979311616/4997252474979311616_LOD4.fbx?response-content-disposition=attachment;filename=Beam_LOD4.fbx",
+				"size": 278896
+			},
+			{
+				"fileName": "8bit_T_Beam_Specular_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/925e9f17d5bbe988e4b3259a7bfe5aff/4997252474979311616/T_4997252474979311616_Specular_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Beam_Specular_2K.jpg",
+				"size": 263974
+			},
+			{
+				"fileName": "Beam_LOD3.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280225/8f1f8ff7999403077f982d55515ab1bc/4997252474979311616/4997252474979311616_LOD3.fbx?response-content-disposition=attachment;filename=Beam_LOD3.fbx",
+				"size": 263552
+			},
+			{
+				"fileName": "Beam_LOD5.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280225/1afa3987cad1105bd3e2326adad41249/4997252474979311616/4997252474979311616_LOD5.fbx?response-content-disposition=attachment;filename=Beam_LOD5.fbx",
+				"size": 154240
+			},
+			{
+				"fileName": "8bit_T_Beam_Metallic_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/1a582969bc0391bd4bb791d8ba1d54de/4741888582829158400/T_4741888582829158400_Metallic_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Beam_Metallic_2K.jpg",
+				"size": 16545
+			}
+		],
+		"currentSize": 0,
+		"settings": {
+			"albedo": "JPG",
+			"normal": "JPG",
+			"roughness": "JPG",
+			"metallic": "JPG",
+			"displacement": [
+				"JPG",
+				"EXR"
+			],
+			"ao": "JPG",
+			"specular": "JPG",
+			"gloss": "JPG",
+			"cavity": "JPG",
+			"format": "JPG",
+			"mesh_format": "FBX",
+			"model_levels": [
+				"LOD3",
+				"LOD4",
+				"LOD5"
+			],
+			"preset": "ALL",
+			"text_resolution": "2K",
+			"color_depth": "8bit"
+		}
+	}
+}

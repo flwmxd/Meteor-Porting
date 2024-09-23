@@ -1,0 +1,124 @@
+{
+	"data": {
+		"uuid": "1666894500680",
+		"id": "l0h342g5y9o4",
+		"token": "3113a8536687a273535ff0ca0e95a154",
+		"categories": [
+			{
+				"id": 270,
+				"label": "设施构建-中式结构-塔",
+				"label_zh": "设施构建-中式结构-塔",
+				"label_en": "Composition-Chinese Comp-Tower"
+			}
+		],
+		"name": "中式石塔",
+		"name_en": "Tower",
+		"totalSize": 43070875,
+		"isFavorite": false,
+		"preview": "https://public.pbrmaxassets.com/1/4673715278830710784.png",
+		"isSSS": 0,
+		"localPath": "F:\\PRBResources\\117622\\assets\\Tower_Composition-Chinese Comp-Tower_l0h342g5y9o4",
+		"fileInfo": [
+			{
+				"fileName": "8bit_T_Tower_Displacement_2K.exr",
+				"url": "https://asset.pbrmaxassets.com/202210280215/935cf79018c6c88ca6a2ea97a3e02103/V2/4700739392908623872/T_4700739392908623872_Displacement_2K.exr?response-content-disposition=attachment;filename=8bit_T_Tower_Displacement_2K.exr",
+				"size": 33587531
+			},
+			{
+				"fileName": "8bit_T_Tower_Normal_2K_LOD5.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/facc4060cd7ab7e100e18524e553f113/4700739392908623872/T_4700739392908623872_Normal_2K_8bit_LOD5.jpg?response-content-disposition=attachment;filename=8bit_T_Tower_Normal_2K_LOD5.jpg",
+				"size": 1606310
+			},
+			{
+				"fileName": "8bit_T_Tower_Normal_2K_LOD4.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/f5bb9ebabc25d3cff1856877cf4afa10/4700739392908623872/T_4700739392908623872_Normal_2K_8bit_LOD4.jpg?response-content-disposition=attachment;filename=8bit_T_Tower_Normal_2K_LOD4.jpg",
+				"size": 1599782
+			},
+			{
+				"fileName": "8bit_T_Tower_Normal_2K_LOD3.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/127fdf8de4f884513b6862e787cc141e/4700739392908623872/T_4700739392908623872_Normal_2K_8bit_LOD3.jpg?response-content-disposition=attachment;filename=8bit_T_Tower_Normal_2K_LOD3.jpg",
+				"size": 1592497
+			},
+			{
+				"fileName": "8bit_T_Tower_Albedo_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/013aead0650bf8eae0407da975b83769/4700739392908623872/T_4700739392908623872_Albedo_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tower_Albedo_2K.jpg",
+				"size": 1064805
+			},
+			{
+				"fileName": "8bit_T_Tower_Cavity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/5b060ddf5b174f570503c3cd06ad057e/4700739392908623872/T_4700739392908623872_Cavity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tower_Cavity_2K.jpg",
+				"size": 724636
+			},
+			{
+				"fileName": "8bit_T_Tower_AO_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/3650e0068f61297625587cd22dedcee8/4700739392908623872/T_4700739392908623872_AO_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tower_AO_2K.jpg",
+				"size": 713977
+			},
+			{
+				"fileName": "Tower_LOD3.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/b292d62968008ce84c4fe3a3fa23b869/4700739392908623872/4700739392908623872_LOD3.fbx?response-content-disposition=attachment;filename=Tower_LOD3.fbx",
+				"size": 701472
+			},
+			{
+				"fileName": "8bit_T_Tower_Displacement_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/56d6d510c9c48df9db0f30e4da417c20/4700739392908623872/T_4700739392908623872_Displacement_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tower_Displacement_2K.jpg",
+				"size": 398387
+			},
+			{
+				"fileName": "Tower_LOD4.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/b2e03ae380451fbb6c764544d74f36f6/4700739392908623872/4700739392908623872_LOD4.fbx?response-content-disposition=attachment;filename=Tower_LOD4.fbx",
+				"size": 397392
+			},
+			{
+				"fileName": "Tower_LOD5.fbx",
+				"url": "https://asset.pbrmaxassets.com/202210280215/db27dd883ac34aabe669522511bf72f6/4700739392908623872/4700739392908623872_LOD5.fbx?response-content-disposition=attachment;filename=Tower_LOD5.fbx",
+				"size": 207968
+			},
+			{
+				"fileName": "8bit_T_Tower_Roughness_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/dd51f59a1aeb3571f75d316d8cce5e66/4700739392908623872/T_4700739392908623872_Roughness_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tower_Roughness_2K.jpg",
+				"size": 168189
+			},
+			{
+				"fileName": "8bit_T_Tower_Gloss_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/88b47046d090e80d07adfe3c2a09fcff/4700739392908623872/T_4700739392908623872_Gloss_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tower_Gloss_2K.jpg",
+				"size": 168183
+			},
+			{
+				"fileName": "8bit_T_Tower_Specular_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/83918a54645bca42500e9e80ddb26832/4700739392908623872/T_4700739392908623872_Specular_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tower_Specular_2K.jpg",
+				"size": 121469
+			},
+			{
+				"fileName": "8bit_T_Tower_Metallic_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280215/a441ec8ada499e11982f21b6e5b93766/4700739392908623872/T_4700739392908623872_Metallic_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Tower_Metallic_2K.jpg",
+				"size": 18277
+			}
+		],
+		"currentSize": 0,
+		"settings": {
+			"albedo": "JPG",
+			"normal": "JPG",
+			"roughness": "JPG",
+			"metallic": "JPG",
+			"displacement": [
+				"JPG",
+				"EXR"
+			],
+			"ao": "JPG",
+			"specular": "JPG",
+			"gloss": "JPG",
+			"cavity": "JPG",
+			"format": "JPG",
+			"mesh_format": "FBX",
+			"model_levels": [
+				"LOD3",
+				"LOD4",
+				"LOD5"
+			],
+			"preset": "ALL",
+			"text_resolution": "2K",
+			"color_depth": "8bit"
+		}
+	}
+}

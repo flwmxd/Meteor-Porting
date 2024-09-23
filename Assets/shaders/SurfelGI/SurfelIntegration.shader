@@ -1,0 +1,1 @@
+#Compute shaders/spv/SurfelGI/SurfelIntegration.comp.spv

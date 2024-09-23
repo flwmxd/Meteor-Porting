@@ -1,0 +1,7336 @@
+{
+    "value0": 110,
+    "value1": 4294967295,
+    "value2": 0,
+    "value3": 1,
+    "value4": 2,
+    "value5": 3,
+    "value6": 4,
+    "value7": 5,
+    "value8": 6,
+    "value9": 7,
+    "value10": 8,
+    "value11": 9,
+    "value12": 10,
+    "value13": 11,
+    "value14": 12,
+    "value15": 13,
+    "value16": 14,
+    "value17": 15,
+    "value18": 16,
+    "value19": 17,
+    "value20": 18,
+    "value21": 19,
+    "value22": 20,
+    "value23": 21,
+    "value24": 22,
+    "value25": 23,
+    "value26": 24,
+    "value27": 25,
+    "value28": 26,
+    "value29": 27,
+    "value30": 28,
+    "value31": 29,
+    "value32": 30,
+    "value33": 31,
+    "value34": 32,
+    "value35": 33,
+    "value36": 34,
+    "value37": 35,
+    "value38": 36,
+    "value39": 37,
+    "value40": 38,
+    "value41": 39,
+    "value42": 40,
+    "value43": 41,
+    "value44": 42,
+    "value45": 43,
+    "value46": 44,
+    "value47": 45,
+    "value48": 46,
+    "value49": 47,
+    "value50": 48,
+    "value51": 49,
+    "value52": 50,
+    "value53": 51,
+    "value54": 52,
+    "value55": 53,
+    "value56": 54,
+    "value57": 55,
+    "value58": 56,
+    "value59": 57,
+    "value60": 58,
+    "value61": 59,
+    "value62": 60,
+    "value63": 61,
+    "value64": 62,
+    "value65": 63,
+    "value66": 64,
+    "value67": 65,
+    "value68": 66,
+    "value69": 67,
+    "value70": 68,
+    "value71": 69,
+    "value72": 70,
+    "value73": 71,
+    "value74": 72,
+    "value75": 73,
+    "value76": 74,
+    "value77": 75,
+    "value78": 76,
+    "value79": 77,
+    "value80": 78,
+    "value81": 79,
+    "value82": 80,
+    "value83": 81,
+    "value84": 82,
+    "value85": 83,
+    "value86": 84,
+    "value87": 85,
+    "value88": 86,
+    "value89": 87,
+    "value90": 88,
+    "value91": 89,
+    "value92": 90,
+    "value93": 91,
+    "value94": 92,
+    "value95": 93,
+    "value96": 94,
+    "value97": 95,
+    "value98": 96,
+    "value99": 97,
+    "value100": 98,
+    "value101": 99,
+    "value102": 100,
+    "value103": 101,
+    "value104": 102,
+    "value105": 103,
+    "value106": 104,
+    "value107": 105,
+    "value108": 106,
+    "value109": 107,
+    "value110": 108,
+    "value111": 1,
+    "value112": 0,
+    "value113": {
+        "Scale": 100.0,
+        "Aspect": 1.3333333730697632,
+        "FOV": 45.0,
+        "Near": 0.009999999776482582,
+        "Far": 100.0
+    },
+    "value114": 116,
+    "value115": 0,
+    "value116": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value117": 0,
+    "value118": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value119": 0,
+    "value120": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value121": 0,
+    "value122": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value123": 0,
+    "value124": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value125": 0,
+    "value126": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value127": 0,
+    "value128": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value129": 0,
+    "value130": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value131": 0,
+    "value132": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value133": 0,
+    "value134": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value135": 1,
+    "value136": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 1.4049900770187379,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value137": 3,
+    "value138": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value139": 2,
+    "value140": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value141": 4,
+    "value142": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value143": 5,
+    "value144": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value145": 6,
+    "value146": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value147": 7,
+    "value148": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value149": 8,
+    "value150": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value151": 9,
+    "value152": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value153": 10,
+    "value154": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value155": 11,
+    "value156": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value157": 12,
+    "value158": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value159": 13,
+    "value160": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value161": 14,
+    "value162": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value163": 15,
+    "value164": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value165": 16,
+    "value166": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value167": 17,
+    "value168": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value169": 18,
+    "value170": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value171": 19,
+    "value172": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value173": 20,
+    "value174": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value175": 21,
+    "value176": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value177": 22,
+    "value178": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value179": 23,
+    "value180": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value181": 24,
+    "value182": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value183": 25,
+    "value184": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value185": 26,
+    "value186": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value187": 27,
+    "value188": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value189": 28,
+    "value190": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value191": 29,
+    "value192": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value193": 30,
+    "value194": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value195": 31,
+    "value196": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value197": 32,
+    "value198": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value199": 33,
+    "value200": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value201": 34,
+    "value202": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value203": 35,
+    "value204": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value205": 36,
+    "value206": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value207": 37,
+    "value208": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value209": 38,
+    "value210": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value211": 39,
+    "value212": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value213": 40,
+    "value214": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value215": 41,
+    "value216": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value217": 42,
+    "value218": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value219": 43,
+    "value220": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value221": 44,
+    "value222": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value223": 45,
+    "value224": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value225": 46,
+    "value226": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value227": 47,
+    "value228": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value229": 48,
+    "value230": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value231": 49,
+    "value232": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value233": 50,
+    "value234": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value235": 51,
+    "value236": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value237": 52,
+    "value238": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value239": 53,
+    "value240": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value241": 54,
+    "value242": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value243": 55,
+    "value244": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value245": 56,
+    "value246": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value247": 57,
+    "value248": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value249": 58,
+    "value250": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value251": 59,
+    "value252": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value253": 60,
+    "value254": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value255": 61,
+    "value256": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value257": 62,
+    "value258": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value259": 63,
+    "value260": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value261": 64,
+    "value262": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value263": 65,
+    "value264": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value265": 66,
+    "value266": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value267": 67,
+    "value268": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value269": 68,
+    "value270": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value271": 69,
+    "value272": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value273": 70,
+    "value274": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value275": 71,
+    "value276": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value277": 72,
+    "value278": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value279": 73,
+    "value280": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value281": 74,
+    "value282": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value283": 75,
+    "value284": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value285": 76,
+    "value286": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value287": 77,
+    "value288": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value289": 78,
+    "value290": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value291": 79,
+    "value292": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value293": 80,
+    "value294": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value295": 81,
+    "value296": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value297": 82,
+    "value298": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value299": 83,
+    "value300": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value301": 84,
+    "value302": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value303": 85,
+    "value304": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value305": 86,
+    "value306": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value307": 87,
+    "value308": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value309": 88,
+    "value310": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value311": 89,
+    "value312": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value313": 90,
+    "value314": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value315": 91,
+    "value316": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value317": 92,
+    "value318": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value319": 93,
+    "value320": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value321": 94,
+    "value322": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value323": 95,
+    "value324": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value325": 96,
+    "value326": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value327": 97,
+    "value328": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value329": 98,
+    "value330": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value331": 99,
+    "value332": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value333": 100,
+    "value334": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value335": 101,
+    "value336": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value337": 102,
+    "value338": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value339": 103,
+    "value340": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value341": 104,
+    "value342": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value343": 105,
+    "value344": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": 0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value345": 108,
+    "value346": {
+        "Position": {
+            "value0": 0.0,
+            "value1": 0.014411687850952149,
+            "value2": 0.0
+        },
+        "Rotation": {
+            "value0": 0.0,
+            "value1": -0.0,
+            "value2": 0.0
+        },
+        "Scale": {
+            "value0": 1.0,
+            "value1": 1.0,
+            "value2": 1.0
+        },
+        "Offset": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 1.0,
+                "value2": 0.0,
+                "value3": 0.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 1.0,
+                "value3": 0.0
+            },
+            "value3": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            }
+        }
+    },
+    "value347": 0,
+    "value348": 104,
+    "value349": 3,
+    "value350": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 4,
+        "value3": 4294967295
+    },
+    "value351": 2,
+    "value352": {
+        "value0": 4294967295,
+        "value1": 3,
+        "value2": 4294967295,
+        "value3": 4294967295
+    },
+    "value353": 4,
+    "value354": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 5,
+        "value3": 3
+    },
+    "value355": 5,
+    "value356": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 6,
+        "value3": 4
+    },
+    "value357": 6,
+    "value358": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 7,
+        "value3": 5
+    },
+    "value359": 7,
+    "value360": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 8,
+        "value3": 6
+    },
+    "value361": 8,
+    "value362": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 9,
+        "value3": 7
+    },
+    "value363": 9,
+    "value364": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 10,
+        "value3": 8
+    },
+    "value365": 10,
+    "value366": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 11,
+        "value3": 9
+    },
+    "value367": 11,
+    "value368": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 12,
+        "value3": 10
+    },
+    "value369": 12,
+    "value370": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 13,
+        "value3": 11
+    },
+    "value371": 13,
+    "value372": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 14,
+        "value3": 12
+    },
+    "value373": 14,
+    "value374": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 15,
+        "value3": 13
+    },
+    "value375": 15,
+    "value376": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 16,
+        "value3": 14
+    },
+    "value377": 16,
+    "value378": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 17,
+        "value3": 15
+    },
+    "value379": 17,
+    "value380": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 18,
+        "value3": 16
+    },
+    "value381": 18,
+    "value382": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 19,
+        "value3": 17
+    },
+    "value383": 19,
+    "value384": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 20,
+        "value3": 18
+    },
+    "value385": 20,
+    "value386": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 21,
+        "value3": 19
+    },
+    "value387": 21,
+    "value388": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 22,
+        "value3": 20
+    },
+    "value389": 22,
+    "value390": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 23,
+        "value3": 21
+    },
+    "value391": 23,
+    "value392": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 24,
+        "value3": 22
+    },
+    "value393": 24,
+    "value394": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 25,
+        "value3": 23
+    },
+    "value395": 25,
+    "value396": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 26,
+        "value3": 24
+    },
+    "value397": 26,
+    "value398": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 27,
+        "value3": 25
+    },
+    "value399": 27,
+    "value400": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 28,
+        "value3": 26
+    },
+    "value401": 28,
+    "value402": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 29,
+        "value3": 27
+    },
+    "value403": 29,
+    "value404": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 30,
+        "value3": 28
+    },
+    "value405": 30,
+    "value406": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 31,
+        "value3": 29
+    },
+    "value407": 31,
+    "value408": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 32,
+        "value3": 30
+    },
+    "value409": 32,
+    "value410": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 33,
+        "value3": 31
+    },
+    "value411": 33,
+    "value412": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 34,
+        "value3": 32
+    },
+    "value413": 34,
+    "value414": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 35,
+        "value3": 33
+    },
+    "value415": 35,
+    "value416": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 36,
+        "value3": 34
+    },
+    "value417": 36,
+    "value418": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 37,
+        "value3": 35
+    },
+    "value419": 37,
+    "value420": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 38,
+        "value3": 36
+    },
+    "value421": 38,
+    "value422": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 39,
+        "value3": 37
+    },
+    "value423": 39,
+    "value424": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 40,
+        "value3": 38
+    },
+    "value425": 40,
+    "value426": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 41,
+        "value3": 39
+    },
+    "value427": 41,
+    "value428": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 42,
+        "value3": 40
+    },
+    "value429": 42,
+    "value430": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 43,
+        "value3": 41
+    },
+    "value431": 43,
+    "value432": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 44,
+        "value3": 42
+    },
+    "value433": 44,
+    "value434": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 45,
+        "value3": 43
+    },
+    "value435": 45,
+    "value436": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 46,
+        "value3": 44
+    },
+    "value437": 46,
+    "value438": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 47,
+        "value3": 45
+    },
+    "value439": 47,
+    "value440": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 48,
+        "value3": 46
+    },
+    "value441": 48,
+    "value442": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 49,
+        "value3": 47
+    },
+    "value443": 49,
+    "value444": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 50,
+        "value3": 48
+    },
+    "value445": 50,
+    "value446": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 51,
+        "value3": 49
+    },
+    "value447": 51,
+    "value448": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 52,
+        "value3": 50
+    },
+    "value449": 52,
+    "value450": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 53,
+        "value3": 51
+    },
+    "value451": 53,
+    "value452": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 54,
+        "value3": 52
+    },
+    "value453": 54,
+    "value454": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 55,
+        "value3": 53
+    },
+    "value455": 55,
+    "value456": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 56,
+        "value3": 54
+    },
+    "value457": 56,
+    "value458": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 57,
+        "value3": 55
+    },
+    "value459": 57,
+    "value460": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 58,
+        "value3": 56
+    },
+    "value461": 58,
+    "value462": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 59,
+        "value3": 57
+    },
+    "value463": 59,
+    "value464": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 60,
+        "value3": 58
+    },
+    "value465": 60,
+    "value466": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 61,
+        "value3": 59
+    },
+    "value467": 61,
+    "value468": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 62,
+        "value3": 60
+    },
+    "value469": 62,
+    "value470": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 63,
+        "value3": 61
+    },
+    "value471": 63,
+    "value472": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 64,
+        "value3": 62
+    },
+    "value473": 64,
+    "value474": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 65,
+        "value3": 63
+    },
+    "value475": 65,
+    "value476": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 66,
+        "value3": 64
+    },
+    "value477": 66,
+    "value478": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 67,
+        "value3": 65
+    },
+    "value479": 67,
+    "value480": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 68,
+        "value3": 66
+    },
+    "value481": 68,
+    "value482": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 69,
+        "value3": 67
+    },
+    "value483": 69,
+    "value484": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 70,
+        "value3": 68
+    },
+    "value485": 70,
+    "value486": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 71,
+        "value3": 69
+    },
+    "value487": 71,
+    "value488": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 72,
+        "value3": 70
+    },
+    "value489": 72,
+    "value490": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 73,
+        "value3": 71
+    },
+    "value491": 73,
+    "value492": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 74,
+        "value3": 72
+    },
+    "value493": 74,
+    "value494": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 75,
+        "value3": 73
+    },
+    "value495": 75,
+    "value496": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 76,
+        "value3": 74
+    },
+    "value497": 76,
+    "value498": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 77,
+        "value3": 75
+    },
+    "value499": 77,
+    "value500": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 78,
+        "value3": 76
+    },
+    "value501": 78,
+    "value502": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 79,
+        "value3": 77
+    },
+    "value503": 79,
+    "value504": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 80,
+        "value3": 78
+    },
+    "value505": 80,
+    "value506": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 81,
+        "value3": 79
+    },
+    "value507": 81,
+    "value508": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 82,
+        "value3": 80
+    },
+    "value509": 82,
+    "value510": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 83,
+        "value3": 81
+    },
+    "value511": 83,
+    "value512": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 84,
+        "value3": 82
+    },
+    "value513": 84,
+    "value514": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 85,
+        "value3": 83
+    },
+    "value515": 85,
+    "value516": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 86,
+        "value3": 84
+    },
+    "value517": 86,
+    "value518": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 87,
+        "value3": 85
+    },
+    "value519": 87,
+    "value520": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 88,
+        "value3": 86
+    },
+    "value521": 88,
+    "value522": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 89,
+        "value3": 87
+    },
+    "value523": 89,
+    "value524": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 90,
+        "value3": 88
+    },
+    "value525": 90,
+    "value526": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 91,
+        "value3": 89
+    },
+    "value527": 91,
+    "value528": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 92,
+        "value3": 90
+    },
+    "value529": 92,
+    "value530": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 93,
+        "value3": 91
+    },
+    "value531": 93,
+    "value532": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 94,
+        "value3": 92
+    },
+    "value533": 94,
+    "value534": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 95,
+        "value3": 93
+    },
+    "value535": 95,
+    "value536": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 96,
+        "value3": 94
+    },
+    "value537": 96,
+    "value538": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 97,
+        "value3": 95
+    },
+    "value539": 97,
+    "value540": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 98,
+        "value3": 96
+    },
+    "value541": 98,
+    "value542": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 99,
+        "value3": 97
+    },
+    "value543": 99,
+    "value544": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 100,
+        "value3": 98
+    },
+    "value545": 100,
+    "value546": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 101,
+        "value3": 99
+    },
+    "value547": 101,
+    "value548": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 102,
+        "value3": 100
+    },
+    "value549": 102,
+    "value550": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 103,
+        "value3": 101
+    },
+    "value551": 103,
+    "value552": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 104,
+        "value3": 102
+    },
+    "value553": 104,
+    "value554": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 105,
+        "value3": 103
+    },
+    "value555": 105,
+    "value556": {
+        "value0": 2,
+        "value1": 4294967295,
+        "value2": 4294967295,
+        "value3": 104
+    },
+    "value557": 1,
+    "value558": 1,
+    "value559": {
+        "value0": false,
+        "value1": true,
+        "value2": 1.0,
+        "value3": {
+            "value0": 0.005799999926239252,
+            "value1": 0.013500000350177288,
+            "value2": 0.03310000151395798
+        },
+        "value4": ""
+    },
+    "value560": 109,
+    "value561": 0,
+    "value562": {
+        "value0": "Main Camera"
+    },
+    "value563": 1,
+    "value564": {
+        "value0": "Light"
+    },
+    "value565": 2,
+    "value566": {
+        "value0": "Sponza"
+    },
+    "value567": 3,
+    "value568": {
+        "value0": "Sponza_51"
+    },
+    "value569": 4,
+    "value570": {
+        "value0": "Sponza_0"
+    },
+    "value571": 5,
+    "value572": {
+        "value0": "Sponza_50"
+    },
+    "value573": 6,
+    "value574": {
+        "value0": "Sponza_1"
+    },
+    "value575": 7,
+    "value576": {
+        "value0": "Sponza_53"
+    },
+    "value577": 8,
+    "value578": {
+        "value0": "Sponza_2"
+    },
+    "value579": 9,
+    "value580": {
+        "value0": "Sponza_52"
+    },
+    "value581": 10,
+    "value582": {
+        "value0": "Sponza_3"
+    },
+    "value583": 11,
+    "value584": {
+        "value0": "Sponza_55"
+    },
+    "value585": 12,
+    "value586": {
+        "value0": "Sponza_4"
+    },
+    "value587": 13,
+    "value588": {
+        "value0": "Sponza_54"
+    },
+    "value589": 14,
+    "value590": {
+        "value0": "Sponza_5"
+    },
+    "value591": 15,
+    "value592": {
+        "value0": "Sponza_57"
+    },
+    "value593": 16,
+    "value594": {
+        "value0": "Sponza_48"
+    },
+    "value595": 17,
+    "value596": {
+        "value0": "Sponza_6"
+    },
+    "value597": 18,
+    "value598": {
+        "value0": "Sponza_56"
+    },
+    "value599": 19,
+    "value600": {
+        "value0": "Sponza_49"
+    },
+    "value601": 20,
+    "value602": {
+        "value0": "Sponza_7"
+    },
+    "value603": 21,
+    "value604": {
+        "value0": "Sponza_59"
+    },
+    "value605": 22,
+    "value606": {
+        "value0": "Sponza_46"
+    },
+    "value607": 23,
+    "value608": {
+        "value0": "Sponza_8"
+    },
+    "value609": 24,
+    "value610": {
+        "value0": "Sponza_58"
+    },
+    "value611": 25,
+    "value612": {
+        "value0": "Sponza_47"
+    },
+    "value613": 26,
+    "value614": {
+        "value0": "Sponza_9"
+    },
+    "value615": 27,
+    "value616": {
+        "value0": "Sponza_61"
+    },
+    "value617": 28,
+    "value618": {
+        "value0": "Sponza_10"
+    },
+    "value619": 29,
+    "value620": {
+        "value0": "Sponza_60"
+    },
+    "value621": 30,
+    "value622": {
+        "value0": "Sponza_11"
+    },
+    "value623": 31,
+    "value624": {
+        "value0": "Sponza_63"
+    },
+    "value625": 32,
+    "value626": {
+        "value0": "Sponza_12"
+    },
+    "value627": 33,
+    "value628": {
+        "value0": "Sponza_62"
+    },
+    "value629": 34,
+    "value630": {
+        "value0": "Sponza_13"
+    },
+    "value631": 35,
+    "value632": {
+        "value0": "Sponza_14"
+    },
+    "value633": 36,
+    "value634": {
+        "value0": "Sponza_15"
+    },
+    "value635": 37,
+    "value636": {
+        "value0": "Sponza_16"
+    },
+    "value637": 38,
+    "value638": {
+        "value0": "Sponza_17"
+    },
+    "value639": 39,
+    "value640": {
+        "value0": "Sponza_18"
+    },
+    "value641": 40,
+    "value642": {
+        "value0": "Sponza_19"
+    },
+    "value643": 41,
+    "value644": {
+        "value0": "Sponza_20"
+    },
+    "value645": 42,
+    "value646": {
+        "value0": "Sponza_21"
+    },
+    "value647": 43,
+    "value648": {
+        "value0": "Sponza_22"
+    },
+    "value649": 44,
+    "value650": {
+        "value0": "Sponza_23"
+    },
+    "value651": 45,
+    "value652": {
+        "value0": "Sponza_24"
+    },
+    "value653": 46,
+    "value654": {
+        "value0": "Sponza_25"
+    },
+    "value655": 47,
+    "value656": {
+        "value0": "Sponza_26"
+    },
+    "value657": 48,
+    "value658": {
+        "value0": "Sponza_27"
+    },
+    "value659": 49,
+    "value660": {
+        "value0": "Sponza_28"
+    },
+    "value661": 50,
+    "value662": {
+        "value0": "Sponza_29"
+    },
+    "value663": 51,
+    "value664": {
+        "value0": "Sponza_30"
+    },
+    "value665": 52,
+    "value666": {
+        "value0": "Sponza_31"
+    },
+    "value667": 53,
+    "value668": {
+        "value0": "Sponza_32"
+    },
+    "value669": 54,
+    "value670": {
+        "value0": "Sponza_33"
+    },
+    "value671": 55,
+    "value672": {
+        "value0": "Sponza_34"
+    },
+    "value673": 56,
+    "value674": {
+        "value0": "Sponza_35"
+    },
+    "value675": 57,
+    "value676": {
+        "value0": "Sponza_36"
+    },
+    "value677": 58,
+    "value678": {
+        "value0": "Sponza_37"
+    },
+    "value679": 59,
+    "value680": {
+        "value0": "Sponza_38"
+    },
+    "value681": 60,
+    "value682": {
+        "value0": "Sponza_39"
+    },
+    "value683": 61,
+    "value684": {
+        "value0": "Sponza_40"
+    },
+    "value685": 62,
+    "value686": {
+        "value0": "Sponza_41"
+    },
+    "value687": 63,
+    "value688": {
+        "value0": "Sponza_42"
+    },
+    "value689": 64,
+    "value690": {
+        "value0": "Sponza_43"
+    },
+    "value691": 65,
+    "value692": {
+        "value0": "Sponza_44"
+    },
+    "value693": 66,
+    "value694": {
+        "value0": "Sponza_45"
+    },
+    "value695": 67,
+    "value696": {
+        "value0": "Sponza_64"
+    },
+    "value697": 68,
+    "value698": {
+        "value0": "Sponza_65"
+    },
+    "value699": 69,
+    "value700": {
+        "value0": "Sponza_66"
+    },
+    "value701": 70,
+    "value702": {
+        "value0": "Sponza_67"
+    },
+    "value703": 71,
+    "value704": {
+        "value0": "Sponza_68"
+    },
+    "value705": 72,
+    "value706": {
+        "value0": "Sponza_69"
+    },
+    "value707": 73,
+    "value708": {
+        "value0": "Sponza_70"
+    },
+    "value709": 74,
+    "value710": {
+        "value0": "Sponza_71"
+    },
+    "value711": 75,
+    "value712": {
+        "value0": "Sponza_72"
+    },
+    "value713": 76,
+    "value714": {
+        "value0": "Sponza_73"
+    },
+    "value715": 77,
+    "value716": {
+        "value0": "Sponza_74"
+    },
+    "value717": 78,
+    "value718": {
+        "value0": "Sponza_75"
+    },
+    "value719": 79,
+    "value720": {
+        "value0": "Sponza_76"
+    },
+    "value721": 80,
+    "value722": {
+        "value0": "Sponza_77"
+    },
+    "value723": 81,
+    "value724": {
+        "value0": "Sponza_78"
+    },
+    "value725": 82,
+    "value726": {
+        "value0": "Sponza_79"
+    },
+    "value727": 83,
+    "value728": {
+        "value0": "Sponza_80"
+    },
+    "value729": 84,
+    "value730": {
+        "value0": "Sponza_81"
+    },
+    "value731": 85,
+    "value732": {
+        "value0": "Sponza_82"
+    },
+    "value733": 86,
+    "value734": {
+        "value0": "Sponza_83"
+    },
+    "value735": 87,
+    "value736": {
+        "value0": "Sponza_84"
+    },
+    "value737": 88,
+    "value738": {
+        "value0": "Sponza_85"
+    },
+    "value739": 89,
+    "value740": {
+        "value0": "Sponza_86"
+    },
+    "value741": 90,
+    "value742": {
+        "value0": "Sponza_87"
+    },
+    "value743": 91,
+    "value744": {
+        "value0": "Sponza_88"
+    },
+    "value745": 92,
+    "value746": {
+        "value0": "Sponza_89"
+    },
+    "value747": 93,
+    "value748": {
+        "value0": "Sponza_90"
+    },
+    "value749": 94,
+    "value750": {
+        "value0": "Sponza_91"
+    },
+    "value751": 95,
+    "value752": {
+        "value0": "Sponza_92"
+    },
+    "value753": 96,
+    "value754": {
+        "value0": "Sponza_93"
+    },
+    "value755": 97,
+    "value756": {
+        "value0": "Sponza_94"
+    },
+    "value757": 98,
+    "value758": {
+        "value0": "Sponza_95"
+    },
+    "value759": 99,
+    "value760": {
+        "value0": "Sponza_96"
+    },
+    "value761": 100,
+    "value762": {
+        "value0": "Sponza_97"
+    },
+    "value763": 101,
+    "value764": {
+        "value0": "Sponza_98"
+    },
+    "value765": 102,
+    "value766": {
+        "value0": "Sponza_99"
+    },
+    "value767": 103,
+    "value768": {
+        "value0": "Sponza_100"
+    },
+    "value769": 104,
+    "value770": {
+        "value0": "Sponza_101"
+    },
+    "value771": 105,
+    "value772": {
+        "value0": "Sponza_102"
+    },
+    "value773": 106,
+    "value774": {
+        "value0": "Raytraced-Shadow"
+    },
+    "value775": 107,
+    "value776": {
+        "value0": "Raytraced-Reflection"
+    },
+    "value777": 108,
+    "value778": {
+        "value0": "DDGI"
+    },
+    "value779": 1,
+    "value780": 1,
+    "value781": {
+        "value0": {
+            "value0": {
+                "value0": 1.0,
+                "value1": 1.0,
+                "value2": 1.0,
+                "value3": 1.0
+            },
+            "value1": {
+                "value0": 0.0,
+                "value1": 0.0,
+                "value2": 0.0,
+                "value3": 1.0
+            },
+            "value2": {
+                "value0": 0.0,
+                "value1": -0.9862856268882752,
+                "value2": 0.1650475263595581,
+                "value3": 0.0
+            },
+            "value3": 10.0,
+            "value4": 0.0,
+            "value5": 0.0
+        },
+        "value1": false,
+        "value2": false
+    },
+    "value782": 0,
+    "value783": 0,
+    "value784": 0,
+    "value785": 0,
+    "value786": 0,
+    "value787": 0,
+    "value788": 1,
+    "value789": 106,
+    "value790": {
+        "value0": 0,
+        "value1": 0.5
+    },
+    "value791": 1,
+    "value792": 107,
+    "value793": {
+        "value0": 0,
+        "value1": 0.009999999776482582,
+        "value2": 0.20000000298023225,
+        "value3": 1,
+        "value4": 10.0,
+        "value5": 32.0,
+        "value6": 1.0,
+        "value7": 0.5,
+        "value8": 1.0,
+        "value9": 0.800000011920929
+    },
+    "value794": 1,
+    "value795": 108,
+    "value796": {
+        "value0": 1.5,
+        "value1": true,
+        "value2": 256,
+        "value3": 0.9800000190734863,
+        "value4": 1.2000000476837159,
+        "value5": 0.10000000149011612,
+        "value6": 50.0,
+        "value7": 5.0,
+        "value8": 0
+    },
+    "value797": 0,
+    "value798": 0,
+    "value799": 103,
+    "value800": 3,
+    "value801": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_51",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value802": 4,
+    "value803": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_0",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value804": 5,
+    "value805": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_50",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value806": 6,
+    "value807": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_1",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value808": 7,
+    "value809": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_53",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value810": 8,
+    "value811": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_2",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value812": 9,
+    "value813": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_52",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value814": 10,
+    "value815": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_3",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value816": 11,
+    "value817": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_55",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value818": 12,
+    "value819": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_4",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value820": 13,
+    "value821": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_54",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value822": 14,
+    "value823": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_5",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value824": 15,
+    "value825": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_57",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value826": 16,
+    "value827": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_48",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value828": 17,
+    "value829": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_6",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value830": 18,
+    "value831": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_56",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value832": 19,
+    "value833": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_49",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value834": 20,
+    "value835": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_7",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value836": 21,
+    "value837": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_59",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value838": 22,
+    "value839": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_46",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value840": 23,
+    "value841": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_8",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value842": 24,
+    "value843": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_58",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value844": 25,
+    "value845": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_47",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value846": 26,
+    "value847": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_9",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value848": 27,
+    "value849": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_61",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value850": 28,
+    "value851": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_10",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value852": 29,
+    "value853": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_60",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value854": 30,
+    "value855": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_11",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value856": 31,
+    "value857": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_63",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value858": 32,
+    "value859": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_12",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value860": 33,
+    "value861": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_62",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value862": 34,
+    "value863": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_13",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value864": 35,
+    "value865": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_14",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value866": 36,
+    "value867": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_15",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value868": 37,
+    "value869": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_16",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value870": 38,
+    "value871": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_17",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value872": 39,
+    "value873": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_18",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value874": 40,
+    "value875": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_19",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value876": 41,
+    "value877": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_20",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value878": 42,
+    "value879": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_21",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value880": 43,
+    "value881": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_22",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value882": 44,
+    "value883": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_23",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value884": 45,
+    "value885": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_24",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value886": 46,
+    "value887": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_25",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value888": 47,
+    "value889": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_26",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value890": 48,
+    "value891": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_27",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value892": 49,
+    "value893": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_28",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value894": 50,
+    "value895": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_29",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value896": 51,
+    "value897": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_30",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value898": 52,
+    "value899": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_31",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value900": 53,
+    "value901": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_32",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value902": 54,
+    "value903": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_33",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value904": 55,
+    "value905": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_34",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value906": 56,
+    "value907": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_35",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value908": 57,
+    "value909": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_36",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value910": 58,
+    "value911": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_37",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value912": 59,
+    "value913": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_38",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value914": 60,
+    "value915": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_39",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value916": 61,
+    "value917": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_40",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value918": 62,
+    "value919": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_41",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value920": 63,
+    "value921": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_42",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value922": 64,
+    "value923": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_43",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value924": 65,
+    "value925": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_44",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value926": 66,
+    "value927": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_45",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value928": 67,
+    "value929": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_64",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value930": 68,
+    "value931": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_65",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value932": 69,
+    "value933": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_66",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value934": 70,
+    "value935": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_67",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value936": 71,
+    "value937": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_68",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value938": 72,
+    "value939": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_69",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value940": 73,
+    "value941": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_70",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value942": 74,
+    "value943": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_71",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value944": 75,
+    "value945": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_72",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value946": 76,
+    "value947": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_73",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value948": 77,
+    "value949": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_74",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value950": 78,
+    "value951": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_75",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value952": 79,
+    "value953": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_76",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value954": 80,
+    "value955": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_77",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value956": 81,
+    "value957": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_78",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value958": 82,
+    "value959": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_79",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value960": 83,
+    "value961": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_80",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value962": 84,
+    "value963": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_81",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value964": 85,
+    "value965": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_82",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value966": 86,
+    "value967": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_83",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value968": 87,
+    "value969": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_84",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value970": 88,
+    "value971": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_85",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value972": 89,
+    "value973": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_86",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value974": 90,
+    "value975": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_87",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value976": 91,
+    "value977": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_88",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value978": 92,
+    "value979": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_89",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value980": 93,
+    "value981": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_90",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value982": 94,
+    "value983": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_91",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value984": 95,
+    "value985": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_92",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value986": 96,
+    "value987": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_93",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value988": 97,
+    "value989": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_94",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value990": 98,
+    "value991": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_95",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value992": 99,
+    "value993": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_96",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value994": 100,
+    "value995": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_97",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value996": 101,
+    "value997": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_98",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value998": 102,
+    "value999": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_99",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value1000": 103,
+    "value1001": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_100",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value1002": 104,
+    "value1003": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_101",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value1004": 105,
+    "value1005": {
+        "value0": true,
+        "value1": true,
+        "value2": 8,
+        "value3": "Sponza_102",
+        "value4": ".\\glTF-Sample-Models\\2.0\\Sponza\\glTF\\Sponza.gltf"
+    },
+    "value1006": 0,
+    "value1007": 0,
+    "value1008": 2,
+    "value1009": 108,
+    "value1010": {
+        "value0": {
+            "value0": {
+                "value0": -15.367568016052246,
+                "value1": -1.0115400552749634,
+                "value2": -9.462457656860352
+            },
+            "value1": {
+                "value0": 14.39926528930664,
+                "value1": 11.435466766357422,
+                "value2": 8.843408584594727
+            }
+        }
+    },
+    "value1011": 108,
+    "value1012": {
+        "value0": {
+            "value0": {
+                "value0": -15.367568016052246,
+                "value1": -1.0115400552749634,
+                "value2": -9.462457656860352
+            },
+            "value1": {
+                "value0": 14.39926528930664,
+                "value1": 11.435466766357422,
+                "value2": 8.843408584594727
+            }
+        }
+    },
+    "value1013": 0
+}

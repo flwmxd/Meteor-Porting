@@ -1,0 +1,276 @@
+# Blender 3.4.1 MTL File: 'None'
+# www.blender.org
+
+newmtl Material__25.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Lion_Albedo.tga
+map_Bump -bm 1.000000 textures/Lion_Normal.tga
+
+newmtl Material__298.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Background_Albedo.tga
+map_Bump -bm 1.000000 textures/Background_Normal.tga
+
+newmtl Material__47.003
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material__57.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd textures/VasePlant_diffuse.tga
+map_d C:/textures/vase_plant_mask.tga
+map_Bump -bm 1.000000 textures/VasePlant_normal.tga
+
+newmtl arch.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Arch_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Arch_normal.tga
+
+newmtl bricks.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Bricks_a_Albedo.tga
+map_Bump -bm 1.000000 textures/Sponza_Bricks_a_Normal.tga
+
+newmtl ceiling.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Ceiling_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Ceiling_normal.tga
+
+newmtl chain.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd textures/ChainTexture_Albedo.tga
+map_d C:/textures/chain_texture_mask.tga
+map_Bump -bm 1.000000 textures/ChainTexture_Normal.tga
+
+newmtl column_a.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Column_a_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Column_a_normal.tga
+
+newmtl column_b.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Column_b_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Column_b_normal.tga
+
+newmtl column_c.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Column_c_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Column_c_normal.tga
+
+newmtl details.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Details_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Details_normal.tga
+
+newmtl fabric_a.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Fabric_Red_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Fabric_Red_normal.tga
+
+newmtl fabric_c.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Curtain_Red_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Curtain_Red_normal.tga
+
+newmtl fabric_d.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Fabric_Blue_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Fabric_Blue_normal.tga
+
+newmtl fabric_e.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Fabric_Green_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Fabric_Green_normal.tga
+
+newmtl fabric_f.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Curtain_Green_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Curtain_Green_normal.tga
+
+newmtl fabric_g.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Curtain_Blue_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Curtain_Blue_normal.tga
+
+newmtl flagpole.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_FlagPole_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_FlagPole_normal.tga
+
+newmtl floor.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Floor_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Floor_normal.tga
+
+newmtl leaf.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd textures/Sponza_Thorn_diffuse.tga
+map_d C:/textures/sponza_thorn_mask.tga
+map_Bump -bm 1.000000 textures/Sponza_Thorn_normal.tga
+
+newmtl roof.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Sponza_Roof_diffuse.tga
+map_Bump -bm 1.000000 textures/Sponza_Roof_normal.tga
+
+newmtl vase.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/Vase_diffuse.tga
+map_Bump -bm 1.000000 textures/Vase_normal.tga
+
+newmtl vase_hanging.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/VaseHanging_diffuse.tga
+map_Bump -bm 1.000000 textures/VaseHanging_normal.tga
+
+newmtl vase_round.003
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd textures/VaseRound_diffuse.tga
+map_Bump -bm 1.000000 textures/VaseRound_normal.tga

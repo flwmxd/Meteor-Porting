@@ -7,6 +7,10 @@
 *.o
 *.obj
 *.spv
+*.vgeo
+*.glb
+*.gltf
+*.bin
 
 # Precompiled Headers
 *.gch

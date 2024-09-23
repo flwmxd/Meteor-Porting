@@ -1,0 +1,101 @@
+{
+	"data": {
+		"uuid": "1666895152716",
+		"id": "vr51k77udee9",
+		"token": "9bfeccbf48d49222c3124f56b353cb37",
+		"categories": [
+			{
+				"id": 222,
+				"label": "肌理特效-污渍",
+				"label_zh": "肌理特效-污渍",
+				"label_en": "Textures-Blots"
+			}
+		],
+		"name": "贴花",
+		"name_en": "Decals",
+		"totalSize": 41921029,
+		"isFavorite": false,
+		"preview": "https://public.pbrmaxassets.com/1/8387432697501687808.png",
+		"isSSS": 0,
+		"localPath": "F:\\PRBResources\\117622\\assets\\Decals_Textures-Blots_vr51k77udee9",
+		"fileInfo": [
+			{
+				"fileName": "8bit_T_Decals_Displacement_2K.exr",
+				"url": "https://asset.pbrmaxassets.com/202210280225/175825e011609686324b093db9bff314/V2/6406657364624408576/T_6406657364624408576_Displacement_2K.exr?response-content-disposition=attachment;filename=8bit_T_Decals_Displacement_2K.exr",
+				"size": 33587531
+			},
+			{
+				"fileName": "8bit_T_Decals_AO_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/8f42319e5e46c8b66405477602e2fca3/6406657364624408576/T_6406657364624408576_AO_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Decals_AO_2K.jpg",
+				"size": 1930915
+			},
+			{
+				"fileName": "8bit_T_Decals_Cavity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/b68f23d79db862a7010e974ca106c48f/6406657364624408576/T_6406657364624408576_Cavity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Decals_Cavity_2K.jpg",
+				"size": 1619125
+			},
+			{
+				"fileName": "8bit_T_Decals_Opacity_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/50cde2c760f769661235352abaa04353/6406657364624408576/T_6406657364624408576_Opacity_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Decals_Opacity_2K.jpg",
+				"size": 1240604
+			},
+			{
+				"fileName": "8bit_T_Decals_Normal_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/4ba15ffce463199e630998adcf64d6f5/6406657364624408576/T_6406657364624408576_Normal_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Decals_Normal_2K.jpg",
+				"size": 1230498
+			},
+			{
+				"fileName": "8bit_T_Decals_Specular_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/21313a77151b6a035304f60b78004491/6406657364624408576/T_6406657364624408576_Specular_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Decals_Specular_2K.jpg",
+				"size": 764472
+			},
+			{
+				"fileName": "8bit_T_Decals_Displacement_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/96d1c164271823caf55dfc9687bd164b/6406657364624408576/T_6406657364624408576_Displacement_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Decals_Displacement_2K.jpg",
+				"size": 549455
+			},
+			{
+				"fileName": "8bit_T_Decals_Albedo_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/f0f8fb370cc6aeefabe2c80c41216bc2/6406657364624408576/T_6406657364624408576_Albedo_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Decals_Albedo_2K.jpg",
+				"size": 385908
+			},
+			{
+				"fileName": "8bit_T_Decals_Gloss_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/08ce64cbd95a4daaa4dbb003db648ce1/6406657364624408576/T_6406657364624408576_Gloss_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Decals_Gloss_2K.jpg",
+				"size": 298761
+			},
+			{
+				"fileName": "8bit_T_Decals_Roughness_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/c7813d3e28f113cc1207fbfe8ea809b0/6406657364624408576/T_6406657364624408576_Roughness_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Decals_Roughness_2K.jpg",
+				"size": 297215
+			},
+			{
+				"fileName": "8bit_T_Decals_Metallic_2K.jpg",
+				"url": "https://asset.pbrmaxassets.com/202210280225/1a582969bc0391bd4bb791d8ba1d54de/4741888582829158400/T_4741888582829158400_Metallic_2K_8bit.jpg?response-content-disposition=attachment;filename=8bit_T_Decals_Metallic_2K.jpg",
+				"size": 16545
+			}
+		],
+		"currentSize": 0,
+		"settings": {
+			"albedo": "JPG",
+			"normal": "JPG",
+			"roughness": "JPG",
+			"metallic": "JPG",
+			"displacement": [
+				"JPG",
+				"EXR"
+			],
+			"ao": "JPG",
+			"specular": "JPG",
+			"gloss": "JPG",
+			"cavity": "JPG",
+			"opacity": "JPG",
+			"format": "JPG",
+			"mesh_format": "FBX",
+			"model_levels": [],
+			"preset": "ALL",
+			"text_resolution": "2K",
+			"color_depth": "8bit"
+		}
+	}
+}
